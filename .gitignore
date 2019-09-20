@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+._*
+
+# Node
+node_modules/
+
+# Build output
+dist/
+build/
+target/
+out/
+
+# Archives / media
+*.zip
+*.rar
+*.7z
+*.mkv
+*.mp4
+*.mov
