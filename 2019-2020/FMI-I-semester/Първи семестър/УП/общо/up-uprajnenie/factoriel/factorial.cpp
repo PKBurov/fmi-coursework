@@ -1,0 +1,27 @@
+// factorial.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+
+using namespace std;
+
+long long Factorial(int number)
+{
+	int factorial=1;
+	for (int i = number;i > 0;i--)
+		factorial *= i;
+
+		return factorial;
+}
+
+int main()
+{
+	int number;
+	cout << "Input number:";
+	cin >> number;
+
+	cout << Factorial(number) << endl;
+    return 0;
+}
+
