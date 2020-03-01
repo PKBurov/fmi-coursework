@@ -1,0 +1,40 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.2.543
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -12.3456790123457
+xMax = 12.3456790123457
+xTickUnit = 1
+xGridUnit = 1
+yMin = -12.3456790123457
+yMax = 12.3456790123457
+yTickUnit = 2
+yGridUnit = 2
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = ((x^2+2x-3)*e^(1/x))/x
+Color = clRed
+
+[Func2]
+FuncType = 0
+y = x+3
+Color = clPurple
+Size = 2
+
+[Data]
+TextLabelCount = 0
+FuncCount = 2
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+
