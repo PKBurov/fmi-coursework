@@ -1,0 +1,2 @@
+[00 Главна] (forum) Обявления: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=133395
+[00 Главна] GitHub с материали: https://github.com/SI-FMI-2019/OOP-2020
