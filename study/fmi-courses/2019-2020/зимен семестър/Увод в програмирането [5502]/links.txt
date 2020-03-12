@@ -1,0 +1,17 @@
+[00 Главна] (forum) Новини: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=125597
+[00 Главна] (forum) Споделете вашите впечатления от курса: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=125617
+[00 Главна] Slack канал за курса: https://join.slack.com/t/si-fmi-2019-2023/shared_invite/enQtNzgzNjQxNzcyMDE4LTEyOGE4NjliZjRiZjUyOTg3YzYyNTVhNGEyNTkxNWNmOWRjNGMwMTY5MTIwNzc5NGIzMDg0ODFiNTY4ZGE0NTM
+[00 Главна] Github с материали: https://github.com/SI-FMI-2019/UP-2019
+[03 Практикум] Проект № 1 - Игра Scrabble: https://docs.google.com/document/d/1oYBjWvROAHUpQJkKahMnxMtk8SdZXZbb
+[03 Практикум] Проект № 2 - Игра Бесилка: https://docs.google.com/document/d/1WB9Vq737Pp-QWq5YI2kPvw91k9p9HoK-
+[03 Практикум] Проект № 3 - Игра Шах: https://docs.google.com/document/d/19W_zFKDUr1t5uAM7zQZwVvuEIDg2b9m6
+[03 Практикум] Проект № 4 - Калкулатор: https://docs.google.com/document/d/1dUjMNG0Le09T_TvkNPGyAi-NPG1CdtOS
+[03 Практикум] Проект № 5 - Матрицата: https://docs.google.com/document/d/1NdGOXh9AZKLQbakBFOJa9myZYkanQOmX
+[03 Практикум] Проект № 6 - Текстов редактор: https://docs.google.com/document/d/17tDaHnEVJbFvHxvfsXCunIGZtt00gFsO
+[03 Практикум] Проект № 7 - Игра Судоку: https://docs.google.com/document/d/1g3V0lEEimosefah3y5oa9xHg7mq3jb5D
+[03 Практикум] Проект № 8 - Игра Minesweeper: https://docs.google.com/document/d/1FUo5L7NipvWyQ60MPTPL9Pum2aopDq7L
+[03 Практикум] Проект № 9 - ASCII Таймер: https://docs.google.com/document/d/1wCASOQBYdea0yEMx-FeZFdHZuQW65lG-
+[04 Допълнителни материали] Първи стъпки с Visual Studio: https://docs.google.com/document/d/1WEI5DeEieYOL4B8n7UeWcIDKHJdUDbzJlLgdZ3so66E/edit
+[04 Допълнителни материали] Първи стъпки с Code Blocks: https://docs.google.com/document/d/1GBMYidkqyJvlCTxr9OU0Mxcs26_1ray8tRdpXWESZDs/edit
+[04 Допълнителни материали] Литература и други полезни източници: https://docs.google.com/document/d/1sDsfaHEMSr8PAXdUdzZO4p4ThTDmFVRNwqTHzMkG7O4/edit
+[04 Допълнителни материали] Списък с книги и ресурси за програмиране: http://dimitroff.bg/#/article/Intro%20to%20programming%20materials
