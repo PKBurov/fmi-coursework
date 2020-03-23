@@ -1,0 +1,67 @@
+#include<iostream>
+#include<cmath>
+#include <iomanip>  
+
+using namespace std;
+int main()
+{
+	const double aN=1;
+
+	int N, t,v;
+	double D;
+	//double arr[100];
+	double vN[100],arr[100],sN[100];
+
+	unsigned int S = 0;
+	cin >> N >> D;
+
+	int i = 0;
+	arr[i] = 0;
+	for (i = 1; i <= N; i++)
+		cin >> arr[i]; 
+
+	int j = 0;
+	vN[j] = 0;
+
+	for (int j=1; i <= N; j++)
+	{
+		vN[j] = vN[j - 1] + arr[j] * D;
+		cout << vN[j] << " ";
+	}
+
+
+	for (int t = 0; t < N; t++)
+	{
+		if (vN[t] < 0)
+			vN[t] = 0;
+	}
+
+	int k = 0;
+	sN[k] = 0;
+	for (k = 1; i <= N; i++)
+	{
+		sN[i] = vN[i - 1] * D + (arr[i]*pow(D, 2)) / 2;
+	}
+
+	for (int i = 1; i <= N; i++)
+	{
+		S+=sN[i];
+	}
+
+	if (N == 0)
+		S = 0;
+
+	int br = 0;
+	for (int i = 0; i < N; i++)
+	{
+		if (vN[i] == 0)
+			br++;
+	}
+	if (br == N)
+		S = 0;
+	
+	
+	
+	cout << setprecision(5) << S << '\n';
+	return 0;
+}
