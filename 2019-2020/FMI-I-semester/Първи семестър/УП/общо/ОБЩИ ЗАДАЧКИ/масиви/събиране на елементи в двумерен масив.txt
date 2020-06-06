@@ -1,0 +1,116 @@
+
+Вариянт 1
+
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+    const int ROWS=3,COLUMNS=3;
+    int matrixsA[ROWS][COLUMNS],matrixsB[ROWS][COLUMNS];
+    int SUM[ROWS][COLUMNS];
+
+    for(int i=0;i<ROWS;i++)
+    {
+        for(int j=0;j<COLUMNS;j++)
+        {
+            cout<<" matrixsA["<<i<<"]["<<j<<"]=";
+        cin>>matrixsA[i][j];
+            cout<<" matrixsB["<<i<<"]["<<j<<"]=";
+        cin>>matrixsB[i][j];
+        }
+
+        for(int j=0;j<COLUMNS;j++)
+        {
+        SUM[i][j]=  matrixsA[i][j]+matrixsB[i][j];
+        }
+
+
+    }
+    cout<<"\n";
+  for(int i=0;i<ROWS;i++)
+    {
+        for(int j=0;j<COLUMNS;j++)
+        {
+        cout<<setw(3)<<SUM[i][j]<<" ";
+        }
+    cout<<"\n";
+    }
+    return 0;
+}
+
+Вариянт 2
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+    const int ROWS=3,COLUMNS=3;
+    int matrixsA[ROWS][COLUMNS],matrixsB[ROWS][COLUMNS];
+    int SUM[ROWS][COLUMNS];
+
+    for(int i=0;i<ROWS;i++)
+    {
+        for(int j=0;j<COLUMNS;j++)
+        {
+        cout<<" matrixsA["<<i<<"]["<<j<<"]=";
+        cin>>matrixsA[i][j];
+        }
+
+    }
+
+      for(int i=0;i<ROWS;i++)
+    {
+        for(int j=0;j<COLUMNS;j++)
+        {
+        cout<<setw(3)<<matrixsA[i][j]<<" ";
+        }
+    cout<<"\n";
+    }
+
+      for(int i=0;i<ROWS;i++)
+    {
+        for(int j=0;j<COLUMNS;j++)
+        {
+        cout<<" matrixsB["<<i<<"]["<<j<<"]=";
+        cin>>matrixsB[i][j];
+        }
+    }
+        cout<<"\n";
+  for(int i=0;i<ROWS;i++)
+    {
+        for(int j=0;j<COLUMNS;j++)
+        {
+        cout<<setw(3)<<matrixsB[i][j]<<" ";
+        }
+    cout<<"\n";
+    }
+
+
+     for(int i=0;i<ROWS;i++)
+    {
+        for(int j=0;j<COLUMNS;j++)
+        {
+        SUM[i][j]=  matrixsA[i][j]+matrixsB[i][j];
+        }
+
+    }
+
+    cout<<"\n";
+    cout<<"SUM[3][3]=matrixsA[3][3]+matrixsB[3][3]";
+  for(int i=0;i<ROWS;i++)
+    {
+        for(int j=0;j<COLUMNS;j++)
+        {
+        cout<<setw(3)<<SUM[i][j]<<" ";
+        }
+    cout<<"\n";
+    }
+    return 0;
+}
