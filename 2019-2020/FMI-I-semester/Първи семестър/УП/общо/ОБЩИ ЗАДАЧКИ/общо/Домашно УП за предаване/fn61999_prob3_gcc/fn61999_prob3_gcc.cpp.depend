@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1478708435 source:e:\Домашно УП за предаване\fn61999_prob3_gcc.cpp\main.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	<sstream>
+
