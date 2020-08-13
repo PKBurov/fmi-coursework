@@ -1,0 +1,62 @@
+ /*int A = Ay - By;
+		 int B = Bx - Ax;
+		 int C = Ax*By - Bx*Ay;
+		 // cout << A <<" "<< B<< " " << C << endl;
+
+		 
+
+		 //за BC x-5=0
+		 if (point(Ax, Ay, Bx, By, 5, -2, 5, 2) == 1)
+		 { 
+			 newX = 5;
+			 newY = ((By-Ay)*newX-( Ax*By - Bx*Ay))/(Ax-Bx);
+			 //cout << newX << " " << newY << endl;
+
+		 }
+
+		 //за AB y+2=0
+		 if (point(Ax, Ay, Bx, By, -5, -2, 5, -2) == 1)
+		 {
+			 newY = -2;
+		 }
+
+		 
+		 //за CD y-2=0
+		 if (point(Ax, Ay, Bx, By, -5, 2, 5, 2) == 1)
+		 {
+			 newY = 2;
+		 }
+
+		 //за DA x+5=0
+		 if (point(Ax, Ay, Bx, By, -5, 2, -5, -2) == 1)
+		 {
+			 newX = -2;
+		 }
+		 //отделно за случайте точно на абцисната ос
+
+		 if (check(Ax, Ay) == 1)
+			 x = distance(newX, newY, Ax, Ay);
+		 else
+			 x = distance(newX, newY, Bx, By);*/
+
+		/* if (check(Ax, Ay) == 1)
+		 {
+			 int AB = distance(Ax, Ay, Bx, By);
+			 //za AB i CD
+			 if (point(Ax, Ay, Bx, By, -5, -2, 5, -2) == 1 || point(Ax, Ay, Bx, By, -5, 2, 5, 2) == 1)
+			 {
+				 //T(Ax, By)
+				 int TA = distance(Ax, By, Ax, Ay);
+				 cosL = TA / AB;
+				 if (Ay < 0)
+					 X = -5;
+				 else
+					 X = 5;
+
+				 int XA = distance(Ax, Ay, X, Ay);
+				 x = XA / cosL;
+				 cout << x << endl;
+			 }
+			 
+		 }
+		 */
