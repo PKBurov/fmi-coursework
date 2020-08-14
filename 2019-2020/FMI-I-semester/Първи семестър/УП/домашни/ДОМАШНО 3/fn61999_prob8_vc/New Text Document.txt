@@ -1,0 +1,58 @@
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+void selectionSort( int numbers[], int remainders[], int n)
+{
+
+	int minElement;
+
+	for (int i = 0; i < n - 1; i++)
+	{
+		minElement = i;
+
+		for (int j = i + 1; j < n; j++)
+		{			
+				remainders[j] = fabs(remainders[j]);
+				if (remainders[j] < remainders[minElement])
+					minElement = j;
+		}
+
+		if (minElement != i)
+		{
+			swap(remainders[i], remainders[minElement]);
+			swap(numbers[i], numbers[minElement]);
+		}
+
+	}
+
+	for (int t = 0; t < n; t++)
+	{
+		cout << numbers[t] <<' ';
+	}
+}
+
+int main()
+{
+	unsigned int n;
+	cin >> n;
+	int arr[100000];
+	int arrSort[100000];
+
+	for (int i = 0; i < n; i++)
+	{
+		cin >> arr[i];	
+	}
+
+	for (int t = 0; t < n; t++)
+	{
+		arrSort[t] = arr[t] % 3;
+	}
+
+	selectionSort(arr, arrSort, n);
+	cout << '\n';
+
+	
+	return 0;
+}
