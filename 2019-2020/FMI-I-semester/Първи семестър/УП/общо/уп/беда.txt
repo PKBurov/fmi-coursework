@@ -1,0 +1,294 @@
+/**
+*
+* Solution to homework task
+* Introduction to programming course
+* Faculty of Mathematics and Informatics of Sofia University
+* Winter semester 2016/2017
+*
+* @author Silvia Ivanova
+* @idnumber 61999
+* @task 5
+* @compiler VC
+*
+*/
+
+#include<iostream>
+#include <string.h>
+#include <stdlib.h> 
+using namespace std;
+
+int lastDigit(int n)
+{
+	return n % 10;
+}
+
+int cutLastDigit(int n)
+{
+	return n / 10;
+}
+
+int toBaseTen(int currentBase, int n)
+{
+	int nInBaseTen = 0, multiplier = 1;
+	do
+	{
+		nInBaseTen = nInBaseTen + lastDigit(n) * multiplier;
+		n = cutLastDigit(n);
+		multiplier = multiplier * currentBase;
+	} while (n > 0);
+	return nInBaseTen;
+}
+
+int FromBaseHex(char arr[], int lenght)
+{
+	int numbers[100];
+	int flag = 0;
+	int i = 0;
+	while (arr[i] != '\0')
+	{
+		switch (arr[i]) {
+		case 'A':numbers[i] = 10;
+			break;
+		case 'B':numbers[i] = 11;
+			break;
+		case 'C':numbers[i] = 12;
+			break;
+		case 'D':numbers[i] = 13;
+			break;
+		case 'E':numbers[i] = 14;
+			break;
+		case 'F':numbers[i] = 15;
+			break;
+		};
+
+
+		switch (arr[i]) {
+		case '0':numbers[i] = 0;
+			break;
+		case '1':numbers[i] = 1;
+			break;
+		case '2':numbers[i] = 2;
+			break;
+		case '3':numbers[i] = 3;
+			break;
+		case '4':numbers[i] = 4;
+			break;
+		case '5':numbers[i] = 5;
+			break;
+		case '6':numbers[i] = 6;
+			break;
+		case '7':numbers[i] = 7;
+			break;
+		case '8':numbers[i] = 8;
+			break;
+		case '9':numbers[i] = 9;
+			break;
+		};
+
+		i++;
+	}
+
+	int nInBaseHex = 0, multiplier = 1;
+	for (int k = lenght - 1; k >= 0; k--)
+	{
+		nInBaseHex = nInBaseHex + numbers[k] * multiplier;
+		multiplier = multiplier * 16;
+	}
+	return nInBaseHex;
+}
+
+int Base(char number[])
+{
+	int t = 0;
+	if (number[t] == '0' && number[t + 1] != '\0' && number[t + 1] != 'b' && number[t + 1] != 'x')   return 8;
+	if (number[t] == '0' && number[t + 1] == 'b')   return 2;
+	if (number[t] == '0' && number[t + 1] == 'x')   return 16;
+
+	if (number[t] != '0')   return 10;
+	if (number[t] == '0' && number[t + 1] == '\0')   return 10;
+
+}
+
+void ConvertToNumber(char arr[], int lenght)
+{
+	
+	if (Base(arr) == 2 || Base(arr) == 16 || Base(arr) == 0)
+	{
+		for (int i = 0; i < lenght; i++)
+		{
+			arr[i] = arr[i + 2];
+			arr[i + 1] = arr[i + 3];
+		}
+	}
+}
+
+int ConvertFromCharToNumber(char arr[], int lenght)
+{
+	ConvertToNumber(arr, lenght);
+	int numbers[100];
+	int NUMBER = 0;
+	int i = 0;
+	
+	while (arr[i] != '\0')
+	{
+		switch (arr[i]) {
+		case '0':numbers[i] = 0;
+			break;
+		case '1':numbers[i] = 1;
+			break;
+		case '2':numbers[i] = 2;
+			break;
+		case '3':numbers[i] = 3;
+			break;
+		case '4':numbers[i] = 4;
+			break;
+		case '5':numbers[i] = 5;
+			break;
+		case '6':numbers[i] = 6;
+			break;
+		case '7':numbers[i] = 7;
+			break;
+		case '8':numbers[i] = 8;
+			break;
+		case '9':numbers[i] = 9;
+			break;
+		};
+		i++;
+		////////////
+		for (int t = 0; t < lenght; t++)
+		{
+			NUMBER += numbers[t] * pow(10, lenght - 1 - t);
+		}
+	}
+	return NUMBER;
+}
+int ConvertFromCharToNumberInBase(char arr[], int lenght)
+{
+	//ConvertToNumber(arr, lenght);
+	int numbers[100];
+	int NUMBER = 0;
+	int i = 0;
+
+	if (Base(arr) == 10)
+	{
+		ConvertToNumber(arr, lenght);
+		while (arr[i] != '\0')
+		{
+			switch (arr[i]) {
+			case '0':numbers[i] = 0;
+				break;
+			case '1':numbers[i] = 1;
+				break;
+			case '2':numbers[i] = 2;
+				break;
+			case '3':numbers[i] = 3;
+				break;
+			case '4':numbers[i] = 4;
+				break;
+			case '5':numbers[i] = 5;
+				break;
+			case '6':numbers[i] = 6;
+				break;
+			case '7':numbers[i] = 7;
+				break;
+			case '8':numbers[i] = 8;
+				break;
+			case '9':numbers[i] = 9;
+				break;
+			case '10':numbers[i] = 10;
+				break;
+			};
+			i++;
+		}
+
+		for (int t = 0; t < lenght; t++)
+		{
+			NUMBER += numbers[t] * pow(10, lenght - 1 - t);
+		}
+	}
+
+	if (Base(arr) == 16)
+	{
+		ConvertToNumber(arr, lenght);
+		NUMBER = FromBaseHex(arr, lenght);
+	}
+
+	if (Base(arr) == 2)
+	{
+		ConvertToNumber(arr, lenght);
+		NUMBER = toBaseTen(2, ConvertFromCharToNumber(arr, lenght));
+	}
+
+	if (Base(arr) == 8)
+	{
+		ConvertToNumber(arr, lenght);
+		NUMBER = toBaseTen(8, ConvertFromCharToNumber(arr, lenght));
+	}
+	return NUMBER;
+}
+
+char* substr(char* arr, int begin, int len)
+{
+	ConvertToNumber(arr, len);
+	char* res = new char[len];
+	for (int i = 0; i < len; i++)
+		res[i] = *(arr + begin + i);
+	res[len] = 0;
+	return res;
+}
+
+void getNumbersOnlySum(char arr[], int lenght)
+{
+	int sum = 0;
+	int start = 0;
+	int last = 1;
+	int counter = 0;
+	int position = 0;
+	int n;
+	int number;
+	int m = 0;
+
+	for (int i = 0; i < lenght; i++)
+	{
+		if ((arr[i] == ' ' && arr[i - 1] != '+') || i + 1 == lenght)
+		{
+			if (i > 0)  last = i;
+			counter = last - start;
+			if (i + 1 == lenght)
+			{
+				counter++;
+			}
+			n = strlen(substr(arr, start, counter));
+			number = ConvertFromCharToNumberInBase(substr(arr, start, counter), n);
+			//cout << number << endl;
+			start = last + 3;
+			sum += number;
+		}
+
+
+	}
+	cout << sum;
+}
+int main()
+{
+	char arr[10000];
+	cin.getline(arr, 10000, '\n');
+	int n = strlen(arr);
+	long numbers[250];
+	cout << ConvertFromCharToNumber(arr, n);
+	//getNumbersOnlySum(arr, n);
+	cout << '\n';
+	return 0;
+}
+
+/*
+1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10   56  OK
+
+0b111111111111 + 20   4115
+
+0b1011 + 0xF + 10 + 076   98
+
+95647584 + 0b0 + 0x0 + 0   95647584  NO
+
+0x00000F + 004 + 120  139
+*/
