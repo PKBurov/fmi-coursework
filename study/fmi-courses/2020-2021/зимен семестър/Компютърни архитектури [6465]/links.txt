@@ -1,0 +1,9 @@
+[00 Главна] (forum) Обявления: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=154328
+[00 Главна] Полезни материали: https://docs.google.com/document/d/1nXwxbeysrXM_OZ2rprN0ibH1Xsmm-abunoJ5f_1uOyA/edit?usp=sharing
+[03 12 октомври - 18 октомври] Л2-1: https://www.youtube.com/watch?v=IU6xQDe-jOQ&t=0s&list=PLco9XtG983ZWmIzNNtGnN0NLw28rAifaI&index=4
+[04 19 октомври - 25 октомври] L3-1: https://www.youtube.com/watch?v=62WI2Oy_Psc&index=14&list=PLco9XtG983ZWmIzNNtGnN0NLw28rAifaI&t=0s
+[05 26 октомври - 1 ноември] L4-1: https://www.youtube.com/watch?v=XSh1A4hPM4I&t=1455s&index=8&list=PLco9XtG983ZWmIzNNtGnN0NLw28rAifaI
+[07 9 ноември - 15 ноември] L5-1: https://www.youtube.com/watch?v=AVkS4v2wfkQ&index=26&list=PLco9XtG983ZWmIzNNtGnN0NLw28rAifaI&t=0s
+[10 30 ноември - 6 декември] L6-1: https://www.youtube.com/watch?v=Eg3Ha78WmkM&index=17&list=PLco9XtG983ZWmIzNNtGnN0NLw28rAifaI
+[12 14 декември - 20 декември] L8-1: https://www.youtube.com/watch?v=rRi0jDIoPA8&index=13&list=PLco9XtG983ZX9DVcu0ZLgjeOu4xUIFrYO
+[13 21 декември - 27 декември] L9-1: https://www.youtube.com/watch?v=BlwC5H15hg8&index=21&list=PLco9XtG983ZWmIzNNtGnN0NLw28rAifaI&ab_channel=ControlSystems%2CRoboticsandIoT
