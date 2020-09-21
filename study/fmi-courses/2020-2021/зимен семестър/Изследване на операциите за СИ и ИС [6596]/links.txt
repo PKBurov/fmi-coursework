@@ -1,0 +1,9 @@
+[00 Въведение в курса] (forum) Обявления: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=158035
+[00 Въведение в курса] Онлайн среща за упражненията при ас. Андрей Дренски: https://meet.google.com/wou-ibho-ezy
+[00 Въведение в курса] Записи и материали от упражненията при ас. Андрей Дренски: https://drive.google.com/drive/folders/1D8-Ydqrb3FkKvxcDwlg6iBSrZYJaZMyp?usp=sharing
+[09 Компютърно упражнение 1. Използване на Excel за решаване на оптимизационни задачи] Използване на Solver за решаване на линейни оптимизационни задачи: https://www.youtube.com/watch?v=y8-gNrZ2yIY
+[27 Семинарно упражнение 4. Решаване на задачи с неизвестен начален базис. М-задача и намиране на начално БДР] Упражнение 27.10.2020: https://www.youtube.com/watch?v=BMgdDnvzDbA&feature=youtu.be
+[28 Семинарно упражнение 5. Двойнственост в ЛО] Двойнственост в ЛО: https://www.youtube.com/watch?v=wD7nvu02UdU
+[28 Семинарно упражнение 5. Двойнственост в ЛО] Корекция към двойнственост: https://www.youtube.com/watch?v=tZ6ku4emyCM
+[29 Семинарно упражнение 6. Решаване на класическа транспортна задача] Транспортна задача: https://www.youtube.com/watch?v=fTZcDuH9l2c
+[30 Семинарно упражнение 7. Преговор на материала] Семинарни упражнения - преговор: https://www.youtube.com/watch?v=EmqBNjF2M1M
