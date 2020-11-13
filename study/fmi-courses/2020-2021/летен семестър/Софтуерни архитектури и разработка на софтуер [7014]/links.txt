@@ -1,0 +1,18 @@
+[00 Главна] (forum) Новини и съобщения: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=178766
+[00 Главна] (forum) Въпроси и отговори: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=185941
+[00 Главна] (forum) Споделете вашите впечатления от курса: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=185943
+[04 Материали от упражненията] (forum) Дискусии и материали от упражненията: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=185963
+[06 Тема 2 Архитектурни стилове] Architectural Styles (by Garlan & Shaw): http://www.cs.cmu.edu/afs/cs/project/vit/ftp/pdf/intro_softarch.pdf
+[06 Тема 2 Архитектурни стилове] Точки 13.1 & 13.2 от книгата Software architecure in practice: http://jz81.github.io/course/sa/Software%20Architecture%20in%20Practice%20(3rd).pdf#page=225
+[06 Тема 2 Архитектурни стилове] Допълнителни материали Архитектурни стилове в Cloud: https://learn.fmi.uni-sofia.bg/mod/url/view.php?id=185984
+[06 Тема 2 Архитектурни стилове] (forum) Задача Архитектурни стилове: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=185986
+[07 Тема 3 Архитектурата и изискванията към системата] Глава 4 от книгата Software architecture in practice: http://ptgmedia.pearsoncmg.com/images/9780321815736/samplepages/0321815734.pdf
+[07 Тема 3 Архитектурата и изискванията към системата] Functional and Non-Functional Requirements (Видео): https://www.youtube.com/watch?v=zCX-N1H8Vps
+[08 Тема 4 Микроуслуги] Martin Fowler - Microservices (definition): https://martinfowler.com/articles/microservices.html
+[09 Тема 5 Архитектурни подходи (тактики) за удовлетворяване на качествените изисквания] (forum) Задача Архитектурни тактики: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=185971
+[10 Тема 5 Процес за проектиране на архитектурата] Глава 17 от книгата Software architecure in practice: https://jz81.github.io/course/sa/Software%20Architecture%20in%20Practice%20(3rd).pdf#page=332
+[10 Тема 5 Процес за проектиране на архитектурата] Допълнителни материали Процес за проектиране на архитектурата: http://www.ece.ubc.ca/~matei/EECE417/BASS/ch06.html
+[11 Тема 6 Документиране и анализ (оценка) на софтуерната архитектура] Документиране Глава 18 от книгата Software architecure in practice: https://jz81.github.io/course/sa/Software%20Architecture%20in%20Practice%20(3rd).pdf#page=348
+[11 Тема 6 Документиране и анализ (оценка) на софтуерната архитектура] Метод ATAM Глава 21 от книгата Software architecure in practice: https://jz81.github.io/course/sa/Software%20Architecture%20in%20Practice%20(3rd).pdf#page=418
+[11 Тема 6 Документиране и анализ (оценка) на софтуерната архитектура] Метод CBAM Глава 23 от книгата Software architecure in practice: https://jz81.github.io/course/sa/Software%20Architecture%20in%20Practice%20(3rd).pdf#page=458
+[11 Тема 6 Документиране и анализ (оценка) на софтуерната архитектура] (forum) Задача Документиране на софтуерната архитектура: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=185977
