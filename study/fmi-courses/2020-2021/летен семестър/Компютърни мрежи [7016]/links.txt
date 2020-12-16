@@ -1,0 +1,2 @@
+[00 Главна] (forum) Обявления: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=178768
+[04 15 март - 21 март] Документация за iptables и за командата sysctl: https://www.frozentux.net/
