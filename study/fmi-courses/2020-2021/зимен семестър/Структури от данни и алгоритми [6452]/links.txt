@@ -1,0 +1,28 @@
+[00 Главна] (forum) Обявления: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=154315
+[00 Главна] Data Structures and Algorithms - Harvard: http://sites.fas.harvard.edu/~cs124/cs124/lecture_notes.html
+[00 Главна] Introduction to Algorithms - MIT: https://learning-modules.mit.edu/materials/index.html?uuid=/course/6/fa18/6.006#materials
+[00 Главна] Data Structure and Algorithms - Princeton: https://www.cs.princeton.edu/courses/archive/fall20/cos226/lectures.php
+[00 Главна] Data Structures - Berkley: https://inst.eecs.berkeley.edu/~cs61b/sp20/
+[00 Главна] Design and Analysis of Algorithms - Stanford: https://web.stanford.edu/class/cs161/
+[00 Главна] Github: https://github.com/mchechev/data-structures-and-algorithms
+[02 5 октомври - 11 октомври] Лекция 1. Организационни въпроси + Оценка на сложност на алгоритъм: https://docs.google.com/presentation/d/1_kqymqYNs_xiwVGOAUCK4f8BxSXBZmddcS6sqV_GXNQ
+[02 5 октомври - 11 октомври] Задачи за самостоятелна работа 1: https://www.hackerrank.com/contests/sda-homework-1
+[03 12 октомври - 18 октомври] Задачи за самостоятелна работа 2: https://www.hackerrank.com/sda-homework-2
+[03 12 октомври - 18 октомври] Лекция 2. Алгоритми за сортиране: https://docs.google.com/presentation/d/1ObNgy6hLC5UaCg__HbqtaNVttlCPtXUVx1TdvmunItc/edit?usp=drivesdk
+[04 19 октомври - 25 октомври] Лекция 3. Алгоритми за търсене: https://docs.google.com/presentation/d/1eOKijFfHlNXzoKPulWwpkctzFBOoPveYAL5PV0AHgvQ/edit?usp=sharing
+[04 19 октомври - 25 октомври] Задачи за самостоятелна работа 3: https://www.hackerrank.com/sda-homework-3
+[04 19 октомври - 25 октомври] Контролно 2: https://www.hackerrank.com/sda-2020-2021-test2-erfdw
+[05 26 октомври - 1 ноември] Задачи за самостоятелна работа 4: https://www.hackerrank.com/contests/sda-homework-4
+[05 26 октомври - 1 ноември] Лекция 4. Свързан Списък: https://docs.google.com/presentation/d/1Vt1M5xE8orh8n1M_VTPT_20DoKdWKOXrIzs9g5f1DU0/edit?usp=sharing
+[05 26 октомври - 1 ноември] Контролно 3: https://www.hackerrank.com/sda-2020-2021-test3-trvdd
+[06 2 ноември - 8 ноември] Лекция 5. Стек и опашка: https://docs.google.com/presentation/d/1SI7QzfyVP4crfCLYCjRKsS14KpRBqM3wXIyXiLiTTMQ/edit?usp=sharing
+[06 2 ноември - 8 ноември] Контролно 4: https://www.hackerrank.com/sda-2020-2021-test4-tsdcfh
+[06 2 ноември - 8 ноември] Задачи за самостоятелна работа 5: https://www.hackerrank.com/sda-homework-5
+[07 9 ноември - 15 ноември] Лекция 6. Двоично дърво за търсене: https://docs.google.com/presentation/d/1lsvobSpZoVnNnxgJiWEwt_cwHXvJW69edNUSATjxREQ
+[07 9 ноември - 15 ноември] Задачи за самостоятелна работа 6: https://www.hackerrank.com/sda-homework-6
+[08 16 ноември - 22 ноември] Видео лекция AVL дървета: https://youtu.be/DvpXGY1-Z_g
+[08 16 ноември - 22 ноември] Задачи за самостоятелна работа 7: https://www.hackerrank.com/sda-homework-7
+[09 23 ноември - 29 ноември] Задачи за самостоятелна работа 8: https://www.hackerrank.com/sda-homework-8
+[10 30 ноември - 6 декември] Задачи за самостоятелна работа 9: https://www.hackerrank.com/sda-homework-9
+[12 14 декември - 20 декември] Задачи за самостоятелна работа 10: https://www.hackerrank.com/sda-homework-10
+[13 21 декември - 27 декември] Задачи за самостоятелна работа 11: https://www.hackerrank.com/homework-11
