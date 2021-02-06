@@ -1,0 +1,9 @@
+[00 Главна] (forum) Новини: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=154333
+[00 Главна] Sommerville, Software Engineering - oсновен учебник за курса: https://www.academia.edu/42256657/GlobAl_EdiTioN_Software_Engineering_TENTH_EdiTioN
+[04 Материали за упражнения] График за упражнения на 21 и 22 октомври: https://docs.google.com/spreadsheets/d/1ZNqky-k47JTvvEtBnIE_WV5xJTIEBeIvgZW0oAys-YA/edit?usp=sharing
+[04 Материали за упражнения] График за упражнения на 4 и 5 Ноември: https://docs.google.com/spreadsheets/d/1SqurJWw-btxU9ijUUmnFwDPxis9p7KcE2wltdT7g0f8/edit?usp=sharing
+[04 Материали за упражнения] График за упражнения на 18 и 19 Ноември за групи 1,2 и 6: https://docs.google.com/spreadsheets/d/1BR80XhyjbuNB5TXq3hwsti_z0TZHUvJo-hfcdIqhtko/edit?usp=sharing
+[04 Материали за упражнения] UML Sequence Diagrams: https://www.youtube.com/watch?v=18_kVlQMavE
+[04 Материали за упражнения] UML Activity Diagrams: https://www.youtube.com/watch?v=yAihwmczqsk
+[04 Материали за упражнения] График за упражнения на 17 и 18 декември: https://docs.google.com/spreadsheets/d/1JSRz_cO1T9bQMg0Ii02ULRlkJa833E3DIpqPrk0wrrA/edit?usp=sharing
+[04 Материали за упражнения] UML Class Diagram: https://www.youtube.com/watch?v=UI6lqHOVHic
