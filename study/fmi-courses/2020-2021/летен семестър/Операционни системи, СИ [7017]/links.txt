@@ -1,0 +1,26 @@
+[00 Главна] (forum) Обявления: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=178769
+[00 Главна] Google профили: https://docs.google.com/document/d/1RGZwfO6I_WrVYWofzUkYdN53YCJeU4jlKknhM1quXFg/
+[00 Главна] Инструкции за свързване към astero: https://docs.google.com/document/d/1Qq-cMxVxnpUaFNWd00IzAc1sCxsHyVliKWvY2ERlyfg/edit
+[00 Главна] Репо със задачи: https://github.com/avelin/fmi-os
+[00 Главна] Записи на упражненията: https://drive.google.com/drive/u/5/folders/1niQOIVdDudDmTctmKOZ3pi0U_UBhByoi
+[00 Главна] Записи на лекциите в Google meet: https://drive.google.com/drive/folders/1YQbwXD-a46O_KBw0x5lYRdcSVXiKeBch?usp=sharing
+[01 Изпити и оценки] Таблица с точки: https://docs.google.com/spreadsheets/d/1PWaRUOOFXYfGQDcZCKpSLV1NyDkBQBGLbkBFhLgX4PM/edit#gid=906928218
+[02 Допълнителни материали] Материали на Скелета: http://skelet.ludost.net/OS/
+[02 Допълнителни материали] Книжка за семафорите: http://greenteapress.com/semaphores/LittleBookOfSemaphores.pdf
+[02 Допълнителни материали] Bash redirections cheat sheet: https://catonmat.net/ftp/bash-redirections-cheat-sheet.pdf
+[02 Допълнителни материали] Redirections in-depth explanation: https://catonmat.net/bash-one-liners-explained-part-three
+[02 Допълнителни материали] Awk Tutorial: https://www.grymoire.com/Unix/Awk.html
+[02 Допълнителни материали] Sed Tutorial: https://www.grymoire.com/Unix/Sed.html
+[05 Лекции] Видеозаписи на уводната лекция, от 2020 г: http://skelet.ludost.net/OS/SI_2020/
+[05 Лекции] Лекция в сряда, 17 март, 9 10: https://meet.google.com/nhf-hkao-zid
+[05 Лекции] Лекция в сряда, 24 март, 9 10: https://meet.google.com/nhf-hkao-zid
+[05 Лекции] Лекция в сряда, 31 март, 9 10: https://meet.google.com/nhf-hkao-zid
+[05 Лекции] Лекция в сряда, 7 април, 9 10: https://meet.google.com/nhf-hkao-zid
+[05 Лекции] Лекция в сряда, 14 април, 9 10: https://meet.google.com/nhf-hkao-zid
+[05 Лекции] Лекция в сряда, 21 април, 9 10: https://meet.google.com/nhf-hkao-zid
+[05 Лекции] Лекция в сряда, 28 април, 9 10: https://meet.google.com/nhf-hkao-zid
+[05 Лекции] Лекция в сряда, 12 май, 9 10: https://meet.google.com/nhf-hkao-zid
+[05 Лекции] Лекция в сряда, 19 май, 9 10: https://meet.google.com/nhf-hkao-zid
+[05 Лекции] Лекция в сряда, 26 май, 9 10: https://meet.google.com/nhf-hkao-zid
+[05 Лекции] Лекция в сряда, 2 юни, 9 10: https://meet.google.com/nhf-hkao-zid
+[05 Лекции] Лекция в сряда, 9 юни, 9 10: https://meet.google.com/nhf-hkao-zid
