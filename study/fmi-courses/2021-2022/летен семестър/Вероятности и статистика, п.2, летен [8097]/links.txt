@@ -1,0 +1,20 @@
+[00 Главна] (forum) Обявления: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=229140
+[00 Главна] Стая за извикване за събеседване: https://meet.google.com/kqv-yhgq-iyt
+[01 21 февруари - 27 февруари] Лекция 1 за нечетни факултетни номера: https://youtu.be/nina_HisoE8
+[01 21 февруари - 27 февруари] Практикум по R 1 - СИ - 2021: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/4b9bfbd166120482f9d15b6151ae1cbe79e76974-1634371390861
+[01 21 февруари - 27 февруари] Практикум по R 2 - СИ - 2021: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/e31beda02298bfc8dfd720b744672066ddebc808-1634968831661
+[01 21 февруари - 27 февруари] Практикум по R 2 - СИ - 2021 - Вариант 2: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/e2a680478a9c1d7357d0efb1abb4f3b8dae72285-1634976425901
+[03 7 март - 13 март] Лекция 2: https://youtu.be/UVuW3U36yPg
+[03 7 март - 13 март] Практикум по R - Univariate Data - titanic - СИ - 2021: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/06161efa57d6093f774a930e5024df057bf15299-1635573630899
+[03 7 март - 13 март] Практикум по R - Univariate Data - pokemons - СИ - 2021: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/ff55a020275e9fa1f1e1becb6a6f6b8e77baefdf-1635581274285
+[04 14 март - 20 март] Лекция 3: https://youtu.be/uXwHNs42Sgo
+[04 14 март - 20 март] Практикум по R - Bivariate Data - СИ - 2021: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/657b81395c142852d2ad88ae1c46f0150b187379-1636182074216
+[04 14 март - 20 март] Практикум по R - Bivariate Data - СИ - 2021 - Вариант 2: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/fe109e9d0e72224bde6ce00f6ccad85a0a0584e7-1636189363222
+[05 21 март - 27 март] Практикум по R - Multivariate Data - СИ - 2021: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/bfc195922abd2a62a45fd303d3f5669cffc2e695-1636786846544
+[05 21 март - 27 март] Практикум по R - Multivariate Data - СИ - 2021 - Вариант 2: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/7c69a2666043cbc43259db47d050c01e7513492b-1636794180309
+[05 21 март - 27 март] Практикум по R - Multivariate Data More Graphics - СИ - 2021: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/3be1848f06dd38a963be8d931e0f068c91ad3225-1637391752313
+[05 21 март - 27 март] Практикум по R - Multivariate Data More Graphics - СИ - 2021 - Вариант 2: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/5b18a2721712b6e7c1d7ddd7588b4b601392bb11-1637399226291
+[06 28 март - 3 април] Практикум по R - Discrete Random Data - СИ - 2021: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/dcf89d1e273f7affe706ca38d69862f6f6e8e69d-1637996578660
+[06 28 март - 3 април] Практикум по R - Discrete Random Data - СИ - 2021 - Вариант 2: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/1376c1c93636a19abb1ed500d339f5e02b6e4511-1638003813366
+[07 4 април - 10 април] Практикум по R - Continuous Random Data - СИ - 2021: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/541630155cb85bd79ff3d46fe8feb50a03bdcadb-1638619304726
+[07 4 април - 10 април] Практикум по R - Continuous Random Data - СИ - 2021 - Вариант 2: https://bbb.fmi.uni-sofia.bg/playback/presentation/2.3/1d94ab61a57246b2bf7807fd70d9b4d14a6cce49-1638705829707
