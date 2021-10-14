@@ -1,0 +1,14 @@
+[00 Главна] (forum) Обявления: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=229125
+[00 Главна] Таблица: https://docs.google.com/spreadsheets/d/1SJDHtfuuNJ9rLFL-C0Frs9OF9nKBi3Pv6SWaSFoVpeY/edit?usp=sharing
+[02 Упражнения] Инструкции за свързване към astero: https://docs.google.com/document/d/1Qq-cMxVxnpUaFNWd00IzAc1sCxsHyVliKWvY2ERlyfg/edit
+[02 Упражнения] Repository със задачи: https://github.com/avelin/fmi-os
+[03 Лекции] Книжка за семафорите: http://greenteapress.com/semaphores/LittleBookOfSemaphores.pdf
+[03 Лекции] Материали на Скелета: http://skelet.ludost.net/OS/
+[03 Лекции] Записи теория СИ 2021: https://drive.google.com/drive/folders/1YQbwXD-a46O_KBw0x5lYRdcSVXiKeBch
+[03 Лекции] Връзка за meet (Скелета): https://meet.google.com/fqg-vznb-joh
+[04 Допълнителни материали] Free as in Freedom: https://www.oreilly.com/openbook/freedom/
+[04 Допълнителни материали] The Cathedral and the Bazaar: http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/
+[04 Допълнителни материали] Катедралата и базарът: http://catb-bg.sourceforge.net/index.html
+[04 Допълнителни материали] The Linux Documentation Project: https://www.tldp.org/
+[04 Допълнителни материали] Lex Fridman интервюира Brian Kernighan: https://www.youtube.com/watch?v=O9upVbGSBFo
+[04 Допълнителни материали] Brian Kernighan интервюира Ken Thompson: https://www.youtube.com/watch?v=EY6q5dv_B-o
