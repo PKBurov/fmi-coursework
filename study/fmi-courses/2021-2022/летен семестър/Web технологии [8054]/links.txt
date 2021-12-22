@@ -1,0 +1,19 @@
+[00 Главна] (forum) Обявления: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=229097
+[00 Главна] Програма w18: https://intranet.fmi.uni-sofia.bg/index.php/s/Gz2BCzi3cFx6z8P
+[00 Главна] w18, Група за комуникация (фб): https://www.facebook.com/groups/1005705916698108
+[00 Главна] Github repository 3-та група: https://github.com/ngadzheva/WebTechnologies-labs-SI22
+[00 Главна] Github repository 5-та група: https://github.com/alexanderStefanovS/web-technologies-si-2022
+[00 Главна] Академичен календар - СУ: https://www.uni-sofia.bg/index.php/bul/studenti/akademichen_kalendar
+[00 Главна] Код от упражненията на втора група: https://github.com/mtgeorgiev/www-si-2022
+[00 Главна] Ресурси за упражненията на 5-та група: https://github.com/alexanderStefanovS/web-technologies-si-2022
+[01 Въведение, основи на HTML] Упражнение 1 INTRO: http://webtech.w3c.fmi.uni-sofia.bg/w16labs/INTRO.html
+[01 Въведение, основи на HTML] HTML: http://webtech.w3c.fmi.uni-sofia.bg/w16labs/HTML.html
+[02 HTML форми] Forms: http://webtech.w3c.fmi.uni-sofia.bg/w16labs/Forms.html
+[03 Основи на CSS] Презентация CSS - 1: http://webtech.w3c.fmi.uni-sofia.bg/w15labs/CSS-1.html
+[05 Основи на PHP] PHP - основи: http://webtech.w3c.fmi.uni-sofia.bg/w15labs/PHP.html#1
+[06 Основи на JavaScript] JavaScript: http://webtech.w3c.fmi.uni-sofia.bg/w16labs/JS-1.html
+[07 PHP и бази данни] PHP + MySQL: http://webtech.w3c.fmi.uni-sofia.bg/w15labs/PHP-SQL.html
+[08 Authorization & Authentication] Auth презентация web: http://webtech.w3c.fmi.uni-sofia.bg/w15labs/auth.html?read=1#1
+[08 Authorization & Authentication] Authorization & Authentication - resource 2 (pdf): https://learn.fmi.uni-sofia.bg/pluginfile.php/293937/mod_resource/content/1/AuthenticationAuthorization.pdf
+[09 JavaScript - част 2] JavaScript - 2: http://webtech.w3c.fmi.uni-sofia.bg/w15labs/JS-2.html
+[10 CSS - част 2] Презентация CSS - 2: http://webtech.w3c.fmi.uni-sofia.bg/w15labs/CSS-2.html
