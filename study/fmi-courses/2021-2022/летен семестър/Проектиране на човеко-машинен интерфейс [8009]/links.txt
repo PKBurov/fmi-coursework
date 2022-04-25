@@ -1,0 +1,36 @@
+[00 Главна] (forum) Обявления: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=229052
+[01 21 февруари - 27 февруари] Основи на Проектирането на човеко-машинен интерфейс: http://www-it.fmi.uni-sofia.bg/courses/HCI/index2.htm
+[01 21 февруари - 27 февруари] Инфографика - История на концепциите за Human-centered design: https://medium.com/@brandoctor/why-is-human-centred-design-and-marketing-a-match-made-in-heaven-bedf2bea182b
+[02 28 февруари - 6 Март] Различни модели и теории за психологичните основи на човешкото възприятие: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/module2.htm
+[02 28 февруари - 6 Март] Уроци за HTML във W3Schools: http://www.w3schools.com/html/default.asp
+[02 28 февруари - 6 Март] Уроци за HTML 5 във W3Schools: http://www.w3schools.com/html/html5_intro.asp
+[02 28 февруари - 6 Март] Уроци за CSS във W3Schools: http://www.w3schools.com/css/default.asp
+[03 7 Март - 13 Март] Екипи за проекти по ПЧМИ: https://docs.google.com/spreadsheets/d/1AFk3LrwBW64d_pCtS9HePfZRQRH8YTeYhzSEa8UlpV4/edit?usp=sharing
+[04 14 Март - 20 Март] Принципи и Правила: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/c24/index.htm
+[04 14 Март - 20 Март] Ресурси design thinking от IDEO: https://designthinking.ideo.com/resources
+[04 14 Март - 20 Март] Ръководство за проектиране на интерфейси: http://www.uxapprentice.com/
+[04 14 Март - 20 Март] друга технология за html страници: https://www.thymeleaf.org/
+[05 21 Март - 27 Март] Photopea (Онлайн Photoshop): https://www.photopea.com
+[05 21 Март - 27 Март] Графичен редактор PIXLR: http://apps.pixlr.com/editor/
+[05 21 Март - 27 Март] Remove.bg - Онлайн инструмент за премахване на фон зад човешка фигура или лице: https://www.remove.bg
+[05 21 Март - 27 Март] Как да създадем колаж от няколко изображения (видеоурок): https://youtu.be/PEijeVoKd3I
+[05 21 Март - 27 Март] Edward Tufte (официален сайт): http://www.edwardtufte.com/tufte/
+[05 21 Март - 27 Март] Creating Visual Design: https://webflow.com/blog/the-web-design-process-creating-the-visual-design?utm_campaign=novemberNo2&utm_source=newsletter&utm_medium=email&utm_source=Master&utm_campaign=037213de3d-novemberNo2&utm_medium=email&utm_term=0_e8e875e4ea-037213de3d-89966425
+[05 21 Март - 27 Март] The Modern Web Design Process - free ebook: https://ebooks.webflow.com/ebook/the-modern-web-design-process?utm_campaign=ebook3launch&utm_source=blast&utm_medium=email
+[06 28 Март - 3 Април] Kuler - инструмент на Abode за работа с цветове: https://color.adobe.com
+[06 28 Март - 3 Април] Material Design (by Google): https://material.io/design/introduction
+[06 28 Март - 3 Април] Audi UI&UX (by Audi): https://www.audi.com/ci/en/guides/user-interface/introduction.html
+[06 28 Март - 3 Април] Carbon Design (by IBM): https://www.carbondesignsystem.com/
+[07 4 Април - 10 Април] Оценяване чрез интерпретация: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/c32/index.htm
+[07 4 Април - 10 Април] Роля на оценяването: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/c29/index.htm
+[07 4 Април - 10 Април] Сравняване на методите за оценяване: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/c34/index.htm
+[07 4 Април - 10 Април] Предварително оценяване: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/c33/index.htm
+[09 18 април - 24 април] Фонотове за кирилица: https://localfonts.eu/freefonts/medieval-cyrillic-free-fonts/
+[09 18 април - 24 април] букви манускрипт: https://localfonts.eu/product-tag/cyrillic-manuscripts/
+[09 18 април - 24 април] друга библиотека за фонтове: https://fontlibrary.org/en/font/fedorovsk-unicode
+[09 18 април - 24 април] още старинни фонтове: https://www.cirilica.net/staroslovenska-pisma-old-slavic-fonts
+[09 18 април - 24 април] идеи за иконки и по-добър външен вид по онтошение на българския език: https://ibl.bas.bg/
+[11 2 Май - 8 Май] Проектиране на съвместна работа: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/c16/index.htm
+[12 9 май - 15 май] Лекция 10 - Интерактивни модели: http://pavel.it.fmi.uni-sofia.bg/courses/okg/hci-demo/training_start.php?id=62510&mid=16675&name=%D0%9F%D0%B5%D1%82%D1%8A%D1%80%20%D0%91%D1%83%D1%80%D0%BE%D0%B2
+[12 9 май - 15 май] Творчество и дизайн: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/c22/index.htm
+[12 9 май - 15 май] шаблони на стандартни страници: https://getbootstrap.com/docs/4.3/examples/
