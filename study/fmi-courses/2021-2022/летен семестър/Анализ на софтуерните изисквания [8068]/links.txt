@@ -1,0 +1,8 @@
+[00 Главна] (forum) Обявления: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=238574
+[15 Упражнение 5 Анализ на изискванията] UML Sequence diagrams: https://www.youtube.com/watch?v=18_kVlQMavE
+[15 Упражнение 5 Анализ на изискванията] UML Activity diagrams: https://www.youtube.com/watch?v=yAihwmczqsk
+[15 Упражнение 5 Анализ на изискванията] Data Flow Diagram (DFD) Tutorial: https://www.visual-paradigm.com/tutorials/data-flow-diagram-dfd.jsp
+[15 Упражнение 5 Анализ на изискванията] Data Flow Diagram with Examples: https://www.visual-paradigm.com/tutorials/data-flow-diagram-example-food-ordering-system.jsp
+[15 Упражнение 5 Анализ на изискванията] Entity Relationship Diagram (ERD): https://www.visual-paradigm.com/tutorials/erd.jsp
+[15 Упражнение 5 Анализ на изискванията] Добавяне на асоциации в CaseComplete: https://casecomplete.zendesk.com/hc/en-us/articles/200684857-UML-Class-Shape
+[15 Упражнение 5 Анализ на изискванията] Генериране на Активити диаграма в CaseComplete: https://casecomplete.zendesk.com/hc/en-us/articles/200684777-Generating-an-activity-diagram
