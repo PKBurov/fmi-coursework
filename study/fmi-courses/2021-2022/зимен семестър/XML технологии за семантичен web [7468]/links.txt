@@ -1,0 +1,20 @@
+[00 Добре дошли в страницата на курса!] (forum) Форум за новини и съобщения: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=206668
+[02 4 октомври - 10 октомври] Упражнение - Модул 1.А Създаване на XML документи и използване на пространства от имена: http://apogee.online/xml/exer/exercise1/exercise1.html
+[03 11 октомври - 17 октомври] Упражнение - Модул 1.Б Създаване на XML документи и използване на пространства от имена: http://apogee.online/xml/exer/exercise1/exercise1.html
+[04 18 октомври - 24 октомври] Упражнение - Модул 2.А XML валидация чрез DTD: http://apogee.online/xml/exer/exercise2/exercise2.html
+[05 25 октомври - 31 октомври] Упражнение - Модул 2.Б XML валидация чрез DTD: http://apogee.online/xml/exer/exercise2/exercise2.html
+[05 25 октомври - 31 октомври] Упражнение - Модул 3.А XML валидиране чрез XML Schema: http://apogee.online/xml/exer/exercise3/exercise3.html
+[06 1 ноември - 7 ноември] Упражнение - Модул 3.Б XML валидиране чрез XML Schema: http://apogee.online/xml/exer/exercise3/exercise3.html
+[07 8 ноември - 14 ноември] Упражнение - Модул 4 XPath и XQuery: https://apogee.online/xml/exer/exercise4/exercise4.html
+[08 15 ноември - 21 ноември] Упражнение - Модул 5 XSLT: https://apogee.online/xml/exer/exercise5/exercise5.html
+[09 22 ноември - 28 ноември] Упражнение - Модул 6 DOM, SAX и StAX: https://apogee.online/xml/exer/exercise6/exercise6%20no%20sol.html
+[10 29 ноември - 5 декември] Упражнение - Модул 7 CSS, XLink, XPointer и XInclude: https://apogee.online/xml/exer/exercise7/exercise7%20no%20sol.html
+[11 6 декември - 12 декември] Упражнение Консултации по разработката на курсов проект: https://learn.fmi.uni-sofia.bg/mod/bigbluebuttonbn/view.php?id=210080
+[11 6 декември - 12 декември] Упражнение - Модул 8 RDF, RDFS и OWL: https://apogee.online/xml/exer/exercise8/exercise8%20no%20sol.html
+[12 13 декември - 19 декември] Записване за защита на курсови проекти по XML технологии за семантичен Уеб - Сесия 1 4, 10.01.2022 г., 12 00 ч. - 16 00 : https://doodle.com/poll/fnhgcmu6xx73kxpr
+[12 13 декември - 19 декември] Записване за защита на курсови проекти по XML технологии за семантичен Уеб - Сесия 2 4, 12.01.2022 г., 10 00 ч. - 16 00 : https://doodle.com/poll/wgh8w9rkexe2pg34
+[12 13 декември - 19 декември] Записване за защита на курсови проекти по XML технологии за семантичен Уеб - Сесия 3 4, 17.01.2021 г., 12 00 ч. - 16 00 : https://doodle.com/poll/fqzx8p9z7wqttiqe
+[12 13 декември - 19 декември] Записване за защита на курсови проекти по XML технологии за семантичен Уеб - Сесия 4 4, 19.01.2021 г., 10 00 ч. - 16 00 : https://doodle.com/poll/k2imuad955i4duyt
+[12 13 декември - 19 декември] Упражнение Консултации по разработката на курсов проект: https://learn.fmi.uni-sofia.bg/mod/bigbluebuttonbn/view.php?id=210080
+[13 20 декември - 26 декември] Упражнение Консултации по разработката на курсов проект: https://learn.fmi.uni-sofia.bg/mod/bigbluebuttonbn/view.php?id=210080
+[15 3 януари - 9 януари] Записване за представяне на есе за дати 7.01, 14.01 и 21.01.2022г., от 15 00 до 18 00ч: https://doodle.com/poll/dwp4mncn9nty4c8q
