@@ -1,0 +1,21 @@
+
+<!ELEMENT shiporder (orderperson,shipto,item+)>
+<!ATTLIST shiporder orderid CDATA #REQUIRED>
+<!ELEMENT orderperson (#PCDATA)>
+<!ELEMENT shipto (name,address,city,country)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT item (title,note?,quantity,price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT note (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+
+ <!-- Създаваме главен елемент shiporder, който трябва да има под-елементи orderperson, shipto, и item, които може да ги има веднъж или повече. Също така shiporder трябва да има атрибут orderid.
+Създаваме под-елемент orderperson,
+Създаваме под-елемент shipto, който трябва да има под-елементи name, adress, city, contry
+Създаваме под-елементите name, address, city, country
+Създаваме под-елемента item, който има под-елементи title, note, който не е задължителен, quntity и price
+Създаваме под-елементите title, note, quantity, price >
