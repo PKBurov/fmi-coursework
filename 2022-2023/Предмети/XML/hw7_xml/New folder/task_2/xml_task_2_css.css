@@ -1,0 +1,54 @@
+body {
+   background-color: #FFFF00;
+}
+.h1{
+   color: #008080;
+   font-size: 25px;
+   font-family: "Arial";
+   font-weight: bold;
+}
+.h2{
+   color: #008080;
+   font-size: 25px;
+   font-family: "Arial";
+}
+table.green {
+   border: 3px solid #111111;
+   padding: 0px;
+   border-spacing: 0px;
+   border-collapse: collapse;
+   width: 50%;
+   background-color: #00ff00;
+}
+table.blue {
+   border: 3px solid #111111;
+   padding: 0px;
+   border-spacing: 0px;
+   border-collapse: collapse;
+   width: 50%;
+   background-color: 00ffff;
+}
+td {
+   width: 50%;
+   border: 3px solid #FF0000;
+   background-color: #FFFF00;
+}
+td.bold {
+   font-weight: bold;
+   text-align: center;
+}
+td.right {
+   text-align: right;
+}
+a:link {
+   color: #00FF00;
+}
+.normalP {
+   font-family: "Arial";
+   color: #996600;
+}
+
+/* Започваме с дадената ни информация от сампъл кодат който ни е даден. В секция body виждаме bgcolor което го задаваме в css файла с background-color и преписваме самият цвят. след това в секция <p> което е за първият
+параграф, имаме също съптветно свят, размер, от кое семейство на шрифтове е и тн. всичко това влиза в клас .h1 аналогично и за .h2. Възползваме се от упътването и използваме вече дадените класове за table, като правим две разновидности, синя и зелена
+(въвеждаме еднакви стойности за таблиците) след тях следва клас td, което отговаря за една клетка на дадена таблица и преписваме спецификациите за td от даденият ни код в задача 2. Също така правим и втори клас с суфикс (болд) за да 
+можем да болдваме нужната информация в определена клетна на таблицата. Също така правим и тд.right за да може да преместим в дясно дадената клетка. Задаваме цвета на линка с "a:link:" и нормализираме стила на текста и цвета с класа normalP  */
