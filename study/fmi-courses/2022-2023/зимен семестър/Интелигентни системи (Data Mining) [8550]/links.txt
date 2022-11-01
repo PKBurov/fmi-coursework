@@ -1,0 +1,9 @@
+[00 Главна] (forum) Обявления: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=250185
+[00 Главна] Полезни инструкции за курсов проект 1: http://www.nd.edu/~dthain/courses/cse60641/fall2010/proposal.html
+[00 Главна] Полезни инструкции за курсов проект - 2: http://www.cs.princeton.edu/courses/archive/spr98/cs598d/projects/proposals.html
+[00 Главна] IBM's Watson supercomputer destroys all humans in Jeopardy: http://youtu.be/WFR3lOm_xhE
+[05 31 октомври - 6 ноември] Обяснение на Алфа-Бета Отсичане: https://www.youtube.com/watch?v=xBXHtz4Gbdo
+[06 7 ноември - 13 ноември] Naive Bayes Classifier: http://shatterline.com/blog/2013/09/12/not-so-naive-classification-with-the-naive-bayes-classifier/
+[07 14 ноември - 20 ноември] Decision Tree: https://www.saedsayad.com/decision_tree.htm
+[09 28 ноември - 4 декември] kMeans: https://www.youtube.com/watch?v=_aWzGGNrcic
+[09 28 ноември - 4 декември] Soft kMeans: https://www.youtube.com/watch?v=fpM0iZTjLhM
