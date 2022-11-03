@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8">
+<collection xmlns:xsi="http://www.w3.org/2001/xmlSchema-instance" xsi:noNamespaceSchemaLocation="hw3_xml_task_1.xsd">
+	<descrition> Бързо, лесно, вкусно (рецепти) </descrition>
+	<recipe>
+		<title> Чипс Ръфълс</title>
+		<ingredient name="Чипс Ръфълс" amount="1" unit="пакет">
+			<preparation>
+				<step>Отивате до най-близкият магазин</step>
+				<step>Намираш рафта със чипсвое</step>
+				<step>Взимаш чипса</step>
+				<step>Плащаш и ядеш</step>
+			</preparation>
+		</ingredient>
+		<preparation>
+			<step> Отваряш пакета</step>
+			<step> Готов си </step>
+		</preparation>
+			<comment> Прекрасен за хора на диета </comment>
+		<nutrition fat="33г" protein="6,50г" calories="525" carbohydrates="50г"/>
+	</recipe>
+</collection>
