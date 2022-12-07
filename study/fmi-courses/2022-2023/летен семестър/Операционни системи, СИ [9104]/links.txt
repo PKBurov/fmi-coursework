@@ -1,0 +1,11 @@
+[00 Главна] (forum) Обявления: https://learn.fmi.uni-sofia.bg/mod/forum/view.php?id=266750
+[00 Главна] Таблица: https://docs.google.com/spreadsheets/d/18LtEvYJrUTuOq0ax2xL5hZ1lF3bRjBby6kOC9IVQbCI/edit?usp=sharing
+[02 Упражнения] Инструкции за свързване към astero: https://docs.google.com/document/d/1Qq-cMxVxnpUaFNWd00IzAc1sCxsHyVliKWvY2ERlyfg/edit
+[02 Упражнения] Репо със задачи за упражнения: https://github.com/avelin/fmi-os
+[03 Лекции] Книжка за семафорите: http://greenteapress.com/semaphores/LittleBookOfSemaphores.pdf
+[03 Лекции] Материали на Скелета: http://skelet.ludost.net/OS/
+[03 Лекции] Записи теория СИ 2021: https://drive.google.com/drive/folders/1YQbwXD-a46O_KBw0x5lYRdcSVXiKeBch
+[05 Допълнителни материали] Awk Tutorial: https://www.grymoire.com/Unix/Awk.html
+[05 Допълнителни материали] Sed Tutorial: https://www.grymoire.com/Unix/Sed.html#uh-6
+[05 Допълнителни материали] Regex Uses: https://www.rexegg.com/regex-uses.html
+[05 Допълнителни материали] C videos: https://www.youtube.com/@CodeVault
