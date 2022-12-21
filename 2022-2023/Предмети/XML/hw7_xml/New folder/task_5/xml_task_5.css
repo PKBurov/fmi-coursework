@@ -1,0 +1,43 @@
+#text{
+   width: 300px
+   background-color: yellow;
+   height: 200px;
+   overflow: auto;
+   margin-top: 20px;
+   padding-left: 5px;
+   padding-right: 5px;
+   border-top: 6px dashed #32b43c;
+   border-bottom: 3px solid #5545B1;
+   border-top: 6px double orange;
+   display: inline-block;
+}
+/*Първоначално, ще направим клас текст и клас boldunderline за да може да дефинираме как ще изглежда текста и за да може да използваме underline където е нужно в документа.
+	( Използвали сме упътванията от задача 5 за .picture, body и blockSection ) след като въведем височината и дебелината на текста трябва да зададем фон, който в този случай е жълтият.
+	след това добавяме overflow (което се отнася за скролвашата функция от страни на страницата) и експериментираме с падинга от ляво и дясно докато не изглежда приблизително както в заданието. След това 
+	правим същото и за цветовете, като използваме функцията border-top/bottom за да посочим къде какъв цвят искаме и накрая задаваме display: inline-block за да може все пак да зададем with и hight на елемента*/
+p{
+   dislplay:inline;
+}
+.boldUnderline{
+   font-weight: bold;
+   text-decoration: underline
+}
+.picture{
+   width: 310 px;
+   height: 150 px;
+   border: 6 px solid #a0a7c1;
+   display: inpline-block;
+   border-radius: 20px;
+}
+#blockSection{
+   display: block;
+}
+body {
+   margin: auto;
+   width: 650px;
+   background-color: #e8e8e8;
+   border: 3px solid #1e64cc;
+   border-bottom-left-radius: 20px;
+   padding: 10px;
+   border-top-right-radius: 20px;
+}
