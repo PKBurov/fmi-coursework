@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qulified">
+
+<!-- 
+	Започваме като задаваме роот типът банк, който е сложен тип,защото съдържа други елементи (като срещанията на вложение елементи не са значителни). Също дефинираме
+	кей-ове и референции в големината кореновият елемент. Дефинираме елементът accounts като комплексен тип, защото съдържа два под-елемента. Също тако ползваме сложен тип, за да
+	опишем savings_accounts защото може неговите елементи да се срещат повече от веднъж. При saving_account ползваме сложен тип за да може да да дефинираме ключ от съдържащият в него 
+	balance който е прост тип. аналогично за останалите в един от двата случая посочени горе.
+-->
+
+	<xs:element name="bank">
+	<xs:complexType>
+		<xs:all>
+			<xs:element ref="accounts"/>
+			<xs:element ref="customers"/>
+			<xs:element ref="customer_accounts"/>
+		</xs:all>
+	</xs:complexType>
+	
+	<xs:key name="account_key">
+		<xs:select xpatch=".//saving_account | .//checking_account"/>
+		<xs:field xpath="@id"/>
+	</xs:key>
+	
+	<xs:key name="client_key">
+		<xs:select xpatch=".//customer"/>
+		<xs:field xpath="@id"/>
+	</xs:key>
+	
+	<xs:key_reff name="acc_reff" refer="account_key">
+		<xs:select xpatch=".//customer_account"/>
+		<xs:field xpath="@аcc_id"/>
+	</xs:key_reff>
+	
+	<xs:key_reff name="client_reff" refer="client_key">
+		<xs:select xpatch=".//customer_account"/>
+		<xs:field xpath="@c_id"/>
+	</xs:key_reff>
+	</xs:element>
+
+
+	<xs:element name="accounts">
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="saving_accounts"/>
+				<xs:element ref="checking_accounts"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="saving_accounts" type="saving_accounts_specific"/>
+
+
+	<xs:complexType name="saving_accounts_specific">
+		<xs:choice>
+			<xs:element ref="saving_account" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:element name="saving_account" type="saving_account_specific"/>
+		<xs:complexType name="saving_account_specific">
+			<xs:choice>
+				<xs:element name="balance">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="-5000"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:choice>
+			<xs:attribute name="id" type="xs:string" use="required"/>
+			<xs:attribute name="interest" type="xs:decimal" use="required"/>
+		</xs:complexType>
+		
+	<xs:element name="checking_accounts" type="checking_accounts_specific"/>
+	<xs:complexType name="checking_accounts_specific">
+		<xs:choice>
+			<xs:element ref="checking_account" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:element name="checking_account" type="checking_account_specific"/>
+	<xs:complexType name="checking_accounts_specific">
+		<xs:choice>
+			<xs:element name="balance" type="balance"/>
+		</xs:choice>
+		<xs:attribute name="id" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:element name="customers" type="customers_specific"/>
+		<xs:complexType name="customers_specific">
+			<xs:choice>
+				<xs:element ref="customer" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+		</xs:complexType>
+	<xs:element name="customer" type="customer_specific"/>
+	<xs:complexType name="customer_specific">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="address" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:element name="customer_accounts">
+	<xs:complexType name="customer_accounts_specific">
+		<xs:choice>
+			<xs:element ref="customer_account" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:element name="customer_account" type="customer_account_specific"/>
+	<xs:complexType name="customer_account_specific">
+		<xs:attribute name="c_id" type="xs:string" use="required"/>
+		<xs:attribute name="acc_id" type="xs:string" use="required"/>
+	</xs:complexType>
+</xs:schema>
