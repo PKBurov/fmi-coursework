@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+		 xmlns:cd="http://www.myshop.bg/cd#">
+
+	<rdf:Description rdf:about="http://www.myshop.bg/cd/Soulsville"
+		 cd:country="Norway " cd:company="WEA " cd:price="7.90 " cd:year="1996 ">
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.myshop.bg/cd/Pavarotti Gala Concert"
+		cd:artist="Luciano Pavarotti" cd:country="UK" cd:company="DECCA " cd:price="9.90 " cd:year="1991 ">
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://www.myshop.bg/cd/Unchain my heart">
+				<cd:artist rdf:resource="http://www.myshop.bg/cd/joecocker"/>
+	</rdf:Description>
+	<cd:artist rdf:about="http://www.myshop.bg/cd/joecocker">
+				<cd:name>Joe Cocker</cd:name>
+				<cd:country>USA</cd:country>
+				<cd:born>dd-mm-yyyy</cd:born>
+				<cd:style>rock</cd:style>
+				<cd:homepage rdf:resource="http://www.myshop.org"/>
+	</cd:artist>
+	<rdf:Description rdf:about="http://www.myshop.bg/cd/Unchain my heart"
+		 cd:country="USA" cd:company="EMI " cd:price="8.20 " cd:year="1987 ">
+	</rdf:Description>
+
+</rdf:RDF>
+
+<!-- Първоначално преработваме задача 3та като заменяме екемента артист с рефернция към друг ресурс, 
+а след това описваме другият ресурс като използваме елементите name, country, born, style и homepage, като внимаваме
+за правилни връзки между ребрата на графа и използваме референция в последният елемент за да може и новият ресурс да реферира
+към правилното ребро от картинката. -->
