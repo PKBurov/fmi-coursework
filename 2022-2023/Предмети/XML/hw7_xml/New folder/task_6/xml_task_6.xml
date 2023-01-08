@@ -1,0 +1,26 @@
+<book xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+   <chapters>
+      <xi:include href="xml_task6_1.xml" parse="xml">
+         <xi:fallback >
+            <chapter>
+               <content>
+                  <!-- няма нужда от съдържание -->
+               </content>
+            </chapter>
+         </xi:fallback >
+      </xi:include>
+      <xi:include href="xml_task6_2.xml" parse="xml">
+         <xi:fallback >
+            <chapter>
+               <content>
+                <!-- няма нужда от съдържание -->
+               </content>
+            </chapter>
+         </xi:fallback >
+      </xi:include>
+   </chapters>
+</book>	
+
+<!-- Започваме със създаването на елемент "book" и дефинираме стнадартноот прострнатво от имана. След това създаваме елемент който и "chapters" тъй като така е зададено в XML схемата (xs:element name="chapters") след това реферираме към първият документ който трябва да включим. След това използваме
+xi:fallback за да се подсигорим от липсата на include документа и след това създаваме елементат chapter пак спрямо xml схемата както и елемента content. Аналогично и за вторият документ   -->
+		
