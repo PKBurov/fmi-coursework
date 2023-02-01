@@ -1,0 +1,31 @@
+<!ELEMENT football (football_teams, coaches, competitions)>
+        <!ELEMENT football_teams (football_team*)>
+        <!ELEMENT football_team (name,logo,year_found,stadium,captain,description)>
+        <!ATTLIST football_team id ID #REQUIRED
+                coachRef IDREF #IMPLIED
+                competitionRef IDREF #IMPLIED>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT logo EMPTY>
+        <!ATTLIST logo
+                src ENTITY #REQUIRED>
+        <!ELEMENT year_found (#PCDATA)>
+        <!ELEMENT stadium (#PCDATA)>
+        <!ELEMENT captain (#PCDATA)>
+        <!ELEMENT description (#PCDATA)>
+
+        <!ELEMENT coaches (coach*)>
+        <!ELEMENT coach (name,photo?,year_born,months_in_team?,description?)>
+        <!ATTLIST coach id ID #REQUIRED
+                teamRef IDREF #REQUIRED>
+        <!ELEMENT photo EMPTY>
+        <!ATTLIST photo src ENTITY #REQUIRED>
+
+        <!ELEMENT year_born (#PCDATA)>
+        <!ELEMENT months_in_team (#PCDATA)>
+
+        <!ELEMENT competitions (competition*)>
+        <!ELEMENT competition (name,logo,format,teams_count?,first_place_prize?)>
+        <!ATTLIST competition id ID #REQUIRED>
+        <!ELEMENT format (#PCDATA)>
+        <!ELEMENT teams_count (#PCDATA)>
+        <!ELEMENT first_place_prize (#PCDATA)>
