@@ -1,0 +1,46 @@
+1. Izbira element:
+	a) Tracklist --> catalog/cd/child::tracklist/attribute::num
+	b) Year --> catalog/cd/child::year
+// Izvejdame stoinosta na atributa s ::.
+
+2. Izbira atributi num i id za tracklist и cd
+	a) catalog/cd/tracklist/attribute::num
+	b) catalog/cd/attribute::id
+
+// po sushtiqt nachin izbirame atributite, no tozi put samo ot elementite tracklist i cd
+
+3. Izbira vseki element track, koito se namirat predi track elemnta sus stoinost Doschitaydo sta(countdown)'
+
+	a) catalog/cd/tracklist/track[text()='Doschitay do sta (Countdown)']/preceding-sibling::*
+
+// Izbirame vsichki predhodni elementi sus stoinosta v text()=... i zadava predhodnoto deistvie s /preceding-sibling
+
+4. Izbira vsichki elementi track koito se namirat sled track elementa sys stoinost Doschitayda sta(countdown)
+	a) catalog/cd/tracklist/track[text()='Doschitay do sta (Countdown)']/following-sibling::*
+
+// Analogichno na zadacha 3ta no tozi put sled kraqt na text()...
+
+5. Sushtoto kato gornoto no imat atribut lenght'4:04'
+	a) catalog/cd/tracklist/track[text()='Doschitay do sta (Countdown)']/following-sibling::track[@length='4:04']
+
+// Analogichno s zadacha 4, no tozi put dopulvame s proverka na stoinosta na atributa suotvetno s lenght'4:04'
+
+6. Vsichki stoinosti na pod-elementite na vsichki elementi cd v documenta
+
+	a) catalog/cd/tracklist[@num and count(self::*[xs:int(@num) &lt; //@num]) = 0]/@num
+
+// vzimame vsihcki pod elementi i tehnite stoinosti suotvetno s num and count
+
+7. Stoinostite na vsichki elementi koito imat atributi s ime id
+
+	a) catalog/cd/tracklist[@num=max(//*[@num !='']/number(@num))]/@num
+// analogichno s gornata no vzimame tozi but tezi s atribut s ime id
+
+8. Stoinostite na vsichki elementi koito imat kakuvto i da e bilo atribut
+
+	a) catalog/cd/tracklist[@num=max(//*/@num)]/@num
+
+9. Atribut num s maksimalna stoinost
+	a) max(//*/@num)
+
+// za 8 i 9 izpolzvame kluchovata duma max za da vzemem suotvetno maksimalanata stoinost i elementite s kakuvto i da e atribut
