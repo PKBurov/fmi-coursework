@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="football.xsl"?>
+<!DOCTYPE football SYSTEM "football.dtd"[
+        <!NOTATION JPG SYSTEM "image/jpeg">
+
+        <!ENTITY barcelona_fc SYSTEM "images/Barcelona_FC.jpg" NDATA JPG>
+        <!ENTITY chelsea_fc SYSTEM "images/Chelsea_FC.jpg" NDATA JPG>
+        <!ENTITY manchester_city_fc SYSTEM "images/Manchester_City_FC.jpg" NDATA JPG>
+        <!ENTITY liverpool_fc SYSTEM "images/Liverpool_FC.jpg" NDATA JPG>
+        <!ENTITY real_madrid_fc SYSTEM "images/Real_Madrid_FC.jpg" NDATA JPG>
+        <!ENTITY juventus_fc SYSTEM "images/Juventus_FC.jpg" NDATA JPG>
+        <!ENTITY inter_fc SYSTEM "images/Inter_FC.jpg" NDATA JPG>
+
+        <!ENTITY frank_lampard SYSTEM "images/Frank_Lampard.jpg" NDATA JPG>
+        <!ENTITY ernesto_valverde SYSTEM "images/Ernesto_Valverde.jpg" NDATA JPG>
+        <!ENTITY maurizio_sarri SYSTEM "images/Maurizio_Sarri.jpg" NDATA JPG>
+        <!ENTITY antonio_conte SYSTEM "images/Antonio_Conte.jpg" NDATA JPG>
+        <!ENTITY pep_guardiola SYSTEM "images/Pep_Guardiola.jpg" NDATA JPG>
+        <!ENTITY zinedine_zidane SYSTEM "images/Zinedine_Zidane.jpg" NDATA JPG>
+        <!ENTITY jurgen_klopp SYSTEM "images/Jurgen_Klopp.jpg" NDATA JPG>
+
+        <!ENTITY la_league SYSTEM "images/La_Liga.jpg" NDATA JPG>
+        <!ENTITY premier_league SYSTEM "images/Premier_League.jpg" NDATA JPG>
+        <!ENTITY seria_a SYSTEM "images/Seria_A.jpg" NDATA JPG>
+
+        ]>
+<football>
+    <football_teams>
+        <football_team id="CHE" coachRef="Lamp" competitionRef="PL">
+            <name>Chelsea F.C.</name>
+            <logo src="chelsea_fc"  />
+            <year_found>1905</year_found>
+            <stadium>Stamford Bridge</stadium>
+            <captain>Cesar Azpilicueta</captain>
+            <description>
+                Chelsea Football Club are an English professional football club based in Fulham, London
+            </description>
+        </football_team>
+
+        <football_team id="LIV" coachRef="Klo" competitionRef="PL">
+            <name>Liverpool F.C.</name>
+            <logo src="liverpool_fc" />
+            <year_found>1892</year_found>
+            <stadium>Anfield</stadium>
+            <captain>Jordan Henderson</captain>
+            <description>
+                Liverpool Football Club is a professional football club in Liverpool, England, that competes in the Premier League, the top tier of English football
+            </description>
+        </football_team>
+
+        <football_team id="MAN" coachRef="Gua" competitionRef="PL">
+            <name>Manchester City F.C.</name>
+            <logo src="manchester_city_fc"/>
+            <year_found>1880</year_found>
+            <stadium>City of Manchester Stadium</stadium>
+            <captain>David Silva</captain>
+            <description>
+                Manchester City Football Club is an English football club based in Manchester, that competes in the Premier League, the top flight of English football.
+            </description>
+        </football_team>
+
+        <football_team id="BAR" coachRef="Valve" competitionRef="LL">
+            <name>FC Barcelona</name>
+            <logo src="barcelona_fc" />
+            <year_found>1899</year_found>
+            <stadium>Camp Nou</stadium>
+            <captain>Lionel Messi</captain>
+            <description>
+                Futbol Club Barcelona, commonly referred to as Barcelona and colloquially known as Barça, is a Spanish professional football club based in Barcelona, Catalonia
+            </description>
+        </football_team>
+
+        <football_team id="RM" coachRef="Zid" competitionRef="LL">
+            <name>Real Madrid CF</name>
+            <logo src="real_madrid_fc"/>
+            <year_found>1902</year_found>
+            <stadium>Estadio Santiago Bernabéu</stadium>
+            <captain>Sergio Ramos</captain>
+            <description>
+                Real Madrid Club de Fútbol, meaning Royal Madrid Football Club), commonly referred to as Real Madrid, is a Spanish professional football club based in Madrid.
+            </description>
+        </football_team>
+
+        <football_team id="JUV" coachRef="Sar" competitionRef="SerA">
+            <name>Juventus F.C.</name>
+            <logo src="juventus_fc" />
+            <year_found>1897</year_found>
+            <stadium>Juventus Stadium</stadium>
+            <captain>Giorgio Chiellini</captain>
+            <description>
+                Juventus Football Club (from Latin: iuventūs, "youth"), colloquially known as Juve is an Italian professional football club based in Turin, Piedmont.
+            </description>
+        </football_team>
+
+        <football_team id="MIL" coachRef="Con" competitionRef="SerA">
+            <name>Inter Milan</name>
+            <logo src="inter_fc" />
+            <year_found>1908</year_found>
+            <stadium>San Siro</stadium>
+            <captain>Samir Handanovic</captain>
+            <description>
+                Football Club Internazionale Milano, commonly referred to as Internazionale or simply Inter and colloquially known as Inter Milan outside Italy, is an Italian professional football club based in Milan, Lombardy. Inter is the only Italian club to have never been relegated from the top flight.
+            </description>
+        </football_team>
+    </football_teams>
+
+    <coaches>
+        <coach id="Lamp" teamRef="CHE">
+            <name>Frank Lampard</name>
+            <photo src="frank_lampard"/>
+            <year_born>1978</year_born>
+            <months_in_team>5</months_in_team>
+            <description>
+                Frank James Lampard is an English professional football manager and former player who is the head coach of Premier League club Chelsea
+            </description>
+        </coach>
+
+        <coach id="Valve" teamRef="BAR">
+            <name>Ernesto Valverde</name>
+            <photo src="ernesto_valverde"/>
+            <year_born>1964</year_born>
+            <months_in_team>2</months_in_team>
+            <description>
+                Ernesto Valverde Tejedor is a Spanish former footballer who played as a forward, and is the manager of Barcelona.
+            </description>
+        </coach>
+
+        <coach id="Sar" teamRef="JUV">
+            <name>Maurizio Sarri</name>
+            <photo src="maurizio_sarri"/>
+            <year_born>1959</year_born>
+            <months_in_team>2</months_in_team>
+            <description>
+                Maurizio Sarri is an Italian professional football manager who is the manager of Serie A club Juventus.
+            </description>
+        </coach>
+
+        <coach id="Con" teamRef="MIL">
+            <name>Antonio Conte</name>
+            <photo src="antonio_conte"/>
+            <year_born>1969</year_born>
+            <months_in_team>4</months_in_team>
+            <description>
+                Antonio Conte is an Italian professional football manager and former player. He is the head coach at Serie A club Inter Milan.
+            </description>
+        </coach>
+
+        <coach id="Gua" teamRef="MAN">
+            <name>Pep Guardiola</name>
+            <photo src="pep_guardiola"/>
+            <year_born>1971</year_born>
+            <months_in_team>41</months_in_team>
+            <description>
+                Josep "Pep" Guardiola Sala is a Spanish professional football manager and former player, who is the current manager of Premier League club Manchester City. He is considered to be one of the greatest managers of all time.
+            </description>
+        </coach>
+
+        <coach id="Zid" teamRef="RM">
+            <name>Zinedine Zidane</name>
+            <photo src="zinedine_zidane"/>
+            <year_born>1972</year_born>
+            <months_in_team>5</months_in_team>
+            <description>
+                Zinedine Yazid Zidane, popularly known in French as Zizou, is a French former professional football player who played as an attacking midfielder. He is the current manager of La Liga club Real Madrid.
+            </description>
+        </coach>
+
+        <coach id="Klo" teamRef="LIV">
+            <name>Jurgen Klopp</name>
+            <photo src="jurgen_klopp"/>
+            <year_born>1967</year_born>
+            <months_in_team>48</months_in_team>
+            <description>
+                Jürgen Norbert Kloppis a German professional football manager and former player who is the manager of Premier League club Liverpool.
+            </description>
+        </coach>
+    </coaches>
+    <competitions>
+        <competition id="PL">
+            <name>Premier League</name>
+            <logo src="premier_league"/>
+            <format>league</format>
+            <teams_count>20</teams_count>
+            <first_place_prize>$100M</first_place_prize>
+        </competition>
+
+        <competition id="LL">
+            <name>La Liga</name>
+            <logo src="la_league"/>
+            <format>league</format>
+            <teams_count>20</teams_count>
+            <first_place_prize>$64M</first_place_prize>
+        </competition>
+
+        <competition id="SerA">
+            <name>Seria A</name>
+            <logo src="seria_a"/>
+            <format>league</format>
+            <teams_count>20</teams_count>
+            <first_place_prize>$45M</first_place_prize>
+        </competition>
+    </competitions>
+</football>
