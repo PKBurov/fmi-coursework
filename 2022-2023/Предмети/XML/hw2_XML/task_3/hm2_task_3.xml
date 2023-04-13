@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<!DOCTYPE shiporder SYSTEM "hw2_task_3_dtd_given.dtd">
+
+<!--
+	Първоначално създаваме роот елемента Course_Catalog, koйто има под-елементат Department. Създаваме под-елементите: Department, Title, Chair, First_Name, Middle_Initial, Last_Name, Course, Instructors и Prereq.
+	Като под-елементите Title, Chair & Course, трябва да ги има веднъж или повече. Под-елемента Chair има под-елемент Proffessor, който на свой ред трябва да има  First_Name, Midddle_Initial (не задължително) и Last_Name;
+	Под-елемента е с атрибут Number & Enrollment, който имат зададени стойности от заданието. Той има под-елементи Титле, Description, Instructors и Prerequisites, като Instructors трябва да има под-елемент Lecturer както и 
+	под-елемнт Proffessor един или повече пъти.
+
+-->
+<Course_Catalog>
+    <Department Code="CS">
+        <Title> Blank_Title </Title>
+        <Chair>
+            <Professor>
+                <First_Name> Blank_FN </First_Name>
+                <Middle_Initial> Blank_MN </Middle_Initial>
+                <Last_Name> Blank_LN </Last_Name>
+            </Professor>
+        </Chair>
+        <Course Number="CS106A" Enrollment="1070">
+            <Title>Blank_Title</Title>
+            <Description> Blank_Description </Description>
+            <Instructors>
+                <Professor>
+                    <First_Name> Blank_FN</First_Name>
+					<Middle_Initial> Blank_MN </Middle_Initial>
+                    <Last_Name> Blank_LN </Last_Name>
+                </Professor>
+                <Lecturer>
+                    <First_Name> Blank_FN </First_Name>
+					<Middle_Initial> Blank_MN </Middle_Initial>
+                    <Last_Name> Blank_LN </Last_Name>
+                </Lecturer>
+            </Instructors>
+            <Prerequisites>
+                <Prereq> None_Prereq </Prereq>
+            </Prerequisites>
+        </Course>
+        <Course Number="CS106B" Enrollment="130">
+            <Title> Blank_Title </Title>
+            <Description> Blank_Description </Description>
+            <Instructors>
+                <Professor>
+                    <First_Name> Blank_FN </First_Name>
+					<Middle_Initial> Blank_MN </Middle_Initial>
+                    <Last_Name> Blank_LN </Last_Name>
+                </Professor>
+            </Instructors>
+            <Prerequisites>
+                <Prereq> None_Prereq </Prereq>
+            </Prerequisites>
+        </Course>
+        <Course Number="LING180" Enrollment="60">
+            <Title> Blank_Title </Title>
+            <Description> Blank_Description </Description>
+            <Instructors>
+                <Professor>
+                    <First_Name> Blank_FN </First_Name>
+					<Middle_Initial> Blank_MN </Middle_Initial>
+                    <Last_Name> Blank_LN </Last_Name>
+                </Professor>
+            </Instructors>
+            <Prerequisites>
+                <Prereq> None_Prereq </Prereq>
+            </Prerequisites>
+        </Course>
+    </Department>
+    <Department Code="EE">
+        <Title> Blank_Title </Title>
+        <Chair>
+            <Professor>
+                <First_Name> Blank_FN </First_Name>
+                <Middle_Initial> Blank_MN </Middle_Initial>
+                <Last_Name> Blank_LN </Last_Name>
+            </Professor>
+        </Chair>
+        <Course Number="CS106A" Enrollment="1070">
+            <Title> Blank_Title </Title>
+            <Description> Blank_Description </Description>
+            <Instructors>
+                <Professor>
+                    <First_Name> Blank_FN </First_Name>
+					<Middle_Initial> Blank_MN </Middle_Initial>
+                    <Last_Name> Blank_LN </Last_Name>
+                </Professor>
+            </Instructors>
+            <Prerequisites>
+                <Prereq> None_Prereq </Prereq>
+            </Prerequisites>
+        </Course>
+        <Course Number="CS106B" Enrollment="130">
+            <Title> Blank_Title </Title>
+            <Description> Blank_Description </Description>
+            <Instructors>
+                <Professor>
+                    <First_Name> Blank_FN </First_Name>
+					<Middle_Initial> Blank_MN </Middle_Initial>
+                    <Last_Name> Blank_LN </Last_Name>
+                </Professor>
+            </Instructors>
+            <Prerequisites>
+                <Prereq> None_Prereq </Prereq>
+            </Prerequisites>
+        </Course>
+        <Course Number="LING180" Enrollment="60">
+            <Title>Blank_Title</Title>
+            <Description>Blank_Description</Description>
+            <Instructors>
+                <Professor>
+                    <First_Name> Blank_FN </First_Name>
+					<Middle_Initial> Blank_MN </Middle_Initial>
+                    <Last_Name> Blank_LN </Last_Name>
+                </Professor>
+            </Instructors>
+            <Prerequisites>
+                <Prereq> None_Prereq </Prereq>
+            </Prerequisites>
+        </Course>
+    </Department>
+    <Department Code="LING">
+        <Title> Blank_Title </Title>
+        <Chair>
+            <Professor>
+                <First_Name> Blank_FN </First_Name>
+                <Middle_Initial> Blank_MN </Middle_Initial>
+                <Last_Name> Blank_LN </Last_Name>
+            </Professor>
+        </Chair>
+        <Course Number="CS106A" Enrollment="1070">
+            <Title> Blank_Title </Title>
+            <Description> Blank_Description </Description>
+            <Instructors>
+                <Professor>
+                    <First_Name> Blank_FN </First_Name>
+					<Middle_Initial> Blank_MN </Middle_Initial>
+                    <Last_Name> Blank_LN </Last_Name>
+                </Professor>
+            </Instructors>
+            <Prerequisites>
+                <Prereq> None_Prereq </Prereq>
+            </Prerequisites>
+        </Course>
+        <Course Number="CS106B" Enrollment="130">
+            <Title> Blank_FN </Title>
+            <Description> Blank_Description </Description>
+            <Instructors>
+                <Professor>
+                    <First_Name> Blank_FN </First_Name>
+					<Middle_Initial> Blank_MN </Middle_Initial>
+                    <Last_Name> Blank_LN </Last_Name>
+                </Professor>
+            </Instructors>
+            <Prerequisites>
+                <Prereq> None_Prereq </Prereq>
+            </Prerequisites>
+        </Course>
+        <Course Number="LING180" Enrollment="60">
+            <Title> Blank_Title </Title>
+            <Description> Blank_Description </Description>
+            <Instructors>
+                <Professor>
+                    <First_Name> Blank_FN </First_Name>
+					<Middle_Initial> Blank_MN </Middle_Initial>
+                    <Last_Name> Blank_LN </Last_Name>
+                </Professor>
+            </Instructors>
+            <Prerequisites>
+                <Prereq> None_Prereq </Prereq>
+            </Prerequisites>
+        </Course>
+    </Department>
+</Course_Catalog>
