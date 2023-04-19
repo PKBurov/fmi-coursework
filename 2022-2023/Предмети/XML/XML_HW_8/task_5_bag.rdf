@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:cd="http://www.recshop.fake/cd#"> 
+<rdf:Description
+ rdf:about="http://www.recshop.fake/cd/Beatles">
+ <cd:artist>
+   <rdf:Bag>
+     <rdf:li>John</rdf:li>
+     <rdf:li>Paul</rdf:li>
+     <rdf:li>George</rdf:li>
+     <rdf:li>Ringo</rdf:li>
+   </rdf:Bag>
+  </cd:artist>
+</rdf:Description>
+</rdf:RDF>
+
+<!-- Създаваме РДФ и създаваме два xmlns'a след което отваряме таг Description и задаваме url'a към който ще се отнасят елементите. Използваме контеинера Bag които се използва за да се опише лист от стойности, които не са подредени.
+също така може да съдържа и повтарящи се стойности. Създаваме контеинера баг и въвеждаме стойностите от къртинката на задача 5, след което затваряме контеинера както и рдф'а -->
