@@ -1,0 +1,46 @@
+<!ELEMENT catalogue (regions,star_ratings,listings)>
+<!-- REGIONS-->
+<!ELEMENT regions (region*)>
+<!ELEMENT region (name,id)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT id ANY>
+<!-- REGIONS OVER-->
+
+<!-- STAR RATINGS-->
+<!ELEMENT star_ratings (star_rating*)>
+<!ELEMENT star_rating (description?)>
+<!ATTLIST star_rating
+          name CDATA #REQUIRED
+          id ID #REQUIRED
+  >
+<!ELEMENT description (#PCDATA)>
+<!-- FINISH STAR RATINGS-->
+
+<!--START LISTINGS-->
+<!ELEMENT listings (hotel*)>
+<!ATTLIST hotel id ID #REQUIRED
+          region_ref IDREF #REQUIRED
+          city IDREF #REQUIRED
+          name IDREF #REQUIRED
+          star_rating IDREF #REQUIRED>
+
+<!ELEMENT hotel (general_amenities*,room_amenities*,description?)>
+<!ELEMENT general_amenities (specials)>
+<!ATTLIST general_amenities 
+          retaurants IDREF #REQUIRED
+          pool IDREF #REQUIRED
+          spa IDREF #REQUIRED
+          gym IDREF #REQUIRED
+          bar IDREF #REQUIRED
+          parking IDREF #REQUIRED
+  >
+<!ELEMENT specials (#PCDATA)>
+
+<!ELEMENT room_amenities (specials)>
+<!ATTLIST room_amenities
+          wifi IDREF #REQUIRED
+          tv IDREF #REQUIRED
+          minibar IDREF #REQUIRED
+          air_conditioning IDREF #REQUIRED>
+
+<!-- FINISHING LISTING-->
