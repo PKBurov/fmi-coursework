@@ -1,0 +1,51 @@
+-------------------------------------------------------1.---------------------------------------
+
+for $o in catalog/cd/tracklist
+where $o/@num = "1"
+return $o/track/text()
+1. Selektirame vsichki elemnti na track koito e pod-element na tracklist, imasht atribut num raven na 1
+
+//Izbirame cical for za da mojem da mine prez vsichki elementi i definirmae $l da prisvoqva tracklist
+//sled koeto preminavame i turskim pod-atribut s num =1.
+
+for $o in catalog/cd
+let $l :=$o/tracklist
+where $l/@num = "1"
+return $l/track
+
+2. Podredba ot zad 1 po a-z red i z-a red
+
+// Puskame cicul koito vzima vsichki pod-elementi na tracklist s atribut=1 i gi sortira po ascending/descending.
+
+for $o in catalog/cd/tracklist[@num = "1"]/track
+order by $o ascending/descending
+return $o/text()
+
+--------------------------------------------2----------------------------------------------
+
+element records 
+for $o in catalog/cd
+return	
+
+   element record {
+ 	attribute cd_ID {$o/@id}, attribute artist {$o/artist}, 
+
+   element info { 					
+        text { "Title:"}, text {$o/title}, text { ", Year:"} ,text{$o/year}, text { ", Track numbers:"},text{count($o/tracklist/track)} 	
+	} 
+  } 
+
+}	
+
+// definirame dva elementa record i info sprqmo strukturata i zapisvame promenite sprqmo tova na koeto otgovarqt.
+
+	
+--------------------------------------------------3------------------------------------
+//Izpolzvame cicul for za da namerim track/text i vrushtame elementa track 
+
+for $o in .
+return                                                                                                                                                                                   
+element tracks  {      
+	;for $p in $o/catalog/cd/tracklist/track/text()
+	;return element track {$p} 
+}	
