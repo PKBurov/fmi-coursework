@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE catalogue [
+
+  <!NOTATION JPG SYSTEM "image/jpeg">
+
+  <!ENTITY hilton_hotel SYSTEM "hilton.jpeg" NDATA JPG >
+  <!ENTITY plovdiv_city_center_hotel SYSTEM "plovdiv_city_center.jpeg" NDATA JPG >
+  <!ENTITY marina_burgas_hotel SYSTEM "marina_burgas.jpeg" NDATA JPG >
+  <!ENTITY cherno_more_hotel SYSTEM "cherno_more.jpeg" NDATA JPG >
+  <!ENTITY yantra_grand_hotel SYSTEM "yantra.jpeg" NDATA JPG >
+  <!ENTITY impuls_hotel SYSTEM "impuls.jpeg" NDATA JPG >
+  <!ENTITY city_hotel SYSTEM "city.jpeg" NDATA JPG >
+  <!ENTITY mountain_lake_hotel SYSTEM "mountain_lake.jpeg" NDATA JPG >
+
+  <!ELEMENT catalogue (regions,star_ratings,listings)>
+  <!-- REGIONS-->
+  <!ELEMENT regions (region+)>
+  <!ELEMENT region EMPTY >
+  <!ATTLIST region
+			name (Yugozapaden | Yuzhen_tsentralen | Yugoiztochen | Severoiztochen | Severen_tsentralen | Severozapaden) #REQUIRED
+			id ID #REQUIRED >
+  <!-- REGIONS OVER-->
+
+  <!-- START RATINGS-->
+  <!ELEMENT star_ratings (star_rating+)>
+  <!ELEMENT star_rating (description)>
+  <!ATTLIST star_rating
+			name (Tourist | Standard | Comfort | First_class | Luxury) #REQUIRED
+			id ID #REQUIRED >
+  <!ELEMENT description (#PCDATA)>
+  <!-- FINISH STAR RATINGS-->
+
+  <!--START LISTINGS-->
+  <!ELEMENT listings (hotel*)>
+  <!ATTLIST hotel id ID #REQUIRED
+				  region_ref IDREF #REQUIRED
+				  city CDATA #REQUIRED
+				  name CDATA #REQUIRED
+				  star_rating_ref IDREF #REQUIRED >
+
+  <!ELEMENT hotel (visualization?, general_amenities?,room_amenities?,description?)>
+  <!ELEMENT visualization EMPTY >
+  <!ATTLIST visualization
+			photo ENTITY #IMPLIED >
+
+  <!ELEMENT general_amenities (specials)>
+  <!ATTLIST general_amenities 
+				  restaurant (yes | no) #REQUIRED
+				  pool (yes | no) #REQUIRED
+				  spa (yes | no) #REQUIRED
+				  gym (yes | no) #REQUIRED
+				  bar (yes | no) #REQUIRED
+				  parking (yes | no) #REQUIRED >
+  <!ELEMENT specials (special*)>
+  <!ELEMENT special (#PCDATA)>
+  <!ELEMENT room_amenities (specials)>
+  <!ATTLIST room_amenities
+				  wifi (yes | no) #REQUIRED
+				  tv (yes | no) #REQUIRED
+				  minibar (yes | no) #REQUIRED
+				  air_conditioning (yes | no) #REQUIRED >
+
+  <!-- FINISHING LISTING-->
+]>
+
+<catalogue>
+  <regions>
+    <region name="Yugozapaden" id="BG41"/>
+    <region name="Yuzhen_tsentralen" id="BG42"/>
+    <region name="Yugoiztochen" id="BG34"/>
+    <region name="Severoiztochen" id="BG33"/>
+    <region name="Severen_tsentralen" id="BG32"/>
+    <region name="Severozapaden" id="BG31"/>
+  </regions>
+
+  <star_ratings>
+    <star_rating name="Tourist" id="x1">
+      <description>
+        Properties that offer budget facilities without compromising cleanliness or guest security.
+        Guests may access fee-based services or facilities upon request.
+      </description>
+    </star_rating>
+    <star_rating name="Standard" id="x2">
+      <description>
+        Properties that focus on the needs of price conscious travellers.
+        Services and guest facilities are typically limited to keep room rates affordable
+        and competitive but may be available upon request or fee-based.
+      </description>
+    </star_rating>
+    <star_rating name="Comfort" id="x3">
+      <description>
+        Properties that deliver a broad range of amenities that exceed above-average accommodation needs.
+        Good quality service, design and physical attributes are typically fit for purpose to match guest expectations.
+      </description>
+    </star_rating>
+    <star_rating name="First_class" id="x4">
+      <description>
+        Properties which achieve a deluxe guest experience.
+        A wide range of facilities and superior design qualities are typically complemented
+        by service standards that reflect the varied and discerning needs of the guest.
+      </description>
+    </star_rating>
+    <star_rating name="Luxury" id="x5">
+      <description>
+        Properties that typify luxury across all areas of operation. Guests will enjoy an extensive
+        range of facilities and comprehensive or highly personalised services.
+        Properties at this level will display excellent design quality and attention to detail.
+      </description>
+    </star_rating>
+  </star_ratings>
+
+  <listings>
+    <hotel id="n101" region_ref="BG41" city="Sofia" name="Hilton_Sofia" star_rating_ref="x5">
+
+      <visualization photo="hilton_hotel"/>
+      <general_amenities restaurant="yes" pool="yes" spa="yes" gym="yes" bar="yes" parking="yes">
+        <specials>
+          <special> Airport shuttle </special>
+        </specials>
+      </general_amenities>
+      <room_amenities wifi="yes" tv="yes" minibar="yes" air_conditioning="yes">
+        <specials>
+          <special> Carpeted </special>
+          <special> Room service </special>
+        </specials>
+      </room_amenities>
+      <description>
+        Opposite the National Palace of Culture and within 10 minutes on foot from the very heart of the city,
+        Hilton Sofia is surrounded by the South Park and overlooks Vitosha Mountain.
+
+        The Art Deco-style rooms feature satellite flat-screen TV,
+        bathrobes and tea/coffee makers. They are equipped with comfortable Hilton Serenity beds and ergonomic desk chairs.
+        The spacious bathrooms come with a walk-in shower, bathtub and free toiletries.
+      </description>
+    </hotel>
+
+    <hotel id="n102" region_ref="BG42" city="Plovdiv" name="Plovdiv_City_Center_Hotel" star_rating_ref="x3">
+
+      <visualization photo="plovdiv_city_center_hotel"/>
+      <general_amenities restaurant="no" pool="no" spa="no" gym="no" bar="no" parking="yes">
+        <specials>
+          <special> Airport shuttle </special>
+        </specials>
+      </general_amenities>
+      <room_amenities wifi="yes" tv="yes" minibar="yes" air_conditioning="yes">
+        <specials>
+          <special> Soundproofing </special>
+        </specials>
+      </room_amenities>
+      <description>
+        Featuring a bar, terrace and views of city, Plovdiv City Center Hotel is located in Plovdiv, 200 m from Roman Theatre Plovdiv.
+        The property is set 2.8 km from Plovdiv Plaza, 300 m from Plovdiv Municipality and 600 m from Ethnographic Museum Plovdiv.
+        The accommodation provides room service and luggage storage for guests.
+      </description>
+    </hotel>
+
+    <hotel id="n103" region_ref="BG34" city="Burgas" name="Marina_Burgas_Hotel" star_rating_ref="x3">
+
+      <visualization photo="marina_burgas_hotel"/>
+      <general_amenities restaurant="yes" pool="yes" spa="yes" gym="no" bar="no" parking="yes">
+        <specials>
+          <special> Beachfront property </special>
+          <special> Facilities for disabled guests </special>
+        </specials>
+      </general_amenities>
+      <room_amenities wifi="yes" tv="yes" minibar="yes" air_conditioning="yes">
+        <specials>
+          <special> Mosquito net </special>
+          <special> Hypoallergenic </special>
+        </specials>
+      </room_amenities>
+      <description>
+        Marina Burgas Hotel is situated on the beachfront in Burgas City,
+        1.4 km from North Beach Burgas and 5 km from Burgas Saltworks.
+        Among the facilities of this property are a restaurant, a 24-hour front desk and a concierge service, along with free WiFi.
+        The property is allergy-free and is set 10 km from Museum of Aviation.
+
+        The hotel will provide guests with air-conditioned rooms with a desk, a safety deposit box,
+        a flat-screen TV and a private bathroom with a shower. At Marina Burgas Hotel the rooms have bed linen and towels.
+      </description>
+    </hotel>
+
+    <hotel id="n104" region_ref="BG33" city="Varna" name="Hotel_and_Casino_Cherno_More" star_rating_ref="x4">
+
+      <visualization photo="cherno_more_hotel"/>
+      <general_amenities restaurant="yes" pool="no" spa="no" gym="yes" bar="yes" parking="no">
+        <specials>
+          <special> Casino </special>
+        </specials>
+      </general_amenities>
+      <room_amenities wifi="yes" tv="yes" minibar="yes" air_conditioning="yes">
+        <specials>
+          <special> Room service </special>
+        </specials>
+      </room_amenities>
+      <description>
+        The Hotel and Casino Cherno More is located in the centre of Varna and offers air-conditioned rooms with free WiFi and panoramic views.
+        The beach is located 450 m away and the Sea Garden can be reached in 300 m.
+      </description>
+    </hotel>
+
+    <hotel id="n105" region_ref="BG32" city="Veliko_Tarnovo" name="Yantra_Grand_Hotel" star_rating_ref="x4">
+
+      <visualization photo="yantra_grand_hotel"/>
+      <general_amenities restaurant="yes" pool="yes" spa="yes" gym="yes" bar="yes" parking="yes">
+        <specials/>
+      </general_amenities>
+      <room_amenities wifi="yes" tv="yes" minibar="yes" air_conditioning="yes">
+        <specials>
+          <special> Wake-up service </special>
+        </specials>
+      </room_amenities>
+      <description>
+        This 4-star hotel is situated in Veliko Tarnovo,
+        offering views of the Tzarevets Fortress and the historical settlement of Arbanassi.
+        It offersLobby Bar and Vienna Cafe and free private parking. Rooms have free WiFi access.
+        An indoor pool and a fitness centre are provided free of charge.
+      </description>
+    </hotel>
+
+    <hotel id="n106" region_ref="BG31" city="Vidin" name="Impuls_Hotel_and_SPA" star_rating_ref="x3">
+
+      <visualization photo="impuls_hotel"/>
+      <general_amenities restaurant="yes" pool="no" spa="yes" gym="no" bar="yes" parking="yes">
+        <specials>
+          <special> à la carte breakfast </special>
+        </specials>
+      </general_amenities>
+      <room_amenities wifi="yes" tv="yes" minibar="yes" air_conditioning="yes">
+        <specials>
+          <special> Hypoallergenic </special>
+          <special> Soundproofing </special>
+        </specials>
+      </room_amenities>
+      <description>
+        Impuls hotel and SPA features a bar, spa and wellness centre and terrace in Vidin.
+        Among the facilities of this property are a restaurant, a 24-hour front desk and a shared lounge,
+        along with free WiFi throughout the property. Private parking can be arranged at an extra charge.
+
+        The hotel will provide guests with air-conditioned rooms with a wardrobe, a kettle, a minibar,
+        a safety deposit box, a flat-screen TV, a balcony and a private bathroom with a shower.
+        At Impuls hotel and SPA each room is equipped with bed linen and towels.
+      </description>
+    </hotel>
+
+    <hotel id="n107" region_ref="BG41" city="Blagoevgrad" name="City_Blagoevgrad_Hotel" star_rating_ref="x2">
+
+      <visualization photo="city_hotel"/>
+      <general_amenities restaurant="yes" pool="no" spa="no" gym="no" bar="yes" parking="yes">
+        <specials>
+          <special> Garden with outdoor furniture </special>
+          <special> Laundry services </special>
+        </specials>
+      </general_amenities>
+      <room_amenities wifi="yes" tv="yes" minibar="yes" air_conditioning="yes">
+        <specials>
+          <special> Terrace </special>
+        </specials>
+      </room_amenities>
+      <description>
+        City Blagoevgrad Hotel is located peacefully within 1 km of the centre of Blagoevgrad,
+        the local bus station and Southwestern University Neofit Rilski.
+        It offers guests spacious rooms that have a balcony with city views.
+        Free private parking is provided on site.
+
+        Rooms at the Blagoevgrad's City Hotel also have air conditioning, a bathroom, refrigerator and cable TV.
+        Аll units have a seating area and Wi-Fi is available free of charge.
+      </description>
+    </hotel>
+
+    <hotel id="n108" region_ref="BG42" city="Smolyan" name="Mountain_Lake_Hotel" star_rating_ref="x3" >
+
+      <visualization photo="mountain_lake_hotel"/>
+      <general_amenities restaurant="yes" pool="yes" spa="yes" gym="yes" bar="yes" parking="yes">
+        <specials>
+          <special/>
+        </specials>
+      </general_amenities>
+      <room_amenities wifi="yes" tv="yes" minibar="yes" air_conditioning="yes">
+        <specials>
+          <special> Hardwood floors </special>
+          <special> Open fireplace </special>
+        </specials>
+      </room_amenities>
+      <description>
+        High in the Rhodope Mountains, this hotel offers luxury spa facilities less than 1 km from Snezhanka ski lifts.
+        The chalet-style apartment buildings provide free Wi-Fi and panoramic mountain views.
+
+        The guest apartments at Mountain Lake Hotel have hardwood floors and white linens, and satellite TV comes as standard.
+        All rooms and apartments feature private bathrooms, and many have an open fireplace.
+
+        Hotel Mountain Lake features an elegant restaurant, offering a range of regional specialties and international favourites.
+        There is also a cosy bar where you can relax with a drink.
+      </description>
+    </hotel>
+  </listings>
+</catalogue>
