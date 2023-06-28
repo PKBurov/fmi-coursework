@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<book xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <chapters>
+     <chapter xlink:type="simple"
+        xlink:href="xml_task7_2.xml#xpointer(id('number1'))"
+        xlink:show="new">
+           <content>
+              n0
+           </content>
+  </chapters>
+  <chapters>
+     <chapter xlink:type="simple"
+        xlink:href="xml_task7_2.xml#xpointer(id('number2'))"
+        xlink:show="new">
+           <content>
+              n1
+           </content>
+  </chapters>
+</book>
+
+<!--Започваме с дефиницията на елемента book и с дефиниране на стандартните пространство от имена с xmlns:xlink.... От xml схемата виждаме, че следващият елемент ще е chapters , а след това chapter в който ползваме
+xlink:type за да зададем поинтер за да съответсва на хмл документа и му слагаме id че е първият. Създаваме референция към самият документ.Задаваме го да се отваря в нов прозорец с командата xlink:show=new. След това създаваме елемента content и приклчваме с първият
+chapter. аналогично и за вторият случай. -->
