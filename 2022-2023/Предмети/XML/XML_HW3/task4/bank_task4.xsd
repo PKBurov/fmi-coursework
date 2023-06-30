@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qulified">
+
+<!-- 
+	По голямата част от коментарите са аналогични с миналата задача. Тук разликата е, че разширямваме customer_specific като добавяме нови под-елементи. Също така добавяме анотации,
+	коментари, добавяме долна и горна граница на баланс както и ги обединяваме също така и променяме базовият XML документ банк.
+-->
+	<xs:notation name="jpeg" public="image/jpeg" system=""/>
+	<xs:annotation>
+			<xs:comment>Root element е комплексен елемент и съдържа други елементи<xs:comment>
+	</xs:annotation>
+	<xs:element name="bank">
+	<xs:complexType>
+		<xs:all>
+			<xs:element ref="accounts"/>
+			<xs:element ref="customers"/>
+			<xs:element ref="customer_accounts"/>
+		</xs:all>
+	</xs:complexType>
+	
+	<xs:key name="acc_кey">
+		<xs:select xpatch=".//saving_account | .//checking_account"/>
+		<xs:field xpath="@id"/>
+	</xs:key>
+	
+	<xs:key name="client_key">
+		<xs:select xpatch=".//customer"/>
+		<xs:field xpath="@id"/>
+	</xs:key>
+	
+	<xs:key_reff name="acc_reff" refer="acc_key">
+		<xs:select xpatch=".//customer_account"/>
+		<xs:field xpath="@аcc_id"/>
+	</xs:key_reff>
+	
+	<xs:key_reff name="client_reff" refer="client_key">
+		<xs:select xpatch=".//customer_account"/>
+		<xs:field xpath="@c_id"/>
+	</xs:key_reff>
+	</xs:element>
+<xs:element name="accounts">
+	<xs:complexType>
+		<xs:all>
+			<xs:element ref="saving_accounts"/>
+			<xs:element ref="checking_accounts"/>
+		</xs:all>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="saving_accounts" type="saving_accounts_specific"/>
+	<xs:complexType name="saving_accounts_specific">
+		<xs:choice>
+			<xs:element ref="saving_account" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="saving_account" type="saving_account_specific"/>
+		<xs:complexType name="saving_account_specific">
+			<xs:choice>
+				<xs:element name="balance" type="balance"/>
+			</xs:choice>
+			<xs:attribute name="id" type="xs:string" use="required"/>
+			<xs:attribute name="interest" type="xs:decimal" use="required"/>
+		</xs:complexType>
+		
+	<!-- Задаваме долна граница -->
+	<xs:simpleType name="min_balance">
+		<xs:restriction base="xs:not_positive_int">
+			<xs:minInclusive value="-5500"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- Задаваме горна граница -->
+	<xs:simpleType name="max_balance">
+		<xs:restriction base="xs:not_negative_int">
+			<xs:minInclusive value="100000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- Простият тип balance обединява горните два типа -->
+	<xs:simpleType name="balance">
+		<xs:union memberType="min_balance max_balance"/>
+	</xs:simpleType>
+	
+	<xs:element name="checking_accounts" type="checking_accounts_specific"/>
+	<xs:complexType name="checking_accounts_specific">
+		<xs:choice>
+			<xs:element ref="checking_account" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:element name="checking_account" type="checking_account_specific"/>
+	<xs:complexType name="checking_accounts_specific">
+		<xs:choice>
+			<xs:element name="balance">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="-5000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:choice>
+		<xs:attribute name="id" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	
+	<xs:element name="customers" type="customers_specific"/>
+		<xs:complexType name="customers_specific">
+			<xs:choice>
+				<xs:element ref="customer" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+		</xs:complexType>
+	
+	<!-- Добавяме нови елементи на елемента customer и добавяме регулярни изрази за пощенски код, телефон и е-поща -->
+	<xs:element name="customer" type="customer_specific"/>
+	<xs:complexType name="customer_specific">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="address" type="xs:string"/>
+			<xs:element name="postal_code" type="xs:string"/>
+		</xs:sequence>
+		<xsd:restriction base="xsd:customer_specific">
+			<xsd:pattern value="postal_code">
+			<xsd:pattern value="telehpone">
+			<xsd:pattern value="e-mail">
+		</xsd:restriction>
+		<xs:attribute name="id" type="xs:string" use="required"/>
+	</xs:complexType>
+			
+	<!-- Сложният тип customer_ext разширява типа customer_specific като добавя нови под-елементи -->
+	<xs:complexType name="customer_ext">
+		<xs:complexContent>
+			<xs:extension base="customer_specific">
+				<xs:sequence>
+					<xs:element name="contacts">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="e-mail" type="xs:string"/>
+								<xs:element name="telephone" type="xs:string"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>	
+	</xs:complexType>
+	<xs:element name="customer_accounts">
+	<xs:complexType name="customer_accounts_specific">
+		<xs:choice>
+			<xs:element ref="customer_account" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:element name="customer_account" type="customer_account_specific"/>
+	<xs:complexType name="customer_account_specific">
+		<xs:attribute name="c_id" type="xs:string" use="required"/>
+		<xs:attribute name="acc_id" type="xs:string" use="required"/>
+	</xs:complexType>
+</xs:schema>
