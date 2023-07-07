@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <!ELEMENT channel (item+, title, language?, link, image*, description?)>
+  <!ATTLIST channel version CDATA #REQUIRED>
+  <!ELEMENT item (title, link, description?)>
+  <!ELEMENT image ( title, link, url)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT language (#PCDATA)>
+  <!ELEMENT link (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT url (#PCDATA)>
