@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE shiporder SYSTEM "hw2_task_5.dtd">
+<!--
+	Започваме като създаваме роот елемента Channel с атрибут version, който трябва да има под-елемент item, title, link, lenguage, image и description.
+	Като под-елементите на channel- image и language не са задължителни. След това създаваме под-елемента Item който има под елемент title, link и дескриптион (който не е задължителен).
+	Създаваме под елемент image който има под-елемент title, link и url и също така може да се среща много пъти. След това създаваме останалите под-елементи title, link, language, description и url.
+-->
+<channel version="1">
+    <item>
+        <title> 
+			Blank_Title 
+		</title>
+        <link>
+			https://www.NotARealLink.bg
+		</link>
+        <description>
+			Blank_Description
+		</description>
+    </item>
+    <title>
+		Blank_Title
+	</title>
+    <link>
+		https://www.NotARealLink.gov
+	</link>
+    <language>
+		Blank_Language
+	</language>
+    <image>
+        <title> 
+			Blank_Title
+		</title>
+        <link>
+			Blank_link
+		</link>
+        <url>
+			https://www.NotARealUrl.ru
+		</url>
+    </image>
+    <description> 
+		Blank_Description 
+	</description>
+</channel>
