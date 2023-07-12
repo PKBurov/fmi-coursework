@@ -1,0 +1,35 @@
+--------------------------------------------------------------5---------------------------------------
+//Declarirame funciq toc (vzeta ot uputvane) kato definirame $catalog kato element i v koqto proverqva vsichki
+pod-elementi na tracklist s atribut=1 i gi sortirame po namalqvasht broi. Sled tova sledvame uputvaneto i zamestavame s 
+funkciqta kudeto e nujno.
+
+declare function local:toc($catalog as element()) as element()*
+{
+   for $o in $catalog/cd/tracklist[@num=1]/track
+      order by $o descending
+   return $o
+};
+
+<toc>
+{
+   for $s in /catalog return local:toc($s)
+}
+</toc>
+
+declare function local:toc($catalog as element()) as element()*
+{
+   for $o in $catalog/cd
+   return
+        element record{
+            attribute id{$o/@id},attribute artist{$o/artist},
+             element info {
+                   text { "Title:"}, text {$o/title}, text { ", Year:"} ,text{$o/year}, text { ", Track numbers:"}, text{count($o/tracklist/track)}
+             }
+
+        }
+};
+<toc>
+element records {
+   for $s in /catalog return local:toc($s)
+}
+</toc>
