@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE shiporder SYSTEM "hw2_task_6.dtd">
+<!--
+	Започваме като създадем роот елемента games, който трябва да има под-елемента game, под-елемнта game на свой ред трябва да има под-елементите home-team, ex-team, yellows и reds. След което създаваме под елементите:
+	score (който е задължителен), home-team, ex-team, scores, yellows, reds и players. Като под-елемнта scores е с атрибут me, който е с под-елемент score, yellows който трябва да има под-елемент player и reds който има под-елементпл
+	player.
+-->
+
+<games>
+    <game score="1-1">
+        <home-team>
+			Roma
+		</home-team>
+        <ex-team>
+			Lazio
+		</ex-team>
+        <scores>
+            <score me="15">
+                <player>
+					Klose
+				</player>
+            </score>
+            <score me="85" type="penalty">
+                <player>
+					Tox
+				</player>
+            </score>
+        </scores>
+        <yellows>
+            <player>
+				Tox
+			</player>
+            <player>
+				Hernanes
+			</player>
+        </yellows>
+        <reds>
+            <player>
+				Kjaer
+			</player>
+        </reds>
+    </game>
+</games>
