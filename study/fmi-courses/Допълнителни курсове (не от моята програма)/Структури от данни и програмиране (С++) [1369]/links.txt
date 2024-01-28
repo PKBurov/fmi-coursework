@@ -1,0 +1,2 @@
+[00 Главна] Visual Studio 2010, 2012, 2013 за практически упражнения: http://elms.fmi.uni-sofia.bg
+[08 Topic 8] Итератори (основна информация): http://www.cplusplus.com/reference/iterator/
