@@ -1,0 +1,8 @@
+[02 24 февруари - 2 март] Учебник по алгоритми (www версия) на Дасгупта, Пападимитриу и Вазирани: http://www.cs.berkeley.edu/~vazirani/algorithms/
+[02 24 февруари - 2 март] Алгоритми и сложност, Уилф: http://www.math.upenn.edu/~wilf/AlgComp3.html
+[02 24 февруари - 2 март] Три свободно достъпни книги на И. Парбъри (иска се приемането на лиценз за ползване), вкл. сборник със задачи с частични: http://www.eng.unt.edu/ian/books/free/
+[08 7 април - 13 април] Резултати от малкото контролно на трета група, Компютърни Науки: https://docs.google.com/spreadsheets/d/1YUQhdAldO37nLFC-1rLtA0yPXxfZc1h4iFgBDTz5RA0
+[14 19 май - 25 май] 3SUM долна граница и редукции: http://www.cs.mcgill.ca/~jking/papers/3sumhard.pdf
+[15 26 май - 1 юни] Арора и Барак, Изчислителна сложност: http://www.math.sc.edu/~cooper/math778C/abct.pdf
+[15 26 май - 1 юни] Трите възможни сценария, когато не можем да намерим ефикасен алгоритъм: https://learn.fmi.uni-sofia.bg/pluginfile.php/17230/mod_resource/content/0/GJ.jpg
+[17 9 юни - 15 юни] Резултати от второто малко контролно на трета група, Компютърни Науки: https://docs.google.com/spreadsheets/d/1YUQhdAldO37nLFC-1rLtA0yPXxfZc1h4iFgBDTz5RA0/edit?usp=sharing
