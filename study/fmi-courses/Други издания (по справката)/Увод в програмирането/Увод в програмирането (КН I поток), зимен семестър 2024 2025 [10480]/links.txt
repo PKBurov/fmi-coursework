@@ -1,0 +1,7 @@
+[00 Главна] Схема за оценяване по УП: https://docs.google.com/document/d/11b-OTq0qFEwH0d0u5nOC1lCyaLAeyCt1vwpmADVBLgc/edit?usp=sharing
+[00 Главна] Примерни решения на задачите от Контролно 2 Вариант 2: https://github.com/FMI-IP-2024-2025/ip-kn1-group3-practicum-2024-2025/tree/main/test2_example_solutions
+[00 Главна] Github repository - група 2 семинар: https://github.com/fmi-lab/up-kn-2024-2025-group-2-seminar
+[00 Главна] Github repository - група 2 практикум: https://github.com/lacho55/Intro-to-programming-CS-2024
+[00 Главна] Връзка към Github на 3-та група практикум: https://github.com/FMI-IP-2024-2025/ip-kn1-group3-practicum-2024-2025
+[00 Главна] Връзка към Github - 3та група семинар: https://github.com/BorisVassilev1/up-kn-2024-2025-seminar
+[00 Главна] Връзка към Github на 4та група практикум + семинар: https://github.com/tervelgstoyanov/fmi-kn-4-up-2024-2025/tree/main
