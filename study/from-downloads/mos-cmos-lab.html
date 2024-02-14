@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MOS и CMOS логически схеми</title>
+<style>
+:root{
+  color-scheme: light;
+  --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+  --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10);
+  --series:#2a78d6; --warn:#b4540a; --warn-bg:#fdf1e7; --ok:#006300;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
+    --series:#3987e5; --warn:#f0a35e; --warn-bg:#2a1f15; --ok:#0ca30c;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+  --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
+  --series:#3987e5; --warn:#f0a35e; --warn-bg:#2a1f15; --ok:#0ca30c;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:22px;margin:0 0 4px}
+h2{font-size:18px;margin:36px 0 8px;padding-top:12px;border-top:1px solid var(--border)}
+h3{font-size:15px;margin:20px 0 6px}
+p,li{color:var(--ink2)}
+.sub{color:var(--muted);margin:0 0 16px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;margin:12px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.grid2{grid-template-columns:1fr}}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{border:1px solid var(--axis);padding:5px 8px;text-align:center}
+th{color:var(--ink);font-weight:600;background:transparent}
+td{color:var(--ink)}
+td.w{background:var(--warn-bg);color:var(--warn);font-weight:600}
+.ov{border-top:1.5px solid currentColor;padding-top:1px}
+.params td:first-child,.params th:first-child{text-align:left}
+.big{font-size:17px;font-weight:600;color:var(--ink)}
+.note{font-size:13px;color:var(--muted)}
+.warnbox{border-left:3px solid var(--warn);background:var(--warn-bg);padding:8px 12px;border-radius:4px;color:var(--ink);font-size:14px;margin:10px 0}
+.chartwrap{position:relative}
+svg{width:100%;height:auto;display:block}
+svg text{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.tip{position:absolute;pointer-events:none;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:4px 8px;font-size:13px;color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.15);opacity:0;transition:opacity .1s;white-space:nowrap}
+.blank{display:inline-block;min-width:70px;border-bottom:1px dotted var(--muted)}
+@media print{
+  :root{--page:#fff;--surface:#fff}
+  .noprint{display:none}
+  .card{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Конструиране и изследване на MOS и CMOS логически схеми</h1>
+<p class="sub">Цифрова схемотехника · измерени стойности от упражнението (V<sub>DD</sub> ≈ 5 V)</p>
+
+<div class="card noprint">
+  <p style="margin:0"><b>Как се четат точките (фиг.П3).</b> H(U<sup>0</sup>, U<sup>1</sup>) и L(U<sup>1</sup>, U<sup>0</sup>) са работните точки:
+  при вход логическа <b>0</b> изходът е логическа <b>1</b> (точка H) и обратно (точка L).
+  T<sub>H</sub> и T<sub>L</sub> са праговите точки – там наклонът на характеристиката е −1 (допирателна под 45°).
+  От тях: <b>U<sup>1</sup></b> = U<sub>o</sub> в точка H, <b>U<sup>0</sup></b> = U<sub>o</sub> в точка L,
+  <b>ΔU<sub>ш</sub><sup>0</sup> = U<sub>i</sub>(T<sub>H</sub>) − U<sup>0</sup></b>,
+  <b>ΔU<sub>ш</sub><sup>1</sup> = U<sup>1</sup> − U<sub>i</sub>(T<sub>L</sub>)</b>.
+  Кривите по-долу са прекарани през четирите измерени точки (U<sub>i</sub>; U<sub>o</sub>).</p>
+</div>
+
+<!-- ============ Задача 1 ============ -->
+<h2>1. NMOS инвертор с линеен (резисторен) товар – фиг.2</h2>
+<div class="grid2">
+  <div class="card">
+    <h3>Измерени точки (R’<sub>T</sub>)</h3>
+    <table class="params">
+      <tr><th>Точка</th><th>U<sub>i</sub> [V]</th><th>U<sub>o</sub> [V]</th></tr>
+      <tr><td>H</td><td>0</td><td>4,85</td></tr>
+      <tr><td>T<sub>H</sub></td><td>1,28</td><td>4,70</td></tr>
+      <tr><td>T<sub>L</sub></td><td>2,00</td><td>0,20</td></tr>
+      <tr><td>L</td><td>4,85</td><td>0,04</td></tr>
+    </table>
+    <h3>Статични параметри</h3>
+    <table class="params">
+      <tr><td>при R’<sub>T</sub> =</td><td><span class="blank"></span> kΩ</td></tr>
+      <tr><td>U<sup>1</sup> (логическа единица)</td><td class="big">4,85 V</td></tr>
+      <tr><td>U<sup>0</sup> (логическа нула)</td><td class="big">0,04 V</td></tr>
+      <tr><td>ΔU = U<sup>1</sup> − U<sup>0</sup></td><td>4,81 V</td></tr>
+      <tr><td>ΔU<sub>ш</sub><sup>0</sup> = 1,28 − 0,04</td><td class="big">1,24 V</td></tr>
+      <tr><td>ΔU<sub>ш</sub><sup>1</sup> = 4,85 − 2,00</td><td class="big">2,85 V</td></tr>
+    </table>
+    <p class="note">Точките на втората крива (R’’<sub>T</sub>) за фиг.П1 не са в снимките – ако ги имате, попълнете ги отделно.</p>
+  </div>
+  <div class="card">
+    <h3>фиг.П1 ПХ на NMOS инвертор с линеен товар</h3>
+    <div class="chartwrap"><svg id="c1" viewBox="0 0 520 470" role="img" aria-label="Предавателна характеристика на NMOS инвертор"></svg><div class="tip"></div></div>
+  </div>
+</div>
+
+<h3>Табл.1 – NMOS схеми 2И-НЕ (фиг.3а) и 2ИЛИ-НЕ (фиг.3б)</h3>
+<div class="grid2">
+  <div class="card">
+    <p style="margin:0 0 6px">R<sub>T</sub> = <span class="blank"></span> kΩ (1-ви резистор)</p>
+    <table>
+      <tr><th>x<sub>1</sub></th><th>x<sub>2</sub></th><th><span class="ov">x<sub>1</sub>.x<sub>2</sub></span> [V]</th><th><span class="ov">x<sub>1</sub> ∨ x<sub>2</sub></span> [V]</th></tr>
+      <tr><td>0</td><td>0</td><td>4,89 (1)</td><td>4,89 (1)</td></tr>
+      <tr><td>0</td><td>1</td><td class="w">0,09 (0) ⚠</td><td>0,04 (0)</td></tr>
+      <tr><td>1</td><td>0</td><td>4,89 (1)</td><td class="w">4,89 (1) ⚠</td></tr>
+      <tr><td>1</td><td>1</td><td>0,09 (0)</td><td>0,04 (0)</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <p style="margin:0 0 6px">R<sub>T</sub> = <span class="blank"></span> kΩ (2-ри резистор)</p>
+    <table>
+      <tr><th>x<sub>1</sub></th><th>x<sub>2</sub></th><th><span class="ov">x<sub>1</sub>.x<sub>2</sub></span> [V]</th><th><span class="ov">x<sub>1</sub> ∨ x<sub>2</sub></span> [V]</th></tr>
+      <tr><td>0</td><td>0</td><td>4,90 (1)</td><td>4,90 (1)</td></tr>
+      <tr><td>0</td><td>1</td><td class="w">0,22 (0) ⚠</td><td>0,10 (0)</td></tr>
+      <tr><td>1</td><td>0</td><td>4,90 (1)</td><td class="w">4,91 (1) ⚠</td></tr>
+      <tr><td>1</td><td>1</td><td>0,22 (0)</td><td>0,10 (0)</td></tr>
+    </table>
+  </div>
+</div>
+<div class="warnbox noprint">⚠ = измерването не съвпада с теорията (2И-НЕ: 1 1 1 0; 2ИЛИ-НЕ: 1 0 0 0). И в двете схеми изходът следва само x<sub>2</sub> (U<sub>o</sub> = <span class="ov">x<sub>2</sub></span>) – вероятно входът x<sub>1</sub> не е превключвал (свързване на DO към извод 3/6). Същото е и в таблицата на колегата. Проверете в протокола как е прието да се отрази.</div>
+<div class="card">
+  <p style="margin:0"><b>Логическа нула: 2И-НЕ спрямо инвертор при същия товар.</b> При инвертора U<sup>0</sup> = 0,04 V, а при 2И-НЕ U<sup>0</sup> = 0,09 V (1-ви резистор) – около два пъти по-голяма,
+  защото двата NMOS транзистора са свързани последователно и съпротивлението им във включено състояние се удвоява:
+  U<sup>0</sup> ≈ V<sub>DD</sub>·2R<sub>on</sub>/(2R<sub>on</sub> + R<sub>T</sub>).</p>
+</div>
+
+<!-- ============ Задача 2 ============ -->
+<h2>2. CMOS инвертор – фиг.4</h2>
+<div class="grid2">
+  <div class="card">
+    <h3>Измерени точки</h3>
+    <table class="params">
+      <tr><th>Точка</th><th>U<sub>i</sub> [V]</th><th>U<sub>o</sub> [V]</th></tr>
+      <tr><td>H</td><td>0</td><td>4,85</td></tr>
+      <tr><td>T<sub>H</sub></td><td>1,70</td><td>4,75</td></tr>
+      <tr><td>T<sub>L</sub></td><td>2,35</td><td>0,27</td></tr>
+      <tr><td>L</td><td>4,83</td><td>0,00</td></tr>
+    </table>
+    <h3>Статични параметри</h3>
+    <table class="params">
+      <tr><td>V<sub>TN</sub> =</td><td><span class="blank"></span> V</td></tr>
+      <tr><td>|V<sub>TP</sub>| =</td><td><span class="blank"></span> V</td></tr>
+      <tr><td>U<sup>1</sup> (логическа единица)</td><td class="big">4,85 V</td></tr>
+      <tr><td>U<sup>0</sup> (логическа нула)</td><td class="big">0,00 V</td></tr>
+      <tr><td>ΔU<sub>ш</sub><sup>0</sup> = 1,70 − 0,00</td><td class="big">1,70 V</td></tr>
+      <tr><td>ΔU<sub>ш</sub><sup>1</sup> = 4,85 − 2,35</td><td class="big">2,50 V</td></tr>
+    </table>
+    <p class="note">V<sub>TN</sub> и |V<sub>TP</sub>| не са в снимките. V<sub>TN</sub> е входното напрежение, при което U<sub>o</sub> започва да пада от V<sub>DD</sub>;
+    |V<sub>TP</sub>| = V<sub>DD</sub> − U<sub>i</sub>, при което U<sub>o</sub> достига 0.</p>
+  </div>
+  <div class="card">
+    <h3>фиг.П2 ПХ на CMOS инвертор (фиг.4)</h3>
+    <div class="chartwrap"><svg id="c2" viewBox="0 0 520 470" role="img" aria-label="Предавателна характеристика на CMOS инвертор"></svg><div class="tip"></div></div>
+  </div>
+</div>
+<div class="card">
+  <p style="margin:0"><b>Сравнение.</b> CMOS инверторът дава U<sup>0</sup> ≈ 0 V (без статичен ток през товар) и по-голям запас ΔU<sub>ш</sub><sup>0</sup> (1,70 срещу 1,24 V).
+  NMOS с резистор има U<sup>0</sup> > 0, който зависи от R<sub>T</sub>.</p>
+</div>
+
+<!-- ============ Задача 3 ============ -->
+<h2>3. CMOS 2И-НЕ (фиг.5) и 2ИЛИ-НЕ (фиг.6)</h2>
+<div class="grid2">
+  <div class="card">
+    <h3>Табл.2 – БЛС 2И-НЕ &nbsp;Y = <span class="ov">x<sub>1</sub>.x<sub>2</sub></span></h3>
+    <table>
+      <tr><th>x<sub>1</sub></th><th>x<sub>2</sub></th><th>U<sub>o</sub> [V]</th><th>Y</th></tr>
+      <tr><td>0</td><td>0</td><td>4,92</td><td>1</td></tr>
+      <tr><td>0</td><td>1</td><td>4,92</td><td>1</td></tr>
+      <tr><td>1</td><td>0</td><td>4,93</td><td>1</td></tr>
+      <tr><td>1</td><td>1</td><td>0,00</td><td>0</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h3>Табл.3 – БЛС 2ИЛИ-НЕ &nbsp;Y = <span class="ov">x<sub>1</sub> ∨ x<sub>2</sub></span></h3>
+    <table>
+      <tr><th>x<sub>1</sub></th><th>x<sub>2</sub></th><th>U<sub>o</sub> [V]</th><th>Y</th></tr>
+      <tr><td>0</td><td>0</td><td>4,92</td><td>1</td></tr>
+      <tr><td>0</td><td>1</td><td>0,00</td><td>0</td></tr>
+      <tr><td>1</td><td>0</td><td class="w">4,92 ⚠</td><td>0</td></tr>
+      <tr><td>1</td><td>1</td><td>0,00</td><td>0</td></tr>
+    </table>
+    <p class="note">⚠ в тетрадката: измерени 4,92 V, но логическата стойност е записана 0 (по теория).</p>
+  </div>
+</div>
+<div class="card">
+  <p style="margin:0"><b>Размери спрямо S<sub>N</sub></b> (PMOS на единичния инвертор ≈ k·S<sub>N</sub>, k = μ<sub>n</sub>/μ<sub>p</sub> ≈ 2–3):
+  2И-НЕ – двата последователни NMOS по <b>2·S<sub>N</sub></b>, двата паралелни PMOS по <b>k·S<sub>N</sub></b>;
+  2ИЛИ-НЕ – двата паралелни NMOS по <b>S<sub>N</sub></b>, двата последователни PMOS по <b>2k·S<sub>N</sub></b>.</p>
+</div>
+
+<!-- ============ Задача 4 ============ -->
+<h2>4. Y = <span class="ov">x<sub>1</sub>.x<sub>2</sub> ∨ x<sub>3</sub></span> в CMOS базис – фиг.7</h2>
+<div class="card">
+  <h3>Табл.4</h3>
+  <table>
+    <tr><th>x<sub>3</sub></th><th>x<sub>2</sub></th><th>x<sub>1</sub></th><th>U<sub>o</sub> измерено [V]</th><th>Y (теория)</th></tr>
+    <tr><td>0</td><td>0</td><td>0</td><td>4,92</td><td>1</td></tr>
+    <tr><td>0</td><td>0</td><td>1</td><td class="w">2,30 ⚠</td><td>1</td></tr>
+    <tr><td>0</td><td>1</td><td>0</td><td>4,92</td><td>1</td></tr>
+    <tr><td>0</td><td>1</td><td>1</td><td>0,78</td><td>0</td></tr>
+    <tr><td>1</td><td>0</td><td>0</td><td class="w">4,92 ⚠</td><td>0</td></tr>
+    <tr><td>1</td><td>0</td><td>1</td><td>0,79</td><td>0</td></tr>
+    <tr><td>1</td><td>1</td><td>0</td><td class="w">4,92 ⚠</td><td>0</td></tr>
+    <tr><td>1</td><td>1</td><td>1</td><td>0,00</td><td>0</td></tr>
+  </table>
+  <p class="note">⚠ = несъвпадение с теорията. 2,30 V е в забранената зона (нито 0, нито 1). Редовете с x<sub>3</sub> = 1 и x<sub>1</sub> = 0 дават 1 вместо 0 – x<sub>3</sub> изглежда не е действал (вход DO2 → извод 6).</p>
+</div>
+
+<!-- ============ Въпроси ============ -->
+<h2>Кратки отговори на въпросите</h2>
+<div class="card">
+  <p><b>Разлика в U<sup>0</sup> при двата товара; ограничения за R<sub>T</sub>.</b> U<sup>0</sup> ≈ V<sub>DD</sub>·R<sub>on</sub>/(R<sub>on</sub> + R<sub>T</sub>): по-голям R<sub>T</sub> дава по-ниска логическа нула
+  (виж 2И-НЕ: 0,09 V при единия и 0,22 V при другия резистор – значи 2-рият резистор е по-малкият). R<sub>T</sub> трябва да е много по-голям от R<sub>on</sub>, за да е U<sup>0</sup> под прага на следващата схема,
+  но голям R<sub>T</sub> бавно зарежда товарния капацитет (дълъг фронт t<sub>ф</sub><sup>+</sup>) и заема голяма площ; малък R<sub>T</sub> увеличава статичния ток и консумацията.</p>
+  <p><b>Съотношение на праговите напрежения в CMOS.</b> Оптимално V<sub>TN</sub> ≈ |V<sub>TP</sub>| и симетрични транзистори ((W/L)<sub>p</sub> ≈ k·(W/L)<sub>n</sub>), така че превключването да е около V<sub>DD</sub>/2 и двата запаса на шумоустойчивост да са равни.</p>
+  <p style="margin-bottom:0"><b>Предимства и ограничения на CMOS.</b> Предимства: почти нулева статична консумация, пълен размах U<sup>0</sup> ≈ 0, U<sup>1</sup> ≈ V<sub>DD</sub>, висока шумоустойчивост, широк диапазон на захранването, голям коефициент на разклонение.
+  Ограничения: два транзистора на вход (по-голяма площ), динамичната консумация расте с честотата, по-ниско бързодействие при голям капацитивен товар, чувствителност към статично електричество и latch-up.</p>
+</div>
+<p class="note">Задача 5 (t<sub>ф</sub><sup>+</sup>, t<sub>ф</sub><sup>−</sup>, t<sub>зср</sub>) – няма данни в снимките.</p>
+</main>
+
+<script>
+(function(){
+  const NS = "http://www.w3.org/2000/svg";
+  const fmt = v => v.toFixed(2).replace(".", ",");
+  // plot area: x 0..5 V -> 60..500 px, y 0..5 V -> 420..20 px
+  const X = v => 60 + v * 88, Y = v => 420 - v * 80;
+  function el(tag, attrs, parent, text){
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (text !== undefined) e.textContent = text;
+    parent.appendChild(e); return e;
+  }
+  function curve(P){
+    const [xH,yH]=P.H, [xa,ya]=P.TH, [xb,yb]=P.TL, [xL,yL]=P.L, pts=[];
+    const p = (xa - xH) / (yH - ya);          // slope 0 at H, -1 at T_H
+    for (let i=0;i<=60;i++){ const x = xH + (xa-xH)*i/60; pts.push([x, yH - (yH-ya)*Math.pow((x-xH)/(xa-xH), p)]); }
+    const h = xb - xa;                          // Hermite, slope -1 at both threshold points
+    for (let i=1;i<=60;i++){ const t=i/60, t2=t*t, t3=t2*t;
+      const y = (2*t3-3*t2+1)*ya + (t3-2*t2+t)*h*(-1) + (-2*t3+3*t2)*yb + (t3-t2)*h*(-1);
+      pts.push([xa + h*t, y]); }
+    const q = (xL - xb) / (yb - yL);           // slope -1 at T_L, 0 at L
+    for (let i=1;i<=60;i++){ const x = xb + (xL-xb)*i/60; pts.push([x, yL + (yb-yL)*Math.pow((xL-x)/(xL-xb), q)]); }
+    return pts;
+  }
+  function draw(id, P){
+    const svg = document.getElementById(id), tip = svg.parentNode.querySelector(".tip");
+    const U1 = P.H[1], U0 = P.L[1];
+    // grid
+    for (let v=0; v<=5.001; v+=0.5){
+      el("line",{x1:X(v),y1:Y(0),x2:X(v),y2:Y(5),stroke:"var(--grid)","stroke-width":1},svg);
+      el("line",{x1:X(0),y1:Y(v),x2:X(5),y2:Y(v),stroke:"var(--grid)","stroke-width":1},svg);
+      el("text",{x:X(v),y:Y(0)+18,"text-anchor":"middle","font-size":12,fill:"var(--muted)"},svg,String(v).replace(".",","));
+      el("text",{x:X(0)-8,y:Y(v)+4,"text-anchor":"end","font-size":12,fill:"var(--muted)"},svg,String(v).replace(".",","));
+    }
+    el("line",{x1:X(0),y1:Y(0),x2:X(5.1),y2:Y(0),stroke:"var(--axis)","stroke-width":1.5},svg);
+    el("line",{x1:X(0),y1:Y(0),x2:X(0),y2:Y(5.15),stroke:"var(--axis)","stroke-width":1.5},svg);
+    el("text",{x:X(5)+4,y:Y(0)+38,"text-anchor":"end","font-size":13,fill:"var(--ink2)"},svg,"Ui [V]");
+    el("text",{x:4,y:12,"text-anchor":"start","font-size":13,fill:"var(--ink2)"},svg,"Uo [V]");
+    // guides through the threshold points
+    [P.TH, P.TL].forEach(([x,y])=>{
+      el("line",{x1:X(x),y1:Y(y),x2:X(x),y2:Y(0),stroke:"var(--muted)","stroke-width":1,"stroke-dasharray":"2 3"},svg);
+      el("line",{x1:X(x-0.55),y1:Y(y+0.55),x2:X(x+0.55),y2:Y(y-0.55),stroke:"var(--muted)","stroke-width":1.2,"stroke-dasharray":"5 3"},svg);
+    });
+    // noise-margin arrows
+    const arrow = (x1,x2,y,label)=>{
+      el("line",{x1:X(x1),y1:Y(y),x2:X(x2),y2:Y(y),stroke:"var(--ink2)","stroke-width":1.2,"marker-start":"url(#a"+id+")","marker-end":"url(#a"+id+")"},svg);
+      el("text",{x:(X(x1)+X(x2))/2,y:Y(y)-6,"text-anchor":"middle","font-size":12,fill:"var(--ink2)"},svg,label);
+    };
+    const defs = el("defs",{},svg), m = el("marker",{id:"a"+id,viewBox:"0 0 10 10",refX:5,refY:5,markerWidth:7,markerHeight:7,orient:"auto-start-reverse"},defs);
+    el("path",{d:"M0,1 L9,5 L0,9 z",fill:"var(--ink2)"},m);
+    arrow(U0, P.TH[0], U1-1.2, "ΔUш⁰ = "+fmt(P.TH[0]-U0)+" V");
+    arrow(P.TL[0], U1, U0+1.0, "ΔUш¹ = "+fmt(U1-P.TL[0])+" V");
+    // the curve
+    const d = curve(P).map((p,i)=>(i?"L":"M")+X(p[0]).toFixed(1)+","+Y(p[1]).toFixed(1)).join(" ");
+    el("path",{d,fill:"none",stroke:"var(--series)","stroke-width":2.2,"stroke-linejoin":"round"},svg);
+    // points
+    const names = {H:"H", TH:"T", TL:"T", L:"L"}, subs = {TH:"H", TL:"L"};
+    const off = {H:[10,20,"start"], TH:[8,-10,"start"], TL:[10,-8,"start"], L:[-6,-12,"end"]};
+    for (const k of ["H","TH","TL","L"]){
+      const [x,y] = P[k];
+      el("circle",{cx:X(x),cy:Y(y),r:5,fill:"var(--series)",stroke:"var(--surface)","stroke-width":2},svg);
+      const t = el("text",{x:X(x)+off[k][0],y:Y(y)+off[k][1],"text-anchor":off[k][2],"font-size":13,fill:"var(--ink)","font-weight":600},svg);
+      t.appendChild(document.createTextNode(names[k]));
+      if (subs[k]) el("tspan",{"baseline-shift":"sub","font-size":10},t,subs[k]);
+      t.appendChild(document.createTextNode(" ("+fmt(x)+"; "+fmt(y)+")"));
+      const hit = el("circle",{cx:X(x),cy:Y(y),r:14,fill:"transparent",style:"cursor:pointer"},svg);
+      const label = (subs[k] ? names[k]+subs[k] : names[k]) + ": Ui = "+fmt(x)+" V, Uo = "+fmt(y)+" V";
+      hit.addEventListener("mouseenter",()=>{
+        const r = svg.getBoundingClientRect(), s = r.width/520;
+        tip.textContent = label; tip.style.left = (X(x)*s+12)+"px"; tip.style.top = (Y(y)*s-34)+"px"; tip.style.opacity = 1;
+      });
+      hit.addEventListener("mouseleave",()=>tip.style.opacity = 0);
+    }
+  }
+  draw("c1", {H:[0,4.85], TH:[1.28,4.70], TL:[2.00,0.20], L:[4.85,0.04]});
+  draw("c2", {H:[0,4.85], TH:[1.70,4.75], TL:[2.35,0.27], L:[4.83,0.00]});
+})();
+</script>
+</body>
+</html>
