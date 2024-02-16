@@ -1,0 +1,12 @@
+[00 Главна] Връзка за изтегляне на програмата Cisco Packet Tracer: https://www.netacad.com/portal/resources/packet-tracer
+[00 Главна] Свободен софтуер за конзолна връзка с устройство - PuTTY: http://www.putty.org/
+[00 Главна] Свободен софтуер за конзолна връзка с устройство - Tera Term: http://ttssh2.sourceforge.jp/
+[00 Главна] Свободен софтуер за анализиране на мрежови протоколи - Wireshark: http://www.wireshark.org/
+[00 Главна] Въведение в Packet Tracer: https://www.netacad.com/cisco-packet-tracer
+[02 12 октомври - 18 октомври] Онлайн тест Modules 1 - 3 Basic Network Connectivity and Communications Exam: https://www.netacad.com
+[03 19 октомври - 25 октомври] Етернет архитектура - описание на български: http://www.iit.net-bg.info/Ethernet/EthernetNetwork.html
+[03 19 октомври - 25 октомври] Онлайн тест Modules 4 - 7 Ethernet Concepts Exam: https://www.netacad.com
+[04 26 октомври - 1 ноември] Онлайн тест Modules 8 - 10 Communicating Between Networks Exam: https://www.netacad.com/launch?id=7dac6e6a-a6de-4cdc-be3e-d3817284ce1c
+[05 2 ноември - 8 ноември] Онлайн тест Modules 11 - 13 Basic Network Connectivity and Communications Exam: https://www.netacad.com
+[06 9 ноември - 15 ноември] Онлайн тест Modules 14 - 15 Basic Network Connectivity and Communications Exam (copy) (copy): https://www.netacad.com
+[06 9 ноември - 15 ноември] Онлайн тест Modules 16 - 17 Basic Network Connectivity and Communications Exam: https://www.netacad.com
