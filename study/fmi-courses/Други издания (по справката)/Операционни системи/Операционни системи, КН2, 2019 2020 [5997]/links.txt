@@ -1,0 +1,10 @@
+[00 Главна] Материали на Скелета: http://skelet.ludost.net/OS/
+[00 Главна] Таблица с резултати: https://docs.google.com/spreadsheets/d/1TbkM95rluI-FEXEfQ5tg-O0r_enO8izqB35MpdYNrB0/edit#gid=0
+[04 9 март - 15 март] Материали за упражнение на 8-ма група (3-4-та седмица): https://github.com/carolinepetrova/OperatingSystems_2019-2020/tree/master/week3-4
+[04 9 март - 15 март] Упражнение 4 за 6та и 7ма група: http://newkis.fmi.uni-sofia.bg/~svi/os/ex/ex4.html
+[05 16 март - 22 март] Материали за упражнение на 8-ма група (5-та седмица): https://github.com/carolinepetrova/OperatingSystems_2019-2020/tree/master/week5
+[06 23 март - 29 март] Материали за упражнение на 8-ма група: https://github.com/carolinepetrova/OperatingSystems_2019-2020/tree/master/week6
+[07 30 март - 5 април] Материали за упражнение на 8-ма група: https://github.com/carolinepetrova/OperatingSystems_2019-2020
+[08 6 април - 12 април] Материали за упражнение на 8-ма група: https://github.com/carolinepetrova/OperatingSystems_2019-2020/tree/master/week8
+[11 27 април - 3 май] Материали за упражнение на 8-ма група: https://github.com/carolinepetrova/OperatingSystems_2019-2020/tree/master/week11
+[12 4 май - 10 май] Материали за упражнение на 8-ма група: https://github.com/carolinepetrova/OperatingSystems_2019-2020/tree/master/week12
