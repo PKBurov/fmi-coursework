@@ -1,0 +1,44 @@
+[00 Главна] Introduction to Algorithms - MIT: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-notes/
+[00 Главна] Design and Analysis of Algorithms - Stanford: https://web.stanford.edu/class/cs161/
+[00 Главна] Data Structures and Algorithms - Harvard: https://online-learning.harvard.edu/course/data-structures-and-algorithms?delta=0
+[00 Главна] Data Structures - Berkley: https://inst.eecs.berkeley.edu/~cs61b/sp20/
+[00 Главна] Data Structure and Algorithms - Princeton: https://www.cs.princeton.edu/courses/archive/fall20/cos226/lectures.php
+[00 Главна] Github: https://github.com/mchechev/data-structures-and-algorithms
+[02 4 октомври - 10 октомври] Лекция 1. Организация на курса и Оценка на сложност на алгоритъм: https://docs.google.com/presentation/d/1ttAmgqoDjpJcGRtlxi8s2uPgVSY74Vh3fz7eXsa4hSw/edit?usp=sharing
+[02 4 октомври - 10 октомври] Задачи за самостоятелна работа 1: https://www.hackerrank.com/sda-hw-1
+[03 11 октомври - 17 октомври] Лекция 2. Алгоритми за сортиране: https://docs.google.com/presentation/d/1Ln0NHtAEacMugnoIljFrim3SwXUPeCfx9vGLINqAYfU/edit?usp=sharing
+[03 11 октомври - 17 октомври] Задачи за самостоятелна работа 2: https://www.hackerrank.com/contests/sda-hw-2
+[04 18 октомври - 24 октомври] Лекция 3. Алгоритми за търсене: https://docs.google.com/presentation/d/1P8gdjuIdwUfvILBHTgNyPWsFJOc66Qqp3dVDYVmmtpQ/edit?usp=sharing
+[04 18 октомври - 24 октомври] Задачи за самостоятелна работа 3: https://www.hackerrank.com/sda-hw-3
+[04 18 октомври - 24 октомври] Контролна работа 1 - 2021 10 19 18 00: https://www.hackerrank.com/contests/sda-2021-2021-test-1
+[05 25 октомври - 31 октомври] Лекция 4. Свързан списък: https://docs.google.com/presentation/d/1AN9y-zfIZOTWDM5qQ7Bx4Cw_dqb2MvzHM-ponJDQols/edit?usp=sharing
+[05 25 октомври - 31 октомври] Задачи за самостоятелна работа 4: https://www.hackerrank.com/contests/sda-hw-4/challenges
+[06 1 ноември - 7 ноември] Лекция 5. Стек и опашка: https://docs.google.com/presentation/d/122O0HWgHg0XkTOtc89bwSf6RUJtaT-UxHnNzHHXOQlk/edit?usp=sharing
+[06 1 ноември - 7 ноември] Задачи за самостоятелна работа 5: https://www.hackerrank.com/sda-hw-5
+[06 1 ноември - 7 ноември] Контролна работа 2: https://www.hackerrank.com/sda-2021-2021-test-2-test
+[07 8 ноември - 14 ноември] Лекция 6. Binary Search Tree: https://docs.google.com/presentation/d/1GgDPncS3J3VMhK1YOHDbCZu5ZsYcxcIGu_bFk5GGhgg/edit?usp=sharing
+[07 8 ноември - 14 ноември] Задачи за самостоятелна работа 6: https://www.hackerrank.com/sda-hw-6-2021
+[08 15 ноември - 21 ноември] Лекция 7. Балансирано AVL дърво: https://docs.google.com/presentation/d/1XmkBoGKyNagmE8YJnY47NOB0dYE-M6AkWnt7zg9NJfM/edit?usp=sharing
+[08 15 ноември - 21 ноември] Задачи за самостоятелна работа 7: https://www.hackerrank.com/contests/sda-hw-7
+[08 15 ноември - 21 ноември] Контролна работа 3: https://www.hackerrank.com/sda-2021-2021-test-3-november16
+[09 22 ноември - 28 ноември] Задачи за самостоятелна работа 8: https://www.hackerrank.com/sda-hw-8-2021
+[09 22 ноември - 28 ноември] Лекция 8. Пирамида: https://docs.google.com/presentation/d/1yTrC5MsiHrGaU1Eufy6eVRXeEsJkJ7jvII_kVAcW4Kk/edit?usp=sharing
+[10 29 ноември - 5 декември] Лекция 9. Хештаблица: https://docs.google.com/presentation/d/10PbXvLU7T3DOLlLkBLHeeV6qRVpWn9-gd0UlsBbHmss/edit?usp=sharing
+[10 29 ноември - 5 декември] Задачи за самостоятелна работа 9: https://www.hackerrank.com/sda-hw-9-2021
+[10 29 ноември - 5 декември] Контролна работа 4: https://www.hackerrank.com/sda-2021-2022-test4-nov30
+[11 6 декември - 12 декември] Лекция 10. Граф - представяне и обхождане bfs,dfs: https://docs.google.com/presentation/d/1BF6LrWSNWyJFjBXCb3K-_UsXN1OU5V_3IUbveVZ3iEE/edit?usp=sharing
+[11 6 декември - 12 декември] Контролно 5: https://www.hackerrank.com/sda-2021-2022-test5-8dec
+[11 6 декември - 12 декември] Задачи за самостоятелна работа 10: https://www.hackerrank.com/sda-hw-10-2021
+[12 13 декември - 19 декември] Лекция 11. Най-къс път в граф. Алгоритъм на Дийкстра: https://docs.google.com/presentation/d/1rNoXQJmoZ_46kOSaZmnS0yPhHiCjjYMDNzL0HA1lnd0/edit?usp=sharing
+[12 13 декември - 19 декември] Задачи за самостоятелна работа 11: https://www.hackerrank.com/contests/sda-hw-11-2021/challenges
+[13 20 декември - 26 декември] Лекция 12. Минимално покриващо дърво: https://docs.google.com/presentation/d/1MvQ3kQ6DqNzrkVOfrYxubQxq4YeMe1M2htAQmP7Q1Jw/edit?usp=sharing
+[13 20 декември - 26 декември] Контролно 6: https://www.hackerrank.com/contests/sda-2021-2022-test-6-christmas
+[13 20 декември - 26 декември] Задачи за самостоятелна работа 12: https://www.hackerrank.com/contests/12-2/challenges
+[15 3 януари - 9 януари] Лекция 13. Ойлеров и Хамилтонов път в граф. NP, NP Complete: https://docs.google.com/presentation/d/1sVxKkiBr2lvx6AODpRr6QVsRFzx-cbcsc0WNahiFBW8/edit?usp=sharing
+[15 3 януари - 9 януари] Задачи за самостоятелна работа 13: https://www.hackerrank.com/sda-hw-13-2022
+[15 3 януари - 9 януари] Примерен теоретичен тест: https://docs.google.com/document/d/1fqtHVPPqLY-R73ZAmmI53m6tg3fxufqqkgf1vry9L0o/edit?usp=sharing
+[16 10 януари - 16 януари] Лекция 14.Обобщение: https://docs.google.com/presentation/d/1LLFEaD1COuxGF20R86IOJqYZB3_G7rxKEq6SsuynhKs/edit?usp=sharing
+[16 10 януари - 16 януари] Контролно 7 линк: https://www.hackerrank.com/sda-2021-2022-test-7-final
+[16 10 януари - 16 януари] Лекция 15. Линк в гугъл меет: https://meet.google.com/hcm-gjbn-xyt
+[17 17 януари - 23 януари] Изпит задачи 1 (11 20-12 50): https://www.hackerrank.com/exam-2022-part1-sda
+[17 17 януари - 23 януари] Изпит задачи 2 (11 20-13 50): https://www.hackerrank.com/exam-2022-part2-sda
