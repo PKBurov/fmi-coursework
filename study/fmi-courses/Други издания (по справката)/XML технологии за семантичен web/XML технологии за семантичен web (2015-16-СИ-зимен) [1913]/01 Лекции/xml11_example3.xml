@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="example3.css"?>
+<Rolodex>
+  <record>
+    <name gender = "female">
+	<first>Jane</first>
+	<last>Poe</last>
+    </name>
+    <address>
+	Av. St. Clair on the Heavens 1643, Bristol, MA 2131, USA
+    </address>
+  </record>
+  <record>
+    <name gender = "male">
+	<first>Jim</first>
+	<last>Hackman</last>
+  </name>
+    <address>
+	Balsha 6 St., Sofia 1643, vvvvvvvvvvvvvvvv, Bulgaria
+    </address>
+  </record>
+</Rolodex>
+
+
+ 
