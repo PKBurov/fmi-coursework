@@ -1,0 +1,330 @@
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://wadl.dev.java"> 
+   <grammars></grammars> 
+   <resources base="http://ui.cloudfaces.io/services/dance">
+	 <!-- Home -->
+   	<resource path="/"> 
+		<method name="GET">
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" /> 
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Message" value="message" />
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+    </resource>
+	 <!-- Register -->
+   	<resource path="/user_register.json"> 
+		<method name="POST">
+			<request>
+				<param name="user_email" value="user_email" style="query" default="" required="true" />
+				<param name="user_password" value="user_password" style="query" default="" required="true" />
+				<param name="user_firstname" value="user_firstname" style="query" default="" required="true" />
+				<param name="user_lastname" value="user_lastname" style="query" default="" required="true" />
+			</request>
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" /> 
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Message" value="message" />
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+     </resource>
+	 <!-- Login -->
+   	<resource path="/user_login.json"> 
+		<method name="POST">
+			<request>	
+				<param value="user_email" name="Email" style="query" required="true" />
+				<param value="user_password" name="Password" style="query" required="true" />
+			</request>
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" /> 
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Token" value="token" session="1" />
+				<param type="string" style="template" name="Message" value="message" />
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+     </resource>
+   	<resource path="/user_submit_highscore.json"> 
+		<method name="POST">
+			<request>	
+				<param value="score" name="Score" style="query" required="true" />
+				<param value="token" name="Token" style="query" required="true" />
+			</request>
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" /> 
+				<param type="string" style="template" name="Position" value="pos" />
+				<list name="Lessons" type="list" value="lessons">
+					<param type="string" style="template" name="Event ID" value="event_id" />
+					<param type="string" style="template" name="Name" value="name" />
+					<param type="string" style="template" name="Description" value="description" />
+					<param type="string" style="template" name="Image" value="image" />
+				</list>				
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+     </resource>	 
+	 <!-- View Profile -->
+   	<resource path="/user_profile_view.json/{token}">
+		<param name="Token" value="token" style="query" required="true" />
+		<method name="POST">
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" /> 
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Email" value="user_data/email" />
+				<param type="string" style="template" name="Firstname" value="user_data/firstname" />
+				<param type="string" style="template" name="Lastname" value="user_data/lastname" />
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+    </resource>
+	 <!-- Edit Profile -->
+	<resource path="/user_profile_edit.json/token/{token}"> 
+		<param name="Token" value="token" style="query" required="true" />
+		<method name="POST">
+			<request>
+				<param name="Firstname" value="user_firstname" style="query" default="" required="true" />
+				<param name="Lastname" value="user_lastname" style="query" default="" required="true" />
+			</request>
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" /> 
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Message" value="message" />
+				<param type="string" style="template" name="Email" value="user_data/email" />
+				<param type="string" style="template" name="Firstname" value="user_data/firstname" />
+				<param type="string" style="template" name="Lastname" value="user_data/lastname" />
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+     </resource>
+	 <!-- Delete user -->
+   	<resource path="/user_delete.json/token/{token}"> 
+		<param name="Token" value="token" style="query" default="" required="true" />
+		<method name="POST">
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" /> 
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Message" value="message" />
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+     </resource>
+	 <!-- Get Profile -->
+   	<resource path="/user_profile.json/token/{token}"> 
+		<param name="Token" value="token" style="query" default="" required="true" />	
+		<method name="POST">
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" /> 
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error" value="error" />
+				<param type="string" style="template" name="Firstname" value="firstname" />
+				<param type="string" style="template" name="Lastname" value="lastname" />
+				<param type="string" style="template" name="Email" value="email" />
+				<param type="string" style="template" name="Address" value="address" />
+				<param type="string" style="template" name="City" value="city" />
+				<param type="string" style="template" name="Country" value="country" />
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+    </resource>
+	<!-- Lessons Get -->
+   	<resource path="/lessons_get.json/token/{token}">
+		<param name="Token" value="token" style="query" default="" required="true" />
+		<method name="POST">
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" /> 
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<list name="Lessons" type="list" value="lessons">
+					<param type="string" style="template" name="Event ID" value="event_id" />
+					<param type="string" style="template" name="Name" value="name" />
+					<param type="string" style="template" name="Description" value="description" />
+					<param type="string" style="template" name="Image" value="image" />
+				</list>
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+    </resource>
+   	<resource path="/lesson_description_get.json/token/{token}"> 
+		<param name="Token" value="token" style="query" default="" required="true" />
+		<method name="POST">
+			<request>	
+				<param name="Event ID" value="event_id" style="query" default="" required="true" />
+			</request>
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Event ID" value="event/event_id" />
+				<param type="string" style="template" name="Name" value="event/name" />
+				<param type="string" style="template" name="Description" value="event/description" />
+				<param type="string" style="template" name="Image" value="image" />
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Message" value="error" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+			</response>
+		</method>
+     </resource>
+   	<resource path="/user_lesson_set.json/token/{token}"> 
+		<param name="Token" value="token" style="query" default="" required="true" />
+		<method name="POST">
+			<request>	
+				<param name="Event ID" value="event_id" style="query" default="" required="true" />
+			</request>
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Message" value="message" />
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+     </resource>
+   	<resource path="/user_lesson_get.json/token/{token}">
+		<param name="Token" value="token" style="query" default="" required="true" />
+		<method name="POST">
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" /> 
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<list name="Lessons" type="list" value="lessons">
+					<param type="string" style="template" name="Event ID" value="event_id" />
+					<param type="string" style="template" name="Name" value="name" />
+					<param type="string" style="template" name="Description" value="description" />
+					<param type="string" style="template" name="Image" value="image" />
+				</list>
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+     </resource>
+   	<resource path="/lesson_comments_set.json/token/{token}"> 
+		<param name="Token" value="token" style="query" default="" required="true" />
+		<method name="POST">
+			<request>	
+				<param name="Event ID" value="event_id" style="query" default="" required="true" />
+				<param name="Title" value="comment_title" style="query" default="" required="true" />
+				<param name="Text" value="comment_text" style="query" default="" required="true" />
+			</request>
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Message" value="message" />
+				<list name="Comments(All)" type="list" value="comments">
+					<param type="string" style="template" name="Event ID" value="event_id" />
+					<param type="string" style="template" name="User ID" value="user_id" />
+					<param type="string" style="template" name="Title" value="title" />
+					<param type="string" style="template" name="Text" value="Text" />
+				</list>				
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+     </resource>
+   	<resource path="/lesson_comments_get.json/token/{token}"> 
+		<param name="Token" value="token" style="query" default="" required="true" />
+		<method name="POST">
+			<request>	
+				<param name="Event ID" value="event_id" style="query" default="" required="true" />
+			</request>
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<list name="Comments(All)" type="list" value="comments">
+					<param type="string" style="template" name="Event ID" value="event_id" />
+					<param type="string" style="template" name="User ID" value="user_id" />
+					<param type="string" style="template" name="Title" value="title" />
+					<param type="string" style="template" name="Text" value="Text" />
+				</list>				
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+     </resource>
+   	<resource path="/lesson_vote_set.json/token/{token}"> 
+		<param name="Token" value="token" style="query" default="" required="true" />
+		<method name="POST">
+			<request>	
+				<param name="Event ID" value="event_id" style="query" default="" required="true" />
+				<param name="Vote(1 - 10)" value="vote_mark" style="query" default="" required="true" />
+			</request>
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Message" value="message" />
+				<param type="string" style="template" name="Vote" value="lesson_vote" />
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+     </resource>
+   	<resource path="/lesson_vote_get.json/token/{token}"> 
+		<param name="Token" value="token" style="query" default="" required="true" />
+		<method name="POST">
+			<request>	
+				<param name="Event ID" value="event_id" style="query" default="" required="true" />
+			</request>
+			<response status="200" variable="Code" name="Result OK"> 
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Vote" value="vote" />
+			</response>
+			<response status="400" variable="Code" name="Result Error">
+				<representation mediaType="json" />
+				<param type="string" style="template" name="Error Code" value="error_code" />
+				<param type="string" style="template" name="Error Message" value="error" />
+			</response>
+		</method>
+     </resource>	 
+   </resources>
+ </application>
