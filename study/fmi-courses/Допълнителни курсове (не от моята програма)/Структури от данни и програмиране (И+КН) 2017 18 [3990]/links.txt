@@ -1,0 +1,54 @@
+[00 Главна] Полезни източници: https://github.com/semerdzhiev/sdp-samples/blob/master/resources.md
+[00 Главна] Схема за оценяване: https://docs.google.com/document/d/1ix06GNSqJs487K6TYNbJqq7wz9L4y_SMQYKmW3wyWWg/edit#
+[00 Главна] Теми за проекти по СДП: https://drive.google.com/drive/u/0/folders/1AX_zU_Nq0egbTWmdbDuhFMKiPOH6zE16
+[01 Материали за спец. Информатика] Хранилище с примери @ GitHub: https://github.com/semerdzhiev/sdp-samples
+[01 Материали за спец. Информатика] Учебно съдържание: https://docs.google.com/document/d/1YbCxzs188RjTcSugE4htTF9gc-Alu14Uv3gxB4oOgI4/edit?usp=sharing
+[02 Материали за спец. Компютърни науки, 1 поток] GitHub хранилище с програмите от лекции: https://github.com/triffon/sdp-2017-18/
+[02 Материали за спец. Компютърни науки, 1 поток] Примерна работа с потоци: https://github.com/triffon/sdp-2017-18/blob/master/streams/streams.cpp
+[02 Материали за спец. Компютърни науки, 1 поток] Решение на задачата СУСИ: https://github.com/triffon/sdp-2017-18/tree/master/susi
+[02 Материали за спец. Компютърни науки, 1 поток] std vector: http://www.cplusplus.com/reference/vector/vector/
+[02 Материали за спец. Компютърни науки, 1 поток] std string: http://www.cplusplus.com/reference/string/string/
+[02 Материали за спец. Компютърни науки, 1 поток] std pair: http://www.cplusplus.com/reference/utility/pair/
+[02 Материали за спец. Компютърни науки, 1 поток] std tuple: http://www.cplusplus.com/reference/tuple/tuple/
+[02 Материали за спец. Компютърни науки, 1 поток] Реализации на стек с тестове: https://github.com/triffon/sdp-2017-18/tree/master/stack
+[02 Материали за спец. Компютърни науки, 1 поток] Пресмятане на израз с обратен полски запис: https://github.com/triffon/sdp-2017-18/tree/097ead2f50b828ee2f8e138faf181849a72c47a7/arithmetic
+[02 Материали за спец. Компютърни науки, 1 поток] Пресмятане на израз с обратен полски запис — поточна реализация: https://github.com/triffon/sdp-2017-18/tree/362005a0dfeb5f34470e0ea950ac2fbe0e7c45a0/arithmetic
+[02 Материали за спец. Компютърни науки, 1 поток] Симулиране на рекурсия ход на коня: https://github.com/triffon/sdp-2017-18/tree/5eaa91606174283ec1282fbfdc0c46e4eb223ff7/horse
+[02 Материали за спец. Компютърни науки, 1 поток] std stack: http://www.cplusplus.com/reference/stack/stack/
+[02 Материали за спец. Компютърни науки, 1 поток] Реализации на опашка статично и свързано представяне: https://github.com/triffon/sdp-2017-18/tree/master/queue
+[02 Материали за спец. Компютърни науки, 1 поток] Ход на коня с метод на вълната: https://github.com/triffon/sdp-2017-18/tree/9c107165843bbaeb2b3c776703d86583b8b7f3b4/horse
+[02 Материали за спец. Компютърни науки, 1 поток] std queue: http://www.cplusplus.com/reference/queue/queue/
+[02 Материали за спец. Компютърни науки, 1 поток] Пълна реализация на едносвързан списък с тестове + примерни приложения: https://github.com/triffon/sdp-2017-18/tree/master/lists
+[02 Материали за спец. Компютърни науки, 1 поток] Функции от по-висок ред за списъци: https://github.com/triffon/sdp-2017-18/blob/master/lists/list_highorder.cpp
+[02 Материали за спец. Компютърни науки, 1 поток] Реализация на двойносвързан списък: https://github.com/triffon/sdp-2017-18/blob/master/lists/dllist.cpp
+[02 Материали за спец. Компютърни науки, 1 поток] std list: http://www.cplusplus.com/reference/list/list/
+[02 Материали за спец. Компютърни науки, 1 поток] Реализация на хетерогенен списък от стекове и опашки: https://github.com/triffon/sdp-2017-18/blob/master/polylist/stackqueuelist.cpp
+[02 Материали за спец. Компютърни науки, 1 поток] Реализация на Scheme списъци: https://github.com/triffon/sdp-2017-18/blob/master/polylist/slist.cpp
+[02 Материали за спец. Компютърни науки, 1 поток] Реализация на коренови дървета с произволен брой наследници: https://github.com/triffon/sdp-2017-18/tree/f83d240a7628bee4c1b3a0a3cbc4e22f4a47b36a/trees
+[02 Материали за спец. Компютърни науки, 1 поток] Реализация на двоични дървета (с абстракция за позиция): https://github.com/triffon/sdp-2017-18/blob/master/trees/bintree.cpp
+[02 Материали за спец. Компютърни науки, 1 поток] Статична реализация на пирамида: https://github.com/triffon/sdp-2017-18/blob/master/trees/heap.cpp
+[02 Материали за спец. Компютърни науки, 1 поток] Пирамидално сортиране като тест за пирамидата: https://github.com/triffon/sdp-2017-18/blob/master/trees/heap_tests.h
+[02 Материали за спец. Компютърни науки, 1 поток] Визуализация на алгоритмите за пирамида: https://visualgo.net/en/heap
+[02 Материали за спец. Компютърни науки, 1 поток] std priority_queue: http://www.cplusplus.com/reference/queue/priority_queue/
+[02 Материали за спец. Компютърни науки, 1 поток] Реализация на двоично дърво за търсене: https://github.com/triffon/sdp-2017-18/blob/master/trees/bstree.cpp
+[02 Материали за спец. Компютърни науки, 1 поток] Визуализация на AVL дървета: https://visualgo.net/en/bst
+[02 Материали за спец. Компютърни науки, 1 поток] Визуализация на B дървета: https://www.cs.usfca.edu/~galles/visualization/BTree.html
+[02 Материали за спец. Компютърни науки, 1 поток] АТД речник: https://github.com/triffon/sdp-2017-18/blob/master/dictionary/dictionary.h
+[02 Материали за спец. Компютърни науки, 1 поток] АТД множество: https://github.com/triffon/sdp-2017-18/blob/master/dictionary/set.cpp
+[02 Материали за спец. Компютърни науки, 1 поток] Реализация на речник чрез двоично дърво за търсене: https://github.com/triffon/sdp-2017-18/blob/master/dictionary/bstree_dictionary.cpp
+[02 Материали за спец. Компютърни науки, 1 поток] Хеш таблица с пряко свързване: https://github.com/triffon/sdp-2017-18/blob/master/dictionary/hash.cpp
+[02 Материали за спец. Компютърни науки, 1 поток] std map: http://www.cplusplus.com/reference/map/map/
+[02 Материали за спец. Компютърни науки, 1 поток] std unordered_map: http://www.cplusplus.com/reference/unordered_map/unordered_map/
+[02 Материали за спец. Компютърни науки, 1 поток] std set: http://www.cplusplus.com/reference/set/set/
+[02 Материали за спец. Компютърни науки, 1 поток] std unordered_set: http://www.cplusplus.com/reference/unordered_set/unordered_set/
+[02 Материали за спец. Компютърни науки, 1 поток] Реализация на ориентиран граф с ,решения на примерни задачи: https://github.com/triffon/sdp-2017-18/blob/master/graph/graph.cpp
+[03 Материали за спец. Компютърни науки, 2 поток] ЗЗС 3 Обхождания със стек: https://github.com/stranxter/lecture-notes/blob/master/homeworks/03_sdp/2017/stacks/stacks.pdf
+[03 Материали за спец. Компютърни науки, 2 поток] ЗЗС 4 Задачи за двоични дървета 1: https://github.com/stranxter/lecture-notes/blob/master/homeworks/03_sdp/03_trees/trees.pdf
+[03 Материали за спец. Компютърни науки, 2 поток] ЗЗС 5 Задачи за двоични дървета 2: https://github.com/stranxter/lecture-notes/blob/master/homeworks/03_sdp/2017/trees/trees%202.pdf
+[03 Материали за спец. Компютърни науки, 2 поток] ЗЗС 6 Задачи за двоични дървета 3: https://github.com/stranxter/lecture-notes/blob/master/homeworks/03_sdp/2017/trees_3/trees3.pdf
+[03 Материали за спец. Компютърни науки, 2 поток] ЗЗС 7 Задачи за двоични дървета 4: https://github.com/stranxter/lecture-notes/blob/master/homeworks/03_sdp/2017/trees_4/trees_4.pdf
+[03 Материали за спец. Компютърни науки, 2 поток] ЗЗС 8 Реактивни потоци: https://github.com/stranxter/lecture-notes/blob/master/homeworks/03_sdp/2017/funWithTemplates/funwithtemplates.pdf
+[03 Материали за спец. Компютърни науки, 2 поток] ЗЗС 9 Домашно за Хеш таблици: https://github.com/stranxter/lecture-notes/blob/master/homeworks/03_sdp/2017/hashmap/hashmap.pdf
+[03 Материали за спец. Компютърни науки, 2 поток] ЗЗС 11 Крайни автомати: https://github.com/stranxter/lecture-notes/blob/master/homeworks/03_sdp/2017/fsa/fsa.pdf
+[03 Материали за спец. Компютърни науки, 2 поток] ЗЗС 12 Крайни автомати 2: https://github.com/stranxter/lecture-notes/blob/master/homeworks/03_sdp/2017/fsa_2/fsa_2.pdf
+[03 Материали за спец. Компютърни науки, 2 поток] ЗЗС 13 Графи: https://github.com/stranxter/lecture-notes/blob/master/homeworks/03_sdp/2017/fsa_3/fsa_3.pdf
