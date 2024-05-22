@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тригери и броячи</title>
+<style>
+:root{
+  color-scheme: light;
+  --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+  --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10);
+  --series:#2a78d6; --warn:#b4540a; --warn-bg:#fdf1e7;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
+    --series:#3987e5; --warn:#f0a35e; --warn-bg:#2a1f15;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+  --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
+  --series:#3987e5; --warn:#f0a35e; --warn-bg:#2a1f15;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:22px;margin:0 0 4px}
+h2{font-size:18px;margin:36px 0 8px;padding-top:12px;border-top:1px solid var(--border)}
+h3{font-size:15px;margin:4px 0 8px}
+p,li{color:var(--ink2)}
+.sub{color:var(--muted);margin:0 0 16px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;margin:12px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.grid2{grid-template-columns:1fr}}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{border:1px solid var(--axis);padding:5px 8px;text-align:center;color:var(--ink)}
+th{font-weight:600}
+td.ans{font-weight:700;font-size:16px}
+td.nb{color:var(--muted)}
+td.w{background:var(--warn-bg);color:var(--warn);font-weight:600}
+.ov{border-top:1.5px solid currentColor;padding-top:1px}
+.eq{font-size:19px;font-weight:600;color:var(--ink);margin:6px 0;font-family:"Cambria Math","STIX Two Math",Georgia,serif}
+.note{font-size:13px;color:var(--muted)}
+.warnbox{border-left:3px solid var(--warn);background:var(--warn-bg);padding:8px 12px;border-radius:4px;color:var(--ink);font-size:14px;margin:10px 0}
+.pulse{display:inline-block;width:18px;height:11px;border:1.5px solid currentColor;border-bottom:none;vertical-align:middle;position:relative;top:-1px}
+svg{width:100%;height:auto;display:block}
+svg text{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+@media print{:root{--page:#fff;--surface:#fff}.noprint{display:none}.card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<h1>Изследване на тригери и броячи</h1>
+<p class="sub">Цифрова схемотехника · попълване на таблиците от упражнението</p>
+
+<div class="warnbox noprint">
+Колона <b>„тетрадка“</b> е това, което е записано в тетрадката; колона <b>Q<sup>t+1</sup></b> е за листа.
+В табл.3, 4 и 5 записаното в тетрадката е систематично <b>обърнато</b> спрямо работата на тригера (Set → 0, Reset → 1) –
+най-вероятно е отчитан индикаторът на <span class="ov">Q</span> (DI<sub>1</sub>), а не на Q (DI<sub>0</sub>). Разликите са маркирани с ⚠.
+</div>
+
+<!-- ===== 1 ===== -->
+<h2>1. Асинхронен RS тригер – характеристични уравнения (Табл.1а)</h2>
+<div class="card">
+  <p style="margin:0 0 6px">За схемата с ЛЕ ИЛИ-НЕ (изходите един през друг):</p>
+  <div class="eq">Q<sup>t+1</sup><sub>RS</sub> = <span class="ov">R ∨ <span class="ov">Q</span><sup>t</sup></span> &nbsp;=&nbsp; S ∨ <span class="ov">R</span>·Q<sup>t</sup> &nbsp;&nbsp;(R·S = 0)</div>
+  <div class="eq"><span class="ov">Q</span><sup>t+1</sup><sub>RS</sub> = <span class="ov">S ∨ Q<sup>t</sup></span> &nbsp;=&nbsp; R ∨ <span class="ov">S</span>·<span class="ov">Q</span><sup>t</sup> &nbsp;&nbsp;(R·S = 0)</div>
+  <p class="note" style="margin-bottom:0">R·S = 0 е условието да не се подава забранената комбинация R = S = 1 (ред 0* в Табл.1а).
+  Проверка: S=1 → Q=1; R=1 → Q=0; R=S=0 → Q<sup>t+1</sup> = Q<sup>t</sup> (запазване).</p>
+</div>
+
+<!-- ===== 2 ===== -->
+<h2>2. Синхронен по ниво RS тригер – фиг.3, Табл.2</h2>
+<div class="grid2">
+<div class="card">
+<table>
+  <tr><th>C</th><th>R</th><th>S</th><th>Q<sup>t+1</sup></th><th class="noprint">тетрадка</th></tr>
+  <tr><td rowspan="4">0 (---)</td><td>0</td><td>0</td><td class="ans">Q<sup>t</sup></td><td class="nb noprint">Q<sup>t</sup></td></tr>
+  <tr><td>0</td><td>1</td><td class="ans">Q<sup>t</sup></td><td class="nb noprint">Q<sup>t</sup></td></tr>
+  <tr><td>1</td><td>0</td><td class="ans">Q<sup>t</sup></td><td class="nb noprint">Q<sup>t</sup></td></tr>
+  <tr><td>1</td><td>1</td><td class="ans">Q<sup>t</sup></td><td class="nb noprint">Q<sup>t</sup></td></tr>
+  <tr><td rowspan="4"><span class="pulse"></span></td><td>0</td><td>0</td><td class="ans">Q<sup>t</sup></td><td class="nb noprint">Q<sup>t</sup></td></tr>
+  <tr><td>0</td><td>1</td><td class="ans">1</td><td class="nb noprint">1</td></tr>
+  <tr><td>1</td><td>0</td><td class="ans">0</td><td class="nb noprint">0</td></tr>
+  <tr><td>1</td><td>1</td><td class="ans">1*</td><td class="nb noprint">Q<sup>t*</sup> забранено</td></tr>
+</table>
+</div>
+<div class="card">
+<p style="margin-top:0">Без импулс (C = 0) входните И-НЕ са запушени → тригерът <b>запазва</b> състоянието при всякакви R, S.</p>
+<p>При C = 1 работи като RS тригер: S = 1 → Set (1), R = 1 → Reset (0).</p>
+<p style="margin-bottom:0"><b>R = S = 1 при C = 1 е забранено:</b> и двата изхода стават 1 (Q = <span class="ov">Q</span> = 1), а след края на импулса състоянието е неопределено – затова „1*“, както в Табл.1б. В тетрадката е записано „Q<sup>t*</sup> – забранено“; важното е звездичката и думата „забранено“.</p>
+</div>
+</div>
+
+<!-- ===== 3 ===== -->
+<h2>3. Синхронен по ниво D тригер – фиг.4, Табл.3</h2>
+<div class="grid2">
+<div class="card">
+<table>
+  <tr><th>C</th><th>D</th><th>Q<sup>t+1</sup></th><th class="noprint">тетрадка</th></tr>
+  <tr><td rowspan="2">0 (---)</td><td>0</td><td class="ans">Q<sup>t</sup></td><td class="nb noprint">Q<sup>t</sup></td></tr>
+  <tr><td>1</td><td class="ans">Q<sup>t</sup></td><td class="nb noprint">Q<sup>t</sup></td></tr>
+  <tr><td rowspan="2"><span class="pulse"></span></td><td>0</td><td class="ans">0</td><td class="w noprint">1 ⚠</td></tr>
+  <tr><td>1</td><td class="ans">1</td><td class="w noprint">0 ⚠</td></tr>
+</table>
+</div>
+<div class="card">
+  <div class="eq">Q<sup>t+1</sup><sub>D</sub> = D</div>
+  <div class="eq">Q<sup>t+1</sup><sub>RS</sub> → Q<sup>t+1</sup><sub>D</sub> : &nbsp;D = S = <span class="ov">R</span></div>
+  <p class="note" style="margin-bottom:0">Т.е. S = D и R = <span class="ov">D</span>. Заместено: Q<sup>t+1</sup> = D ∨ D·Q<sup>t</sup> = D, и R·S = <span class="ov">D</span>·D = 0 – забранената комбинация изчезва.
+  Това е и защо долният И-НЕ на фиг.4 взима сигнала от изхода на горния (там е <span class="ov">D</span>).</p>
+</div>
+</div>
+
+<!-- ===== 4 ===== -->
+<h2>4. D тригер по фронт, ИС 7474 – фиг.6, Табл.4</h2>
+<div class="grid2">
+<div class="card">
+<table>
+  <tr><th><span class="ov">S</span></th><th><span class="ov">R</span></th><th>C</th><th>D</th><th>Q<sup>t+1</sup></th><th class="noprint">тетрадка</th></tr>
+  <tr><td rowspan="2">1</td><td rowspan="2">1</td><td>↑</td><td>0</td><td class="ans">0</td><td class="nb noprint">0</td></tr>
+  <tr><td>↑</td><td>1</td><td class="ans">1</td><td class="w noprint">0 ⚠</td></tr>
+  <tr><td>0</td><td>1</td><td rowspan="3">X</td><td rowspan="3">X</td><td class="ans">1</td><td class="w noprint">0 ⚠</td></tr>
+  <tr><td>1</td><td>0</td><td class="ans">0</td><td class="w noprint">1 ⚠</td></tr>
+  <tr><td>0</td><td>0</td><td class="ans">1*</td><td class="nb noprint">Q<sup>t*</sup></td></tr>
+</table>
+<p class="note">Редовете в тетрадката са леко разместени – прочетени са по реда на листа.</p>
+</div>
+<div class="card">
+<p style="margin-top:0">При <span class="ov">S</span> = <span class="ov">R</span> = 1 тригерът записва D само при <b>нарастващ фронт</b> на C (↑): Q<sup>t+1</sup> = D.</p>
+<p><span class="ov">S</span> (PRE) и <span class="ov">R</span> (CLR) са асинхронни, активни с ниско ниво: <span class="ov">S</span> = 0 → Q = 1, <span class="ov">R</span> = 0 → Q = 0, без значение C и D (затова X).</p>
+<p style="margin-bottom:0"><b>Приоритет:</b> асинхронните входове <span class="ov">S</span>, <span class="ov">R</span> имат по-висок приоритет от синхронния вход D – докато някой от тях е 0, D и C не влияят.
+<span class="ov">S</span> = <span class="ov">R</span> = 0 е забранено (Q = <span class="ov">Q</span> = 1) → 1*.</p>
+</div>
+</div>
+
+<!-- ===== 5 ===== -->
+<h2>5. Асинхронен брояч с K<sub>бр</sub> = 4 – фиг.7 (времедиаграми)</h2>
+<div class="card">
+  <svg id="td" viewBox="0 0 760 300" role="img" aria-label="Времедиаграми ТГ, Q1, Q2"></svg>
+  <p class="note" style="margin-bottom:0">Двата тригера са включени като T-тригери (D ← <span class="ov">Q</span>), затова всеки сменя състоянието си при нарастващ фронт на своя C.
+  Q<sub>1</sub> се сменя на всеки фронт ↑ на ТГ (честота f/2); C на втория тригер е от Q<sub>1</sub> (45 → 53), затова Q<sub>2</sub> се сменя при всеки фронт ↑ на Q<sub>1</sub> (честота f/4).
+  Началното състояние е прието 00. Числата отдолу са Q<sub>2</sub>Q<sub>1</sub>: 0 → 3 → 2 → 1 → 0 – 4 различни състояния, т.е. K<sub>бр</sub> = 4 (при тази връзка броячът брои назад).
+  Малкото изместване на фронтовете на Q<sub>1</sub> и Q<sub>2</sub> показва закъснението t<sub>з</sub> на всеки тригер. t<sub>з01</sub> и t<sub>з10</sub> не са в снимките.</p>
+</div>
+
+<!-- ===== 6 ===== -->
+<h2>6. Master-Slave JK тригер, ИС 7472 – фиг.8, Табл.5</h2>
+<div class="grid2">
+<div class="card">
+<table>
+  <tr><th><span class="ov">S</span></th><th><span class="ov">R</span></th><th>C</th><th>J1</th><th>K1</th><th>Q<sup>t+1</sup></th><th class="noprint">тетрадка</th></tr>
+  <tr><td rowspan="4">1</td><td rowspan="4">1</td><td><span class="pulse"></span></td><td>0</td><td>0</td><td class="ans">Q<sup>t</sup></td><td class="nb noprint">1 (поправено)</td></tr>
+  <tr><td><span class="pulse"></span></td><td>0</td><td>1</td><td class="ans">0</td><td class="w noprint">1 ⚠</td></tr>
+  <tr><td><span class="pulse"></span></td><td>1</td><td>0</td><td class="ans">1</td><td class="w noprint">0 ⚠</td></tr>
+  <tr><td><span class="pulse"></span></td><td>1</td><td>1</td><td class="ans"><span class="ov">Q</span><sup>t</sup></td><td class="nb noprint">1</td></tr>
+  <tr><td>0</td><td>1</td><td rowspan="3">X</td><td rowspan="3">X</td><td rowspan="3">X</td><td class="ans">1</td><td class="w noprint">0 ⚠</td></tr>
+  <tr><td>1</td><td>0</td><td class="ans">0</td><td class="w noprint">1 ⚠</td></tr>
+  <tr><td>0</td><td>0</td><td class="ans">1*</td><td class="nb noprint">Q<sup>t*</sup></td></tr>
+</table>
+<p class="note">J2 = J3 = 1; K2 = K3 = 1, така че J = J1, K = K1.</p>
+</div>
+<div class="card">
+<p style="margin-top:0"><b>J = K = 0</b> → запазва (Q<sup>t</sup>); <b>J = 0, K = 1</b> → Reset (0); <b>J = 1, K = 0</b> → Set (1); <b>J = K = 1</b> → превключва (<span class="ov">Q</span><sup>t</sup>) на всеки импулс.</p>
+<p><b>Сравнение с RS:</b> JK работи като RS (J ≡ S, K ≡ R), но комбинацията J = K = 1 не е забранена – вместо неопределено състояние тригерът се превключва. Асинхронните <span class="ov">S</span>, <span class="ov">R</span> работят като при 7474.</p>
+<p style="margin-bottom:0"><b>Изходният импулс при MS:</b> при C = 1 входните данни се записват в Master, а Slave е блокиран; при спада на C (1 → 0) Master се блокира и състоянието му се пренася в Slave, т.е. изходът Q се сменя по <b>задния фронт</b> на тактовия импулс. Така входовете и изходът никога не са свързани едновременно и няма „състезание“.</p>
+</div>
+</div>
+</main>
+
+<script>
+(function(){
+  const NS="http://www.w3.org/2000/svg", svg=document.getElementById("td");
+  const el=(t,a,txt)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(txt!==undefined)e.textContent=txt;svg.appendChild(e);return e;};
+  const x0=70, x1=740, period=120, hi=26, d=6;           // 5 clock periods, rising edges at x0+20+k*period
+  const rows=[{name:"ТГ",y:70},{name:"Q₁",y:150},{name:"Q₂",y:230}];
+  rows.forEach(r=>{
+    el("line",{x1:x0,y1:r.y,x2:x1,y2:r.y,stroke:"var(--axis)","stroke-width":1});
+    el("text",{x:x0-14,y:r.y-6,"text-anchor":"end","font-size":15,fill:"var(--ink)","font-weight":600},r.name);
+  });
+  el("text",{x:x1,y:290,"text-anchor":"end","font-size":13,fill:"var(--muted)"},"t");
+  const edges=[0,1,2,3,4].map(k=>x0+20+k*period);
+  // clock
+  let p=`M${x0},${rows[0].y}`;
+  edges.forEach(e=>{p+=` L${e},${rows[0].y} L${e},${rows[0].y-hi} L${e+period/2},${rows[0].y-hi} L${e+period/2},${rows[0].y}`;});
+  p+=` L${x1},${rows[0].y}`;
+  el("path",{d:p,fill:"none",stroke:"var(--series)","stroke-width":2});
+  edges.forEach(e=>{
+    el("line",{x1:e,y1:rows[0].y-hi-6,x2:e,y2:rows[2].y+8,stroke:"var(--grid)","stroke-width":1,"stroke-dasharray":"3 3"});
+    el("text",{x:e,y:rows[0].y-hi-10,"text-anchor":"middle","font-size":12,fill:"var(--ink2)"},"↑");
+  });
+  // Q1 toggles at each clock edge (+d), Q2 toggles at each rising edge of Q1 (+2d)
+  function wave(y,times){
+    let v=0, s=`M${x0},${y}`;
+    times.forEach(t=>{ s+=` L${t},${y-v*hi}`; v=1-v; s+=` L${t},${y-v*hi}`; });
+    s+=` L${x1},${y-v*hi}`; return s;
+  }
+  const q1t=edges.map(e=>e+d);
+  const q1rise=q1t.filter((_,i)=>i%2===0);
+  const q2t=q1rise.map(t=>t+d);
+  el("path",{d:wave(rows[1].y,q1t),fill:"none",stroke:"var(--series)","stroke-width":2});
+  el("path",{d:wave(rows[2].y,q2t),fill:"none",stroke:"var(--series)","stroke-width":2});
+  // state numbers Q2Q1
+  const states=["0","3","2","1","0","3"], bounds=[x0,...edges,x1];
+  for(let i=0;i<states.length;i++){
+    const mid=(bounds[i]+bounds[i+1])/2;
+    el("text",{x:mid,y:272,"text-anchor":"middle","font-size":13,fill:"var(--ink2)"},states[i]);
+  }
+  el("text",{x:x0-14,y:272,"text-anchor":"end","font-size":12,fill:"var(--muted)"},"Q₂Q₁");
+  // delay callout
+  el("text",{x:q1t[0]+8,y:rows[1].y-hi-6,"font-size":11,fill:"var(--muted)"},"tз");
+})();
+</script>
+</body>
+</html>
