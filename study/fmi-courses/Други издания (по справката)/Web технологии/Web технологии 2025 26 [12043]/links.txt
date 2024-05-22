@@ -1,0 +1,8 @@
+[00 Главна] Схема за оценяване: https://docs.google.com/document/d/1B2QJ01b5fFUxkz84D7P2tA4nammELbtrYhde9a4rPLs/edit
+[00 Главна] Презентации и проекти: https://docs.google.com/spreadsheets/d/18ZoFXy69ics3Oemgn6-AP5IvWpODcJ2P02ut170ipD8/edit
+[00 Главна] Материали Група 1: https://github.com/dndonev/fmi-webtech-2026
+[01 16 февруари - 22 февруари] Организация на курса: https://triffon.github.io/webtech-org/
+[01 16 февруари - 22 февруари] Уводна лекция Web приложения и трислойна архитектура (доц. д-р Калин Георгиев): https://triffon.github.io/webtech-intro/
+[09 13 април - 19 април] Сигурност на web приложения (доц. д-р Трифон Трифонов): https://triffon.github.io/webtech-security-docker/
+[10 20 април - 26 април] Сесии (Невена Гаджева): https://ngadzheva.github.io/fmi/cookies/
+[12 4 май - 10 май] Сървърно изчислени страници (Димитър Стефанов Евгени Кунев): https://docs.google.com/presentation/d/1dtvayxfZx5hWJYuzi4vC0e1Fck2otdr86wXkzn9WiF0/edit
