@@ -1,0 +1,82 @@
+[00 Главна] Полезни източници: https://github.com/semerdzhiev/sdp-samples/blob/master/resources.md
+[00 Главна] Календар на курса: https://calendar.google.com/calendar/embed?src=i2agv3if0fi92i6ajhnpqua0bg%40group.calendar.google.com&ctz=Europe%2FSofia
+[00 Главна] Github хранилище с код от лекции на 1 поток: https://github.com/triffon/sdp-2019-20
+[00 Главна] Лекционни материали за 1 поток: https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20
+[00 Главна] Семинарни упражнения - група 4: https://github.com/fmi-lab/sdp-2019-kn-group4-sem
+[00 Главна] Примерни решения на задачите от първото контролно: https://github.com/asteasolutions/sdp-2019-20-midterm-1-tests/tree/solutions
+[00 Главна] Примерни решения на задачите от второто контролно: https://github.com/asteasolutions/sdp-2019-20-midterm-2-tests/tree/solutions
+[00 Главна] Теми за проекти: https://drive.google.com/drive/folders/1AX_zU_Nq0egbTWmdbDuhFMKiPOH6zE16
+[01 2 октомври - 8 октомври] Организация на курса: https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=0.0-org.pdf
+[01 2 октомври - 8 октомври] Структури от данни + алгоритми = програми: https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=0.1-datastruct-trans.pdf
+[01 2 октомври - 8 октомври] Структури от данни + алгоритми = програми (с анотации): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=0.1-datastruct-annotations.pdf
+[01 2 октомври - 8 октомври] О-нотация (Wikipedia): https://en.wikipedia.org/wiki/Big_O_notation
+[01 2 октомври - 8 октомври] Doctest - рамка за unit тестове: https://github.com/onqtam/doctest
+[01 2 октомври - 8 октомври] Стек (част 1): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.1-stack-trans-part1.pdf
+[01 2 октомври - 8 октомври] Стек (част 1, с анотации): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.1-stack-annotations-part1.pdf
+[01 2 октомври - 8 октомври] Реализации на стек с тестове: https://github.com/triffon/sdp-2019-20/tree/master/stack
+[01 2 октомври - 8 октомври] Първоначална реализация на пресмятане на израз в обратен полски запис: https://github.com/triffon/sdp-2019-20/tree/7fed797c6f137a82cf92fc67c1a6f98a7460c0cf/arithmetic
+[02 9 октомври - 15 октомври] Стек (част 2): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.1-stack-annotations.pdf
+[02 9 октомври - 15 октомври] Стек (част 2, с анотации): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.1-stack-annotations.pdf
+[02 9 октомври - 15 октомври] Алгоритъм на разпределителната гара (shunting yard): https://github.com/triffon/sdp-2019-20/tree/1c833bcfd794e15366aca3a34d8b285d01574871/arithmetic
+[02 9 октомври - 15 октомври] Директно оценяване на израз: https://github.com/triffon/sdp-2019-20/tree/1c07f81991bace6f9a6cda3d34cc948b2a948528/arithmetic
+[02 9 октомври - 15 октомври] Ход на коня рекурсивна реализация: https://github.com/triffon/sdp-2019-20/tree/bad999b73bd4902898deff361b6bfc7432e96089/horse
+[02 9 октомври - 15 октомври] Ход на коня симулирана рекурсия със стек — без стъпка назад: https://github.com/triffon/sdp-2019-20/tree/f51f1bc869964cf19ec75ab29466546e9e3717c5/horse
+[02 9 октомври - 15 октомври] std stack: https://en.cppreference.com/w/cpp/container/stack
+[02 9 октомври - 15 октомври] Линеен двусвързан списък: https://github.com/stranxter/lecture-notes/blob/master/notes/03_data%20structures/lists/lists.pdf
+[02 9 октомври - 15 октомври] Примерна програма от лекции: https://github.com/stranxter/lecture-notes/tree/master/samples/03_sdp/2019-20_kn/lists
+[02 9 октомври - 15 октомври] Задачи за двойно-свързани списъци (Секция 14.1): https://github.com/stranxter/lecture-notes/blob/master/homeworks/Problems%20in%20Programming.pdf
+[03 16 октомври - 22 октомври] Опашка (част 1): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.2-queue-trans-part1.pdf
+[03 16 октомври - 22 октомври] Опашка (част 1, с анотации): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.2-queue-annotations-part1.pdf
+[03 16 октомври - 22 октомври] Реализации на опашка с тестове: https://github.com/triffon/sdp-2019-20/tree/master/queue
+[03 16 октомври - 22 октомври] Пример за работа с опашка числа на Hamming: https://github.com/triffon/sdp-2019-20/blob/bf60881e4314f658e5f34cd5ac0a0b9e8679abc7/queue/queue.cpp
+[03 16 октомври - 22 октомври] SList (опростен вариант на Skip List): https://github.com/stranxter/lecture-notes/blob/master/notes/03_data%20structures/lists/lists.pdf
+[03 16 октомври - 22 октомври] Примерна програма от лекции: https://github.com/stranxter/lecture-notes/tree/master/samples/03_sdp/2019-20_kn/lists
+[03 16 октомври - 22 октомври] Задачи за SList (Секция 14.2 и 14.3): https://github.com/stranxter/lecture-notes/blob/master/homeworks/Problems%20in%20Programming.pdf
+[04 23 октомври - 29 октомври] Опашка (част 2): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.2-queue-trans.pdf
+[04 23 октомври - 29 октомври] Опашка (част 2, с анотации): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.2-queue-annotations.pdf
+[04 23 октомври - 29 октомври] std queue: https://en.cppreference.com/w/cpp/container/queue
+[04 23 октомври - 29 октомври] Примерни програми с опашка: https://github.com/triffon/sdp-2019-20/blob/master/queue/queue.cpp
+[04 23 октомври - 29 октомври] Ход на коня с опашка: https://github.com/triffon/sdp-2019-20/tree/master/horse
+[04 23 октомври - 29 октомври] Списъци (част 1): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.3-list-trans-part1.pdf
+[04 23 октомври - 29 октомври] Списъци (част 1, с анотации): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.3-list-annotations-part1.pdf
+[04 23 октомври - 29 октомври] Първоначална реализация на едносвързан списък с един тест: https://github.com/triffon/sdp-2019-20/tree/9596253eed81921347354e32722b8cf71cf545d1/lists
+[04 23 октомври - 29 октомври] Примерна програма от лекции: https://github.com/stranxter/lecture-notes/tree/master/samples/03_sdp/2019-20_kn/lists
+[04 23 октомври - 29 октомври] Задачи за итератори (секции 14.4 и 14.5): https://github.com/stranxter/lecture-notes/blob/master/homeworks/Problems%20in%20Programming.pdf
+[05 30 октомври - 5 ноември] Примерна програма от лекции: https://github.com/stranxter/lecture-notes/tree/master/samples/03_sdp/2019-20_kn/lists/mapreduce
+[05 30 октомври - 5 ноември] Задачи за самоподготовка (секции 14.4 и 14.5): https://github.com/stranxter/lecture-notes/blob/master/homeworks/Problems%20in%20Programming.pdf
+[05 30 октомври - 5 ноември] Списъци (част 2): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.3-list-trans-part2.pdf
+[05 30 октомври - 5 ноември] Списъци (част 2, с анотации): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.3-list-annotations-part2.pdf
+[05 30 октомври - 5 ноември] Пълна реализация на едносвързан списък с тестове: https://github.com/triffon/sdp-2019-20/tree/533c3fd3b2f703151e88e62fc2c56be2b8238692/lists
+[06 6 ноември - 12 ноември] Списъци (част 3): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.3-list-trans.pdf
+[06 6 ноември - 12 ноември] Списъци (част 3, с анотации): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.3-list-annotations.pdf
+[06 6 ноември - 12 ноември] Реализация на сортиране чрез сливане: https://github.com/triffon/sdp-2019-20/blob/7d5aa13b81a1c147a0c5d8252776b1b780577b41/lists/lists.cpp
+[06 6 ноември - 12 ноември] Прости реализации на функции от по-висок ред над списъци: https://github.com/triffon/sdp-2019-20/blob/master/lists/lists_highorder.cpp
+[06 6 ноември - 12 ноември] Първоначална реализация на двойносвързан списък: https://github.com/triffon/sdp-2019-20/blob/adb0557ddf83f38358262694187473fa664b003c/lists/dllist.cpp
+[06 6 ноември - 12 ноември] std list: https://en.cppreference.com/w/cpp/container/list
+[06 6 ноември - 12 ноември] Примерни програми от лекции за инфиксна и постфиксна нотация и DFS със стек: https://github.com/stranxter/lecture-notes/tree/master/samples/03_sdp/2019-20_kn/stacks
+[07 13 ноември - 19 ноември] Лекция за двоични дървета: https://github.com/stranxter/lecture-notes/blob/master/notes/03_data%20structures/trees/trees.pdf
+[07 13 ноември - 19 ноември] Примерни програми от лекции за свързано представяне на двоични дървета: https://github.com/stranxter/lecture-notes/tree/master/samples/03_sdp/2019-20_kn/trees
+[09 27 ноември - 3 декември] Завършена реализация на двойносвързан списък: https://github.com/triffon/sdp-2019-20/blob/master/lists/dllist.cpp
+[09 27 ноември - 3 декември] Проверка дали двойносвързан списък е палиндром: https://github.com/triffon/sdp-2019-20/tree/88b2a9558854f92d9fcb1966c84fecaef5ca8f3a/lists
+[09 27 ноември - 3 декември] Хетерогенни контейнери: https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.4-polylist-trans.pdf
+[09 27 ноември - 3 декември] Хетерогенни контейнери (разгъната): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=2.4-polylist.pdf
+[09 27 ноември - 3 декември] Списък от стекове и опашки: https://github.com/triffon/sdp-2019-20/tree/386a0d35cb67cdcabaf0e5a179bc9383265eb961/polylist
+[09 27 ноември - 3 декември] Реализация на дълбоки списъци: https://github.com/triffon/sdp-2019-20/tree/0e01952158884b8ff575f0ec2905aa2b390c8277/polylist
+[09 27 ноември - 3 декември] Примерни програми за ДД и ДНД: https://github.com/stranxter/lecture-notes/tree/master/samples/03_sdp/2019-20_kn/trees
+[11 11 декември - 17 декември] Дървета: https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=3.1-tree-trans.pdf
+[11 11 декември - 17 декември] Дървета (с анотации): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=3.1-tree-annotations.pdf
+[11 11 декември - 17 декември] Абстракция за позиция в дърво: https://github.com/triffon/sdp-2019-20/tree/208b7f6cf73b5a93663dcfdda1b5fc4ecdd52729/trees
+[11 11 декември - 17 декември] Промяна на абстракцията за позиция да позволява промяна на структурата на дървото: https://github.com/triffon/sdp-2019-20/commit/97da0b93f0352e85ff17bfcdd726668b0dcf4547
+[11 11 декември - 17 декември] Дървета за търсене (част 1): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=3.3-searchtree-trans-part1.pdf
+[11 11 декември - 17 декември] Дървета за търсене (част 1, с анотации): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=3.3-searchtree-annotations-part1.pdf
+[11 11 декември - 17 декември] Първоначална реализация на двоично дърво за търсене търсене и включване: https://github.com/triffon/sdp-2019-20/blob/97da0b93f0352e85ff17bfcdd726668b0dcf4547/trees/bstree.cpp
+[12 18 декември - 24 декември] Дървета за търсене (част 2): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=3.3-searchtree-trans.pdf
+[12 18 декември - 24 декември] Дървета за търсене (част 2, с анотации): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=3.3-searchtree-annotations.pdf
+[12 18 декември - 24 декември] Довършване на реализацията на двоично дърво за търсене: https://github.com/triffon/sdp-2019-20/tree/2e9129f4573986e05a895e4519d8a2165d8cd8c7/trees
+[12 18 декември - 24 декември] Реализация на голяма шестица за двоично дърво: https://github.com/triffon/sdp-2019-20/commit/2b1170b667d9317b5dc0cefeca6373ddfda428a7
+[12 18 декември - 24 декември] Речник (част 1): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=3.4-hash-trans-part1.pdf
+[12 18 декември - 24 декември] Речник (част 1, с анотации): https://intranet.fmi.uni-sofia.bg/index.php/s/LpaSoeB0chiW4sy/download?path=%2F2019-20%2F%D0%A1%D0%94%D0%9F%202019-20&files=3.4-hash-annotations-part1.pdf
+[12 18 декември - 24 декември] АТД речник: https://github.com/triffon/sdp-2019-20/blob/master/dictionary/dictionary.h
+[12 18 декември - 24 декември] Наредена двойка за ключ и стойност: https://github.com/triffon/sdp-2019-20/blob/master/dictionary/key_value_pair.cpp
+[12 18 декември - 24 декември] Реализация на речник с двоично дърво за търсене: https://github.com/triffon/sdp-2019-20/blob/d8efa498d59e9be57ef0419081af8f0f15e21814/dictionary/bstree_dictionary.cpp
+[12 18 декември - 24 декември] Първоначална реализация на хеш таблица с пряко свързване: https://github.com/triffon/sdp-2019-20/blob/c44e40516a53051561f1cfcce54d78c022ed374b/dictionary/linked_hash.cpp
