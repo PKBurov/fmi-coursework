@@ -1,0 +1,14 @@
+Файлове, които вече съществуват другаде в архива (същото име и размер) и не са свалени повторно:
+
+K1_2014_KN1.pdf
+hw1-solutions.pdf
+hw1.pdf
+hw2-solutions.pdf
+hw2.pdf
+lab-1-edo.pdf
+lab-2-edo.pdf
+lab-3-edo.pdf
+lab-4-edo.pdf
+lec-1.pdf
+lec-7.pdf
+midterm-KN2--solutions.pdf
