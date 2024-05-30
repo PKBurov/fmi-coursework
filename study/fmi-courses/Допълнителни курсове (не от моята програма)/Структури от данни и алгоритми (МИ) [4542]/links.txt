@@ -1,0 +1,6 @@
+[01 Topic 1] Класове от обекти, инстанции на обекти: https://youtu.be/IBpZBI_8QAE
+[01 Topic 1] Инсталиране на IntelliJ IDEA. Създаване на приложение с команден интерфейс: https://youtu.be/M0Y0T-s_mbQ
+[01 Topic 1] Компилиране и стартиране на приложение: https://www.youtube.com/watch?v=apnIzEf0jnA
+[01 Topic 1] Създаване на приложение с графичен потребителски интерфейс: https://www.youtube.com/watch?v=5vSyylPPEko
+[01 Topic 1] Създаване на изпълним файл: https://www.youtube.com/watch?v=3Xo6zSBgdgk
+[07 Topic 7] Тема 7 Презентация: https://docs.google.com/presentation/d/1psFIXVOphW55UPKBof1v90mA52DUJsLolMY6yfrTGrM/edit?usp=sharing
