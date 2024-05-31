@@ -1,0 +1,57 @@
+[00 Главна] Препоръчвана литература: https://github.com/semerdzhiev/oop-samples/blob/master/resources.md
+[00 Главна] Схема на оценяване: https://docs.google.com/document/d/1zmwYq-6jSpMua7r8xhJF0fhi5n_5dv-ol510tgUY7aU/edit?usp=sharing
+[00 Главна] Задачи за домашна работа: https://docs.google.com/document/d/1dCglcOnL_L3n_U-sr7b_NcwTifeW82xmSdxmB-btfp0/edit?usp=sharing
+[00 Главна] Курсови проекти: https://docs.google.com/document/d/1sGi3Hv8s1cSeIqm46pZ3pG4nMDaMlbfgXOd43ia9YLE/edit?usp=sharing
+[05 Материали на Калин Георгиев за КН 2 и СИ 1, 2, 3] Актуални експериментални програми от лекциите: https://github.com/stranxter/lecture-notes/tree/master/samples/02_oop/2017
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Програми от лекциите в Github: https://github.com/triffon/oop-2016-17/
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Първи клас рационално число: https://github.com/triffon/oop-2016-17/tree/e8cd7efe8aa0c24e8db6f6c6276f842e0b351373/rational
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Обновена реализация на рационално число: https://github.com/triffon/oop-2016-17/tree/7477aee1d5f50d0506d777c173a6b54102f320b1/rational
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Първоначална реализация на точка в равнината. Поправете грешките и допълнете!: https://github.com/triffon/oop-2016-17/tree/master/geometry
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Как да предлагаме промени по файлове в GitHub: https://help.github.com/articles/editing-files-in-another-user-s-repository/
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Реализация на точка в равнината и в пространството. Допълнете методите означени с домашно: https://github.com/triffon/oop-2016-17/tree/1613931c69b5e1b71943ddc7f4e78a91e52d2b6d/geometry
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Първоначална последователна реализация на стек: https://github.com/triffon/oop-2016-17/tree/bf8f7d8f14b2ec141038c8b3d3958a27e08874d5/stack
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Примерни задачи с използване на стек: https://github.com/triffon/oop-2016-17/blob/ac940e89c0120800fdfbf33dc58cdb1549388a37/stack/main.cpp
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Три реализации на стек последователна, разширяваща се и свързана: https://github.com/triffon/oop-2016-17/tree/73323e18b0bb64f1f600e0c460b3aa1cc2854fcc/stack
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Пример за (ненужен) конструктор за копиране в класа Rational: https://github.com/triffon/oop-2016-17/tree/ea8ae9ba9b418ccd06329c8e0a40b78ee2c5b0cd/rational
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Статична реализация на класа Player: https://github.com/triffon/oop-2016-17/tree/05a7270b1c80ffbdc47776ed7fba6975bf28fd4b/player
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Динамична реализация на Player с конструктор за копиране: https://github.com/triffon/oop-2016-17/tree/a3ce6bfea13de569dd23c08b25f63d8faea9616a/player
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Примери за конструктори за преобразуване на тип: https://github.com/triffon/oop-2016-17/tree/a08e4fbac7c18eb71808dcc2d5b6b8697b488102
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Клас RationalPoint: https://github.com/triffon/oop-2016-17/tree/4154192dbf12ba757d492ece1d72ff5dc93794bf/rational
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Конструктор за копиране за класа ResizingStack: https://github.com/triffon/oop-2016-17/tree/aecade5e893b84a693ae9318ce38556bc524d215/stack
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Примери за изтичане на памет при липса на деструктори: https://github.com/triffon/oop-2016-17/blob/4b728f61bf6ef5f3bc2b05f4c29903b68e1435d4/rational/main.cpp
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Конструктор за копиране на свързан стек: https://github.com/triffon/oop-2016-17/blob/7664fdaf4e781cf3b286051468b35b95bbd6ddbf/stack/lstack.cpp
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Предефиниране на + и += за стек: https://github.com/triffon/oop-2016-17/tree/03d4e0138f906a9a65aa29aa9f4f6cf40135a110/stack
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Предефиниране на операции за класа Rational: https://github.com/triffon/oop-2016-17/tree/d8d14fcfc0d90f0186b76ac8d55aa49be16aa261/rational
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Предефиниране на операции за вход, изход и присвояване за Player: https://github.com/triffon/oop-2016-17/tree/0cc8c4756ae25b89cc9ae0601f07688bd51a7670/player
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Привеждане на всички класове до момента в канонична форма: https://github.com/triffon/oop-2016-17/tree/9fbea248e86f279ecbcf2870e8075f2ded9cad75
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Примери за форматиран и неформатиран вход изход с потоци: https://github.com/triffon/oop-2016-17/blob/11aae4a20923f16316167f41c7ace4a0d77ef0a3/streams/streams.cpp
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Възстановяване на поток след грешка: https://github.com/triffon/oop-2016-17/blob/e272ea479d70e9c26961b1d2a4fb1ade7f1d84e0/streams/streams.cpp
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Библиотека за потоци в C++ (cplusplus.com): http://www.cplusplus.com/reference/iolibrary/
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Манипулатори с параметри (cplusplus.com): http://www.cplusplus.com/reference/iomanip/
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Примери за работа с файлове: https://github.com/triffon/oop-2016-17/blob/4470670a96b637e30156d761d5d377e90d418552/files/files.cpp
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Пример за наследяване Hero: https://github.com/triffon/oop-2016-17/tree/f9b61baf5ed1125a353ebffaab08f7240183af86/player
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Пример за наследяване и голяма четворка SuperHero: https://github.com/triffon/oop-2016-17/tree/55d434b1351df56a8718f6fa770305db2181d009/player
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Проблемът на Супермен: https://github.com/triffon/oop-2016-17/tree/7f347a7df97a526d883072d41e1a79f996b40e49/player
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Решение на проблема на Супермен с шаблони: https://github.com/triffon/oop-2016-17/commit/5ec3e3531cef1742ef2d8917f15a74438e29954a
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Пример за обикновено множествено наследяване AI, Bot: https://github.com/triffon/oop-2016-17/tree/a6039322404f49c6ef7852381459b12e3e8f5b91/player
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Проблемът на диаманта Boss: https://github.com/triffon/oop-2016-17/tree/7a1708cb92a4258a2c5294cf52188f54324c4bd5/player
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Решение на проблема на диаманта с виртуално наследяване: https://github.com/triffon/oop-2016-17/tree/42dae122adc36e1b4e42f4432f5393f9b6153be5/player
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Пример за динамично свързване print: https://github.com/triffon/oop-2016-17/tree/501f09cb3084345aadd353c61f690324b1f65de6/player
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Решение на проблема на Супермен с динамично свързване: https://github.com/triffon/oop-2016-17/tree/68318b51430345d9b3da47f986403891ebb8eacf/player
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Информация за типа по време на изпълнение (RTTI): https://github.com/triffon/oop-2016-17/commit/b04bbe1e767d12722c5274058dd9252136cc8c53
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Виртуални деструктори: https://github.com/triffon/oop-2016-17/commit/2e75f172879ec0f6d41211d92af0dc93c5b55308
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Реализация на интерфейс Printable: https://github.com/triffon/oop-2016-17/tree/b41d3b2ef19405e7ae26f5fcbdb9d394672018f9/player
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Реализация на шаблон на интерфейс за стек: https://github.com/triffon/oop-2016-17/tree/fd49289d608345117f61ad7804e9444b24150d05/stack
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Абстрактен клас Task: https://github.com/triffon/oop-2016-17/tree/b4d7b9a7c1cf77914a526eaaa9013f19a224b863/tasks
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Бърза задача (QuickTask): https://github.com/triffon/oop-2016-17/tree/ec1e563a6a283814416f37fd382780b7e56a8a38/tasks
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Проста задача (SimpleTask): https://github.com/triffon/oop-2016-17/tree/43ecb3dd800adb81d886a1211b69c2ea4128bafb/tasks
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Повтаряща се задача (RepeatTask) — директна реализация: https://github.com/triffon/oop-2016-17/tree/359d58810544051dce4a77f56957aeb411bf2790/tasks
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Повтаряща се задача (RepeatTask) — наследник на SimpleTask: https://github.com/triffon/oop-2016-17/commit/45cacd754f5868c91b672e18db4d4e6d9f348a90
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Повтаряща се задача (RepeatTask) — използване на шаблона прототип (Prototype): https://github.com/triffon/oop-2016-17/tree/0e1b23c8df46fb413e6d662228a94aa0ee0f3a76/tasks
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Добавяне на голяма четворка за RepeatTask: https://github.com/triffon/oop-2016-17/tree/d58dd22d3ae4c3c8a0aa2210c03bcd2b3d74247d/tasks
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Реализация на сложна задача (ComplexTask): https://github.com/triffon/oop-2016-17/tree/29c8a60ec7ce405f26bf4ac4179f3a9212af7111/tasks
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Сериализация в JSON формат: https://github.com/triffon/oop-2016-17/tree/0c1f1b0fbb7578ebb758a9b670657c4565b95d4d/tasks
+[06 Материали за КН, 1 поток, и СИ, групи 4, 5 и 6] Добавяне на тип към сериализацията подготовка за десериализация: https://github.com/triffon/oop-2016-17/tree/b2ac845ddd8c2c8c8b6286ca771da42ef088feae/tasks
+[07 Материали за Информатика] GitHub хранилище с примери по ООП: https://github.com/semerdzhiev/oop-samples
+[07 Материали за Информатика] Casting in C++ @ Dr. Dobb's: http://www.drdobbs.com/casting-in-c/184403316
+[07 Материали за Информатика] Multiple Inheritance Considered Useful @ Dr. Dobb's: http://www.drdobbs.com/cpp/multiple-inheritance-considered-useful/184402074
