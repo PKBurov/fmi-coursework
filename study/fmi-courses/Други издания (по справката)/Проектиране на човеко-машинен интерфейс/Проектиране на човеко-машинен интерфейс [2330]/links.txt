@@ -1,0 +1,28 @@
+[01 22 февруари - 28 февруари] Основи на Проектирането на човеко-машинен интерфейс: http://www-it.fmi.uni-sofia.bg/courses/HCI/index2.htm
+[02 29 февруари - 6 март] Различни модели и теории за психологичните основи на човешкото възприятие: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/module2.htm
+[02 29 февруари - 6 март] Уроци за HTML във W3Schools: http://www.w3schools.com/html/default.asp
+[02 29 февруари - 6 март] Уроци за HTML 5 във W3Schools: http://www.w3schools.com/html/html5_intro.asp
+[02 29 февруари - 6 март] Уроци за CSS във W3Schools: http://www.w3schools.com/css/default.asp
+[03 7 март - 13 март] Ръководство как се прави мокъп за мобилно приложение: http://support.balsamiq.com/customer/portal/articles/1119780-creating-a-mobile-application
+[03 7 март - 13 март] Ръководство за проектиране на интерфейси: http://www.uxapprentice.com/
+[03 7 март - 13 март] Как да създадем мокъп прототип: http://support.balsamiq.com/customer/portal/articles/871902
+[04 14 март - 20 март] Edward Tufte (официален сайт): http://www.edwardtufte.com/tufte/
+[04 14 март - 20 март] Графичен редактор PIXLR: http://apps.pixlr.com/editor/
+[04 14 март - 20 март] Готови примерни мокъп прототипи: https://mockupstogo.mybalsamiq.com/projects
+[04 14 март - 20 март] Mockups To Go: https://mockupstogo.mybalsamiq.com/projects
+[05 21 март - 27 март] Принципи и Правила: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/c24/index.htm
+[05 21 март - 27 март] Безплатен онлайн урок на Телерик за UX дизайн: http://academy.telerik.com/student-courses/web-design-and-ui/ux-design/video
+[06 28 март - 3 април] Предварително оценяване: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/c33/index.htm
+[06 28 март - 3 април] Оценяване чрез интерпретация: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/c32/index.htm
+[06 28 март - 3 април] Сравняване на методите за оценяване: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/c34/index.htm
+[06 28 март - 3 април] Роля на оценяването: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/c29/index.htm
+[06 28 март - 3 април] Таблица с екипите - кой кого ще оценява: https://docs.google.com/spreadsheets/d/1mDsiR6d17-IQ5CR2eEWWKV-W7ZThf96yVinRqCs1rL4/edit?usp=sharing
+[06 28 март - 3 април] Уроци за Bootstrap във W3Schools: http://www.w3schools.com/bootstrap/
+[06 28 март - 3 април] Как да подготвим VS2013 за работа с Bootstrap: https://www.youtube.com/watch?v=FHcutD7Ej8g
+[06 28 март - 3 април] Как да подготвим Sublime text 2 за работа с Bootstrap: https://www.youtube.com/watch?v=bi58bo2sSDQ
+[09 18 април - 24 април] Photoshop Online: http://www.pixlr.com/
+[09 18 април - 24 април] IrFanView: http://irfanview.com/
+[09 18 април - 24 април] Растерни и векторни изображения: http://aviary.com/
+[09 18 април - 24 април] IDEE - Multicolr Search Lab: http://labs.ideeinc.com/multicolr
+[12 9 май - 15 май] Проектиране на съвместна работа: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/c16/index.htm
+[15 30 май - 5 юни] Творчество и дизайн: http://www-it.fmi.uni-sofia.bg/courses/HCI/book/c22/index.htm
