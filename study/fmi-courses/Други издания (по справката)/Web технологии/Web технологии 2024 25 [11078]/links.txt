@@ -1,0 +1,12 @@
+[00 Главна] Схема за оценяване: https://docs.google.com/document/d/1NNnPgewehdo0cy_jweCn8kXxIqUePwiV2L6UKfNgbQs/edit
+[00 Главна] Github repo - Група 3: https://github.com/pgmatev/webtech-2025
+[00 Главна] Презентации и проекти: https://docs.google.com/spreadsheets/d/1Ie0EHPXGBxa49Psj5NYvzLARg2F0L7Fqs3yoH2OYvmU/edit
+[01 17 февруари - 23 февруари] Организация на курса: https://triffon.github.io/webtech-org/
+[01 17 февруари - 23 февруари] Уводна лекция Web приложения и трислойна архитектура (доц. д-р Калин Георгиев): https://triffon.github.io/webtech-intro/
+[04 10 март - 16 март] HTML и CSS (доц. д-р Калин Георгиев): https://triffon.github.io/webtech-html-css/
+[07 31 март - 6 април] Web услуги. GET и POST заявки (доц. д-р Трифон Трифонов): https://triffon.github.io/webtech-get-post/
+[10 21 април - 27 април] Сесии (Невена Гаджева): https://ngadzheva.github.io/fmi/cookies/
+[10 21 април - 27 април] [Група 1] Записване за защита на домашна работа - 30.04: https://docs.google.com/spreadsheets/d/15D4o7N1y4UpqyEqSMIXKsYthDkH6UOqX1yXmVdvt8tM/edit?usp=sharing
+[10 21 април - 27 април] Записване за защита на домашна работа - 28.04: https://docs.google.com/spreadsheets/d/1CxFMN1ESy4jcVCEEpK6lvPpJLxRP4UEJLuCpMheidgQ/edit?usp=sharing
+[12 5 май - 11 май] Код от лекцията: https://github.com/mgechev/fmi-2025-todo-app
+[14 19 май - 25 май] Сигурност на web приложения (доц. д-р Трифон Трифонов): https://triffon.github.io/webtech-security-docker/
