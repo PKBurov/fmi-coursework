@@ -1,0 +1,38 @@
+Файлове, които вече съществуват другаде в архива (същото име и размер) и не са свалени повторно:
+
+3-hci.pdf
+Chapter 2.pdf
+Designing Connected Products_sampler.pdf
+Designing for Emerging Technologies_sampler.pdf
+Example_Resources.zip
+First_Principles_of_Interaction_Design.doc
+General_Description_of_Persona_Writing.doc
+HCI_as_a_discipline.pdf
+HCI_as_an_Engineering_discipline.pdf
+L7_Text.pdf
+L8_Infographic.pdf
+Lecture1_Introduction.doc
+Lecture3_Human.doc
+Mandel-GoldenRules.pdf
+Primerno_zadanie1.docx
+Primerno_zadanie1.pdf
+Project_Documentation.doc
+Requirements_Engineering_An_OO_Analysis.pdf
+Restaurant_UML_Valkov_Nikolova_2015-3.docx
+SLIDES1.PDF
+SLIDES5.pdf
+SLIDES6.PDF
+SLIDES9.PDF
+Shneiderman_principles.doc
+The_Essentials_of_Interaction_Design.doc
+USABILITY_TESTING_MANUAL.pdf
+Usability_Engineering_book.doc
+User-Centered_Design_Process.doc
+cmn23-44.pdf
+cs147-fundamentals.ppt
+examples_Winograd.pdf
+guidelines_book.pdf
+nardi.pdf
+p180-rozanski.pdf
+smith-mosier.pdf
+software-above-device.pdf
