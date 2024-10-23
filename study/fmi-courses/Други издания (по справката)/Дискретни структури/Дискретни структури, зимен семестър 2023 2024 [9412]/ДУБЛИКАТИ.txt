@@ -1,0 +1,11 @@
+Файлове, които вече съществуват другаде в архива (същото име и размер) и не са свалени повторно:
+
+Axioms.pdf
+BijectionsProblems.pdf
+BooleanProperties.pdf
+DiGraphs.pdf
+FoundedSets.pdf
+NaturalNumbersInduction.pdf
+OddSets.pdf
+rooted_trees.pdf
+Учебна_програма-ДС-АД(1).xlsx
