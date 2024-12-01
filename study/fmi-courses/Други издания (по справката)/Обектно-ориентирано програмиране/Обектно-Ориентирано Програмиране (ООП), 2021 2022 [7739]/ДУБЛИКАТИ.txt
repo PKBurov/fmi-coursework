@@ -1,0 +1,8 @@
+Файлове, които вече съществуват другаде в архива (същото име и размер) и не са свалени повторно:
+
+01_Intro.pdf
+02_Introduction to programming - review.pdf
+P_Pandas_8_cheet_sheets.pdf
+Primerna_Programa_V1.pdf
+Python Cheet Sheets and ipynb.zip
+index.html
