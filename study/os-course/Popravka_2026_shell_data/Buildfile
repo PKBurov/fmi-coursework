@@ -1,0 +1,6 @@
+gcc -O2 -Wall '/tmp/build/out'
+clang -g '/tmp/debug'
+g++ -O2 -O2 -std=c++20 '/tmp/build/cpp/'
+tcc
+junk line without quoted path
+cc -fast 'relative/path'
