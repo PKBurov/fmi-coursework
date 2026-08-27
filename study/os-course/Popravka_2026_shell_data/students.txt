@@ -1,0 +1,8 @@
+ivan:x:1001:1001:Иван Петров, СИ, 2023, 3:/home/SI/ivan:/bin/bash
+petar:x:1002:1001:Петър Буров, СИ, 2022, 2:/home/SI/petar:/bin/bash
+maria:x:1003:1001:Мария Иванова, СИ, 2023, 1:/home/SI/maria:/bin/bash
+georgi:x:1004:1002:Георги Димитров, КН, 2023, 4:/home/KN/georgi:/bin/bash
+stoyan:x:1005:1001:Стоян Колев, СИ, 2022, 5:/home/SI/stoyan:/bin/bash
+elena:x:1006:1002:Елена Тодорова, КН, 2022, 2:/home/KN/elena:/bin/bash
+dimo:x:1007:1001:Димо Ганев, СИ, 2022, 6:/home/SI/dimo:/bin/bash
+niki:x:1008:1003:Никола Христов, Инф, 2024, 1:/home/Inf/niki:/bin/bash
