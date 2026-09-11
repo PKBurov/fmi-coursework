@@ -1,0 +1,12 @@
+#!/bin/bash
+# Mock на системен инструмент — както правят на изпита от 2022 насам (ssacli, occ...)
+if [ "$#" -ge 1 ] && [ "$1" = "list" ]; then
+cat <<'EOF'
+nginx 1234 running
+postgres - stopped
+redis 4242 running
+cron - stopped
+EOF
+else
+    echo "svcctl: would run: $*"
+fi
