@@ -16,4 +16,4 @@ Coursework and study materials from Sofia University "St. Kliment Ohridski" (Fac
 ## Notes
 
 - Large binary/media files (videos, images, archives) and build artifacts (`.git`, `node_modules`, `bin/`, `obj/`, `dist/`, `target/`, `Debug/`, etc.) are intentionally excluded.
-- Commit history is backdated to approximate the real academic timeline (2019–2024).
+- The commit history was reconstructed afterwards: commits are backdated and spread across the academic year each folder belongs to, so the dates are approximate.
